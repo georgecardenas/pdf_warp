@@ -1,0 +1,4 @@
+name = PDF Warp
+description = A module that provides Drupal 7 with PDF functionality for Ubercart
+core = 7.x
+package = PDF Warp
