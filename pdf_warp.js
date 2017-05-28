@@ -4,6 +4,6 @@ var app = angular
     
   });
 
-jQyery(document).ready(function () {
+jQuery(document).ready(function () {
   angular.bootstrap(document.getElementById('pdf_warp'), ['pdf_warp']);
 });

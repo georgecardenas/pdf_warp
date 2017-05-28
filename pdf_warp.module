@@ -4,12 +4,21 @@
  * Drupal Hooks
  */
 
+function pdf_warp_menu() {
+    $items['pdf_warp'] = array(
+        'title' => t('PDF Warp'),
+        'page callback' => 'pdf_warp_product_page',
+        'access arguments' => array('access content'),
+    );
+    
+    return $items;
+}
+
 function pdf_warp_form_alter(&$form, $form_state, $form_id) {
   if (strpos($form_id, 'uc_product_add_to_cart_form') !== false) {
     $form['to_pdf_button'] = array(
       '#type' => 'submit',
       '#value' => t('To PDF'),
-      '#submit' => array('pdf_warp_product_page')
     );
   }
 }
@@ -25,6 +34,6 @@ function pdf_warp_theme(){
 function pdf_warp_product_page() {
   drupal_add_library('angularjs', 'angularjs');
   $path = drupal_get_path('module', 'pdf_warp');
-  drupal_add_js($path, '/pdf_Warp.js');
+  drupal_add_js($path.'/pdf_warp.js');
   return theme('pdf_warp_product');
 }
