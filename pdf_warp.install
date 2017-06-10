@@ -1,0 +1,56 @@
+<?php
+
+/**
+* Implementation of hook_install().
+*/
+function pdf_warp_install() {
+  drupal_install_schema('pdf_warp');
+}
+
+/**
+* Implementation of hook_uninstall().
+*/
+function pdf_warp_uninstall() {
+  // Remove tables.
+  drupal_uninstall_schema('pdf_warp');
+}
+
+/**
+* Implementation of hook_schema().
+*/
+function pdf_warp_schema() {
+  $schema['pdf_warp_templates'] = array(
+    'description' => t('Tabla de plantillas del módulo PDF Warp.'),
+    'fields' => array(
+      'id' => array(
+        'description' => 'Identificador de plantila',
+        'type'        => 'serial',
+        'unsigned'    => TRUE,
+        'not null'    => TRUE),
+      'name' => array(
+        'description' => 'Nombre de la plantilla',
+        'type'        => 'varchar',
+        'length'      => 255,
+        'not null'    => TRUE),
+      'type' => array(
+        'description' => 'Tipo de plantilla',
+        'type'        => 'varchar',
+        'length'      => 32,
+        'not null'    => TRUE,
+        'default'     => 'catalog'),
+      'render_mode' => array(
+        'description' => 'Tipo de renderizado',
+        'type'        => 'varchar',
+        'length'      => 32,
+        'not null'    => TRUE,
+        'default'     => 'imagen'),
+      'content' => array(
+        'description' => 'Contenido de la plantilla',
+        'type'        => 'text',
+        'not null'    => TRUE,
+        'size'        => 'medium')
+    ),
+    'primary key' => array('id')
+  );
+  return $schema;
+}

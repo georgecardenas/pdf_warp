@@ -1,0 +1,48 @@
+{
+  "name": "angular-draggabilly",
+  "version": "0.0.4",
+  "authors": [
+    "Joscha Feth <joscha@feth.com>"
+  ],
+  "description": "An angular wrapper for Draggabilly",
+  "main": "dist/angular-draggabilly.js",
+  "keywords": [
+    "directive",
+    "angular",
+    "dnd",
+    "drag and drop",
+    "Draggabilly"
+  ],
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "angular-mocks": "^1.2.20",
+    "jquery": "~2.1.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tasks",
+    "demo",
+    "src",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "angular": "^1.2.20",
+    "draggabilly": "~1.1.1"
+  },
+  "homepage": "https://github.com/Jimdo/angular-draggabilly",
+  "_release": "0.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.4",
+    "commit": "7d7c59720cf5fb904eaf9a9f39ce0e7d9b47726b"
+  },
+  "_source": "https://github.com/Jimdo/angular-draggabilly.git",
+  "_target": "^0.0.4",
+  "_originalSource": "angular-draggabilly",
+  "_direct": true
+}
