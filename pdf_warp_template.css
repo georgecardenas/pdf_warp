@@ -1,0 +1,29 @@
+.container {
+  background-color: #151719;
+}
+
+.pdf-container {
+  height: 297mm;
+  width: 210mm;
+  margin: auto;
+}
+
+.pdf-template {
+  height: 297mm;
+  width: 210mm;
+  background-color: #fff;
+  -webkit-box-shadow:inset 0px 0px 0px 1px #000;
+  -moz-box-shadow:inset 0px 0px 0px 1px #000;
+  box-shadow:inset 0px 0px 0px 1px #000;
+}
+
+.draggable {
+  display: inline-block;
+}
+
+.pdf-toolbar {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  background-color: #fef5f1;
+}
