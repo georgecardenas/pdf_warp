@@ -44,6 +44,12 @@ function pdf_warp_schema() {
         'length'      => 32,
         'not null'    => TRUE,
         'default'     => 'imagen'),
+      'active' => array(
+        'description' => 'Plantilla activa',
+        'type'        => 'int',
+        'size'        => 'tiny',
+        'not null'    => TRUE,
+        'default'     => 0),
       'content' => array(
         'description' => 'Contenido de la plantilla',
         'type'        => 'text',
