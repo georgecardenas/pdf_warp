@@ -1,6 +1,25 @@
 <?php
+/** HOOK FORM_ALTER **/
+function pdf_warp_form_alter(&$form, $form_state, $form_id) {
+  if (strpos($form_id, 'uc_product_add_to_cart_form') !== false) {
+    $form['to_pdf_button'] = array(
+      '#type' => 'submit',
+      '#value' => t('To PDF'),
+      '#submit' => array('pdf_warp_goto_generation')
+    );
+  }
+}
 
+/** HOOK MENU **/
 function pdf_warp_menu() {
+  $items['pdf_warp/generate/product/%'] = array(
+    'title'            => 'PDF Warp generación',
+    'description'      => 'Generación de PDF',
+    'page callback'    => 'pdf_warp_generate_product_page',
+    'page arguments' => array(3),
+    'access arguments' => array('access content'),
+  );
+  
   $items['admin/appearance/pdf_warp'] = array(
     'title'            => 'PDF Warp',
     'description'      => 'Configuración de plantillas',
@@ -13,6 +32,15 @@ function pdf_warp_menu() {
     'title' => t('Borrar plantilla'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('pdf_warp_template_delete_confirm', 4),
+    'access arguments' => array('administer site configuration'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK, 
+  );
+  
+  $items['admin/appearance/pdf_warp/enable/%'] = array(
+    'title' => t('Borrar plantilla'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('pdf_warp_template_enable_confirm', 4),
     'access arguments' => array('administer site configuration'),
     'access callback' => TRUE,
     'type' => MENU_CALLBACK, 
@@ -44,9 +72,10 @@ function pdf_warp_menu() {
 
   return $items;
 }
+
 /**** MAIN PAGE ****/
 function pdf_warp_admin_page() {
-  $header = array('ID', 'Nombre', 'Tipo', 'Operaciones');
+  $header = array('ID', 'Nombre', 'Tipo', 'Operaciones','ACTIVO');
 
   $sql = "SELECT * FROM {pdf_warp_templates}";
   $result = db_query($sql);
@@ -59,6 +88,7 @@ function pdf_warp_admin_page() {
       $v->name,
       $v->type == 'product' ? 'Producto' : 'Catálogo',
       "<a href='pdf_warp/edit/{$v->id}'>" . t('Editar') . "</a> | <a href='pdf_warp/delete/{$v->id}'>" . t('Borrar') . "</a> | <a href='pdf_warp/enable/{$v->id}'>" . t('Activar') . "</a>",
+      $v->active == 1 ? 'SI' : '',
     );
   }
   
@@ -69,8 +99,35 @@ function pdf_warp_theme(){
   return array(
     'pdf_warp_template' => array (
       'template' => 'pdf-warp-template'
+    ),
+    'pdf_warp_generation' => array (
+      'template' => 'pdf-warp-generation'
     )
   );
+}
+
+/**** GENERATE PRODUCT PDF PAGE ****/
+function pdf_warp_generate_product_page($id_template) {
+  drupal_add_library('angularjs', 'angularjs');
+  
+  $path = drupal_get_path('module', 'pdf_warp');
+  drupal_add_css($path.'/pdf_warp_template.css');
+  drupal_add_js($path.'/pdf_warp_generation.js');
+  drupal_add_js($path.'/jspdf.min.js');
+  drupal_add_js($path.'/html2pdf.js');
+  drupal_add_js($path.'/bower_components/classie/classie.js');
+  drupal_add_js($path.'/bower_components/eventEmitter/EventEmitter.js');
+  drupal_add_js($path.'/bower_components/eventie/eventie.js');
+  drupal_add_js($path.'/bower_components/get-style-property/get-style-property.js');
+  drupal_add_js($path.'/bower_components/get-size/get-size.js');
+  drupal_add_js($path.'/bower_components/draggabilly/draggabilly.js');
+  drupal_add_js($path.'/bower_components/angular-draggabilly/dist/angular-draggabilly.js');
+  
+  $sql = "SELECT * FROM {pdf_warp_templates} WHERE active=1 AND type='product'";
+  $settings['pdf_warp']['template_content'] = db_query($sql)->fetchAll();
+  drupal_add_js($settings, 'setting');
+  
+  return theme('pdf_warp_generation');
 }
 
 /**** FUNCTIONS TO EDIT TEMPLATE ****/
@@ -108,7 +165,7 @@ function pdf_warp_save_edit($id_template) {
   ->condition('id', $id_template, '=')
   ->execute();
   
-  drupal_set_message(t('La plantilla ' .$result.' ha sido guardada con éxito.'));
+  drupal_set_message(t('La plantilla ha sido guardada con éxito.'));
   drupal_goto("admin/appearance/pdf_warp");
 }
 
@@ -176,4 +233,53 @@ function pdf_warp_template_delete_confirm_submit($form, &$form_state) {
     drupal_set_message(t('La plantilla ' .$id_template.' ha sido borrada con éxito.'));
   }
     drupal_goto("admin/appearance/pdf_warp");
+}
+
+/**** FUNCTIONS TO ACTIVE TEMPLATE ****/
+function pdf_warp_template_enable_confirm($form ,&$form_state, $id_template) {
+  $form['_template'] = array(
+    '#type' => 'value',
+    '#value' => $id_template,
+  );
+		
+  return confirm_form($form,t('Activar plantilla'),'admin/appearance/pdf_warp',
+    t('<p>¿Deseas establecer la plantilla '.$id_template.' como la plantilla activa?</p>'),t('Activar'),t('Cancelar'));
+		
+}
+                      
+function pdf_warp_template_enable_confirm_submit($form, &$form_state) {
+  $form_values = $form_state['values'];
+  if ($form_state['values']['confirm']) {
+    $id_template = $form_state['values']['_template'];
+    
+    $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id_template;
+    $templateResult = db_query($sql);
+    $templateType = 'product';
+    
+    foreach ($templateResult as $v) {
+      $templateType = $v->type;
+    }
+
+    $result = db_update('pdf_warp_templates')
+    ->fields(array(
+      'active' => 0
+    ))
+    ->condition('type', $templateType, '=')
+    ->execute();
+    
+    $result = db_update('pdf_warp_templates')
+    ->fields(array(
+      'active' => 1
+    ))
+    ->condition('id', $id_template, '=')
+    ->execute();
+    drupal_set_message(t('La plantilla ' .$id_template.' ha sido activada con éxito.'));
+  }
+    drupal_goto("admin/appearance/pdf_warp");
+}
+
+function pdf_warp_goto_generation($form, $form_state) {
+  $form_id_array = explode('_',$form['#form_id']);
+  $product_id = end($form_id_array);
+  drupal_goto('pdf_warp/generate/product/'.$product_id);
 }

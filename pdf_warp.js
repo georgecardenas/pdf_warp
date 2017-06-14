@@ -98,41 +98,6 @@ var app = angular
       
       vm.template = JSON.stringify(template);
     }
-    
-    vm.toPDF = function() {
-      var element = document.getElementById('pdf_container');
-      html2pdf(element);
-      /*var pdf = new jsPDF('p', 'mm', 'a4');
-      
-      /*var source = window.document.getElementById("pdf_warp");
-
-      var elementHandler = {
-      '#toPDFButton': function (element, renderer) {
-        return true;
-      }}
-
-      doc.fromHTML(
-          source,
-          15,
-          15,
-          {
-            'width': 595,
-            'elementHandlers': elementHandler
-          },
-          function (dispose) {
-            doc.output("dataurlnewwindow");
-          }
-      );
-      
-      var canvas = pdf.canvas;
-      canvas.width = 595;
-      html2canvas(window.document.getElementById("pdf_warp"), {
-          canvas:canvas,
-          onrendered: function(canvas) {
-              pdf.output('dataurlnewwindow');
-          }
-      });*/
-    }
   });
 
 jQuery(document).ready(function () {
