@@ -160,7 +160,7 @@ function pdf_warp_save_edit($id_template) {
   
   $result = db_update('pdf_warp_templates')
   ->fields(array(
-    'content' => substr($decoded_data, strpos($decoded_data, "content=") + 8)
+    'content' => substr($decoded_data, strpos($decoded_data, "content=") + 8, strpos($decoded_data, "&") - 8)
   ))
   ->condition('id', $id_template, '=')
   ->execute();

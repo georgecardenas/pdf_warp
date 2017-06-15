@@ -13,8 +13,8 @@ var app = angular
     var vm = this;
     vm.products = [];
     vm.path = $location.path() + '/save';
-    vm.template = "";
-    vm.initTemplate = "";
+    vm.template = '';
+    vm.initTemplate = '';
     vm.idSelected;
     vm.fontSelected;
     vm.width;
@@ -26,6 +26,7 @@ var app = angular
       vm.products = result.data.products;
       var templateInfo = Drupal.settings.pdf_warp.template_content;
       vm.initTemplate = JSON.parse(templateInfo[0].content);
+      vm.renderMode = vm.initTemplate.renderMode || 'text';
     });
     
     vm.select = function(id) {
@@ -76,7 +77,8 @@ var app = angular
       var containerBounds = document.getElementById("pdf-template").getBoundingClientRect();
       var template = {
         pdf_elements: {},
-        edit_elements: {}
+        edit_elements: {},
+        renderMode: vm.renderMode
       }
       angular.forEach(elements, function(element, index){
         var elementBounds = element.getBoundingClientRect();

@@ -9,7 +9,7 @@ var app = angular
       });
    })
 
-  .controller('ProductCtrl', function($http, $location) {
+  .controller('ProductCtrl', function($http, $location, $timeout) {
     var vm = this;
     var idEquivalence = {
       pdf_product_description: {id: 'Description', label: ''},
@@ -44,67 +44,42 @@ var app = angular
           element.height * 72 / 96
         );
         if (generate) {
-          doc.output('dataurlnewwindow');
+          doc.save('producto.pdf');
         }
         canvas = null;
+        history.go(-1);
       };
       img.src = url;
     }
     
-    $http.get('http://localhost/warpdf/store/product/' + id + '/json')
+    $http.get('http://' + $location.host() + '/warpdf/store/product/' + id + '/json')
     .then(function(result) {
       vm.products = result.data.products;
       var templateInfo = Drupal.settings.pdf_warp.template_content;
       vm.initTemplate = JSON.parse(templateInfo[0].content);
       
-      var doc = new jsPDF('portrait','pt','a4');
-      var pdf_elements = vm.initTemplate.pdf_elements
-      
-      angular.forEach(Object.keys(pdf_elements), function(key, index){
-        if (key != 'pdf_product_image'){
-          doc.setFontSize(parseInt(pdf_elements[key].fontSize, 10) * 72 / 96);
-          doc.text(pdf_elements[key].x * 72 / 96, pdf_elements[key].y * 72 / 96, idEquivalence[key].label + vm.products[0].product[idEquivalence[key].id]);
-        } else {
-          
-        }
-      });
-      
-      addImageToPDF(doc, pdf_elements.pdf_product_image, vm.products[0].product.Image.src, true);
-      
-      /*vm.toPDF = function() {
-        var element = document.getElementById('pdf_container');
-        html2pdf(element);
-        var pdf = new jsPDF('p', 'mm', 'a4');
+      if (vm.initTemplate.renderMode === 'text') {
+        var doc = new jsPDF('portrait','pt','a4');
+        var pdf_elements = vm.initTemplate.pdf_elements
 
-        var source = window.document.getElementById("pdf_warp");
-
-        var elementHandler = {
-        '#toPDFButton': function (element, renderer) {
-          return true;
-        }}
-
-        doc.fromHTML(
-            source,
-            15,
-            15,
-            {
-              'width': 595,
-              'elementHandlers': elementHandler
-            },
-            function (dispose) {
-              doc.output("dataurlnewwindow");
-            }
-        );
-
-        var canvas = pdf.canvas;
-        canvas.width = 595;
-        html2canvas(window.document.getElementById("pdf_warp"), {
-            canvas:canvas,
-            onrendered: function(canvas) {
-                pdf.output('dataurlnewwindow');
-            }
+        angular.forEach(Object.keys(pdf_elements), function(key, index){
+          if (key != 'pdf_product_image'){
+            doc.setFontSize(parseInt(pdf_elements[key].fontSize, 10) * 72 / 96);
+            doc.text(pdf_elements[key].x * 72 / 96, pdf_elements[key].y * 72 / 96, idEquivalence[key].label + vm.products[0].product[idEquivalence[key].id]);
+          }
         });
-      }*/
+
+        addImageToPDF(doc, pdf_elements.pdf_product_image, vm.products[0].product.Image.src, true);
+      } else if (vm.initTemplate.renderMode === 'image') {
+        $timeout(function () {
+          var element = document.getElementById('pdf-template');
+          html2pdf(element, {
+            filename:     'producto.pdf',
+            image:        { type: 'jpeg', quality: 1 },
+          });
+          history.go(-1);
+        });
+      }
     });
   });
 

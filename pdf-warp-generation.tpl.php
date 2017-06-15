@@ -1,6 +1,7 @@
 <div id="pdf_warp" class="container">
   <div ng-controller="ProductCtrl as vm">
-    <div class="pdf-container">
+    <p>Generando pdf...</p>
+    <div class="pdf-container" style="visibility:hidden">
       <div class="pdf-template" id="pdf-template" ng-click="vm.select(undefined)">
         <div ng-repeat="product in vm.products">
           <div
