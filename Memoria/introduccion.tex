@@ -1,0 +1,78 @@
+\chapter{Introducción}
+
+El comercio electrónico tal y como lo conocemos hoy, consiste en la compra y venta de productos o servicios a través de medios electrónicos, como por ejemplo Internet. Con la llegada en masa de la red de redes a los hogares del mundo, se creó un nicho de mercado que en ese entonces estaba desaprovechado, como es el negocio de la venta on-line. Aunque anteriormente ya existían otros sistemas de e-commerce, basados en televisión, teléfono o incluso a través de Internet, no fue hasta la llegada de Amazon e EBay que el comercio on-line empezó a masificarse.
+A partir de este punto clave, y viendo el éxito que supone para un comercio satisfacer la demanda creciente del "e-cliente" surgieron cada vez más plataformas que ofertaban productos y servicios por Internet, como Netflix (Alquiler de DVDs con un sistema de reparto a domicilio), Alibaba.com (parecido a Amazon pero para el mercado chino), Zappos (plataforma de venta de zapatos) entre otros. También surgieron alrededor del e-commerce, otros servicios útiles para usuarios y vendedores, como Paypal (plataforma de pago on-line) o AdWords de Google, para mostrar publicidad relevante para el usuario.\\
+
+Al principio sólo las grandes empresas podían permitirse aumentar su visibilidad on-line mediante el uso de caras soluciones personalizadas, sin embargo, poco a poco, fueron surgiendo plataformas mucho más asequibles para el pequeño comercio como pueden ser osCommerce, Magento, o PrestaShop, o Shopify, además de soluciones gratuitas basadas en frameworks de software libre como Drupal, Joomla o Wordpress.
+
+A partir de este punto, es raro ver una tienda que no tenga opción de venta on-line, actualmente la única diferencia es el tiempo que tarda un cliente en recibir el producto, siendo las grandes aquellas que se pueden permitir envíos en un único día.\\
+
+Prácticamente la totalidad de las tiendas on-line se basan en los mismos principios: se presenta un catálogo de productos con imagen, descripción y precio y el usuario puede elegir tranquilamente y desde su hogar los elementos que va a adquirir. Actualmente, un sistema de ranking y comentarios pueden ayudar al usuario final a elegir un producto, siendo los de más valoración los que más posiblemente satisfarán sus necesidades.\\
+
+En ocasiones un usuario necesita guardar la información de un producto para su consulta posterior, o un comercial necesita ofrecer a un posible comprador un catálogo personalizado de productos. En estos casos existe una limitación muy grande a la hora de generar el documento con un formato atractivo y por lo general los resultados suelen ser muy pobres y no muestran la información más relevante como al vendedor le gustaría verla, por ejemplo el precio más grande, la foto al centro etc... Todos estos retoques se tienen que pensar previamente cuando se planifica el sistema de venta on-line y, por lo general, tienen que ser realizados por un experto en la materia que no todos los comercios poseen.
+
+\section {Motivación}
+Como se ha explicado al final de la introducción, la motivación principal es la carencia de soluciones disponibles a la hora de elegir la disposición de elementos en un documento PDF, orientado en este caso al mundo del e-commerce.\\
+
+Existen muchas soluciones de generación de PDFs, tanto a nivel de Back-End como de Front-End, con un alto nivel de personalización, pero son librerías que requieren conocimientos avanzados de programación y administración de sistemas para ser usadas, y estos conocimientos no suelen estar al alcance del propietario de una empresa que solamente quiere ofrecer sus productos en Internet.\\
+
+También existen soluciones estándar, Chrome, por ejemplo nos permite convertir una página web a PDF, pero está limitado por la calidad del trabajo que el maquetador web haya realizado con el archivo print.css, en el que se guardan las reglas de estilo a la hora de imprimir las diferentes páginas de la web. De nuevo, la modificación de este archivo requiere conocimientos avanzados de maquetación web y no suele ser fácil conseguir que una página se imprima como de la forma deseada, además de que habría que ocultar elementos sobrantes, como publicidad y menús.\\
+
+Por lo tanto para facilitar la labor de propietarios y administradores en la presentación de sus productos a la hora de generar un documento PDF, se propone la creación de una aplicación que brinde la funcionalidad deseada para una plataforma de e-commerce.
+
+\section {Propuesta}
+A partir de lo elaborado en la introducción, motivación y objetivos, se propone por tanto la realización de un módulo para una de las plataformas libres de e-commerce más utilizadas como es Ubercart par Drupal que permita a un administrador la gestión de plantillas para generación de PDFs de productos del catálogo que el comercio tenga a la venta.
+
+\subsection{Requisitos funcionales}
+El módulo deberá implementar la siguiente funcionalidad
+\subsubsection{Botón de generación de PDF}
+Un usuario debe ser capaz de generar un documento PDF de un producto con tan sólo pulsar un botón.
+\subsubsection{Administración de plantillas}
+Un administrador puede acceder a una sección de administración de plantillas, protegida por privilegios especiales.
+\subsubsection{Creación de plantillas}
+Un administrador puede crear plantillas nuevas proporcionando un nombre de plantilla y un tipo.
+\subsubsection{Borrado de plantillas}
+Un administrador puede borrar plantillas antiguas para no sobrecargar la base de datos.
+\subsubsection{Activado de plantillas}
+Un administrador puede activar una plantilla para ser usada en la generación de PDFs.
+\subsubsection{Editado de plantillas}
+Un administrador puede editar las plantillas entrando en una pantalla de edición en la que se muestran diferentes opciones.
+\subsubsection{Mover elementos de una plantilla}
+Un administrador en modo de edición de plantilla puede mover los elementos y posicionarlos dónde desee.
+\subsubsection{Cambiar tamaño de elementos}
+Un administrador en modo de edición de plantilla puede cambiar el tamaño de los elementos de la misma.
+\subsubsection{Cambiar tamaño de fuente}
+Un administrador en modo de edición de plantilla puede cambiar el tamaño de fuente de los elementos de la misma.
+\subsubsection{Botón de guardar cambios de plantilla}
+Un administrador en modo de edición de plantilla puede pulsar un botón para guardar los cambios de la misma.
+\subsection{Requisitos no funcionales}
+El módulo deberá cumplir los siguientes requisitos no funcionales
+\subsubsection{Uso de tecnologías de libre distribución}
+Las tecnologías usadas para el desarrollo del módulo deben ser de libre distribución.
+\subsubsection{Módulo exportable}
+El módulo desarrollado debe poderse instalar en otras instalaciones de Drupal que cumplan los requisitos y dependencias.
+
+\section {Tecnologías}
+En este capítulo se enumerarán las tecnologías disponibles actualmente para la realización de éste proyecto.
+
+\subsection {Lenguajes}
+\subsubsection {PHP}
+\subsubsection {HTML}
+\subsubsection {Javascript}
+\subsubsection {CSS}
+\subsubsection {JSON}
+\subsection {Frameworks y librerías}
+\subsubsection {Drupal}
+\subsubsection {Angularjs}
+\subsubsection {jQuery}
+\subsubsection {JsPDF}
+\subsubsection {Dragabilly}
+\subsubsection {Html2Canvas}
+\subsection {Sistemas}
+\subsubsection {Apache}
+\subsubsection {MySQL}
+\subsection {Herramientas de desarrollo}
+\subsubsection {Brackets}
+\subsubsection {Git}
+\subsubsection {Bower}
+\subsubsection {Nodejs}

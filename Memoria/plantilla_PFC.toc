@@ -1,0 +1,67 @@
+\select@language {spanish}
+\contentsline {chapter}{Agradecimientos}{\es@scroman {i}}
+\contentsline {chapter}{Resumen}{\es@scroman {iii}}
+\contentsline {chapter}{Abstract}{\es@scroman {v}}
+\contentsline {chapter}{\numberline {1}Objetivos}{1}
+\contentsline {section}{\numberline {1.1}Objetivo general}{1}
+\contentsline {section}{\numberline {1.2}Objetivos espec\IeC {\'\i }ficos}{1}
+\contentsline {subsection}{\numberline {1.2.1}Stack tecnol\'ogico}{1}
+\contentsline {subsection}{\numberline {1.2.2}Framework base}{1}
+\contentsline {subsection}{\numberline {1.2.3}Plataforma de e-commerce}{2}
+\contentsline {subsection}{\numberline {1.2.4}Tecnolog\IeC {\'\i }a Front-End}{2}
+\contentsline {subsection}{\numberline {1.2.5}Generaci\'on de PDF}{2}
+\contentsline {subsection}{\numberline {1.2.6}Comunicaciones Back-End -> Front-End}{2}
+\contentsline {subsection}{\numberline {1.2.7}Capacidades del administrador}{2}
+\contentsline {subsection}{\numberline {1.2.8}Capacidades del usuario}{3}
+\contentsline {subsection}{\numberline {1.2.9}Empaquetado de la soluci\'on}{3}
+\contentsline {chapter}{\numberline {2}Introducci\'on}{5}
+\contentsline {section}{\numberline {2.1}Motivaci\'on}{6}
+\contentsline {section}{\numberline {2.2}Propuesta}{7}
+\contentsline {subsection}{\numberline {2.2.1}Requisitos funcionales}{7}
+\contentsline {subsubsection}{Bot\'on de generaci\'on de PDF}{7}
+\contentsline {subsubsection}{Administraci\'on de plantillas}{7}
+\contentsline {subsubsection}{Creaci\'on de plantillas}{7}
+\contentsline {subsubsection}{Borrado de plantillas}{7}
+\contentsline {subsubsection}{Activado de plantillas}{7}
+\contentsline {subsubsection}{Editado de plantillas}{7}
+\contentsline {subsubsection}{Mover elementos de una plantilla}{8}
+\contentsline {subsubsection}{Cambiar tama\~no de elementos}{8}
+\contentsline {subsubsection}{Cambiar tama\~no de fuente}{8}
+\contentsline {subsubsection}{Bot\'on de guardar cambios de plantilla}{8}
+\contentsline {subsection}{\numberline {2.2.2}Requisitos no funcionales}{8}
+\contentsline {subsubsection}{Uso de tecnolog\IeC {\'\i }as de libre distribuci\'on}{8}
+\contentsline {subsubsection}{M\'odulo exportable}{8}
+\contentsline {section}{\numberline {2.3}Tecnolog\IeC {\'\i }as}{8}
+\contentsline {subsection}{\numberline {2.3.1}Lenguajes}{9}
+\contentsline {subsubsection}{PHP}{9}
+\contentsline {subsubsection}{HTML}{9}
+\contentsline {subsubsection}{Javascript}{9}
+\contentsline {subsubsection}{CSS}{9}
+\contentsline {subsubsection}{JSON}{9}
+\contentsline {subsection}{\numberline {2.3.2}Frameworks y librer\IeC {\'\i }as}{9}
+\contentsline {subsubsection}{Drupal}{9}
+\contentsline {subsubsection}{Angularjs}{9}
+\contentsline {subsubsection}{jQuery}{9}
+\contentsline {subsubsection}{JsPDF}{9}
+\contentsline {subsubsection}{Dragabilly}{9}
+\contentsline {subsubsection}{Html2Canvas}{9}
+\contentsline {subsection}{\numberline {2.3.3}Sistemas}{9}
+\contentsline {subsubsection}{Apache}{9}
+\contentsline {subsubsection}{MySQL}{9}
+\contentsline {subsection}{\numberline {2.3.4}Herramientas de desarrollo}{9}
+\contentsline {subsubsection}{Brackets}{9}
+\contentsline {subsubsection}{Git}{9}
+\contentsline {subsubsection}{Bower}{9}
+\contentsline {subsubsection}{Nodejs}{9}
+\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }a}{11}
+\contentsline {chapter}{\numberline {4}Descripci\'on Inform\'atica (20-35\%)}{13}
+\contentsline {section}{\numberline {4.1}La base de datos coleccionada (si tiene sentido).}{13}
+\contentsline {section}{\numberline {4.2}Los algoritmos para el desarrollo de la soluci\'on}{13}
+\contentsline {chapter}{\numberline {5}Resultados Experimentales (20-35\%)}{15}
+\contentsline {section}{\numberline {5.1}Resultados en forma de tablas, gr\'aficas e im\'agenes donde se describa cuantitativa y cualitativamente el funcionamiento de la aplicaci\'on}{15}
+\contentsline {section}{\numberline {5.2}An\'alisis cr\IeC {\'\i }tico de los resultados con el objetivo de decidir si el sistema implementado es v\'alido}{15}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros (5\%)}{17}
+\contentsline {section}{\numberline {6.1}Implementaci\'on}{17}
+\contentsline {section}{\numberline {6.2}Resultados}{17}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{19}
+\contentsline {chapter}{Anexo 1}{21}

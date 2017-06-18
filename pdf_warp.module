@@ -10,6 +10,13 @@ function pdf_warp_form_alter(&$form, $form_state, $form_id) {
   }
 }
 
+/** HOOK PAGE ALTER **/
+function pdf_warp_page_alter(&$page){
+  if (strpos($page['content']['system_main']['products']['#markup'], 'view-uc-catalog') != false){
+    $page['content']['system_main']['products']['#markup'] = $page['content']['system_main']['products']['#markup'].'<input type="button" value="To PDF"/>';
+  }
+}
+
 /** HOOK MENU **/
 function pdf_warp_menu() {
   $items['pdf_warp/generate/product/%'] = array(
