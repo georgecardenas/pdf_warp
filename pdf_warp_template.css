@@ -6,6 +6,7 @@
   height: 297mm;
   width: 210mm;
   margin: auto;
+  display: inline-block;
 }
 
 .pdf-template {
@@ -26,12 +27,12 @@
 }
 
 .pdf-toolbar {
-  position: absolute;
-  height: 200px;
-  width: 200px;
   margin-left: 10px;
   margin-top: 20px;
+  min-width: 200px;
   padding: 10px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .selected {

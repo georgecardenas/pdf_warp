@@ -65,7 +65,13 @@ var app = angular
         angular.forEach(Object.keys(pdf_elements), function(key, index){
           if (key != 'pdf_product_image'){
             doc.setFontSize(parseInt(pdf_elements[key].fontSize, 10) * 72 / 96);
-            doc.text(pdf_elements[key].x * 72 / 96, pdf_elements[key].y * 72 / 96, idEquivalence[key].label + vm.products[0].product[idEquivalence[key].id]);
+            if (key == 'pdf_product_description') {
+              var splitDescription = doc.splitTextToSize(vm.products[0].product[idEquivalence[key].id], pdf_elements[key].width * 72 / 96);
+              doc.text(pdf_elements[key].x * 72 / 96, pdf_elements[key].y * 72 / 96, splitDescription);
+            }
+            else{
+              doc.text(pdf_elements[key].x * 72 / 96, pdf_elements[key].y * 72 / 96, idEquivalence[key].label + vm.products[0].product[idEquivalence[key].id]);
+            }
           }
         });
 

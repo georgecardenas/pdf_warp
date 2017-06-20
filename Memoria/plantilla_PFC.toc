@@ -32,36 +32,36 @@
 \contentsline {subsubsection}{Uso de tecnolog\IeC {\'\i }as de libre distribuci\'on}{8}
 \contentsline {subsubsection}{M\'odulo exportable}{8}
 \contentsline {section}{\numberline {2.3}Tecnolog\IeC {\'\i }as}{8}
-\contentsline {subsection}{\numberline {2.3.1}Lenguajes}{9}
-\contentsline {subsubsection}{PHP}{9}
-\contentsline {subsubsection}{HTML}{9}
-\contentsline {subsubsection}{Javascript}{9}
+\contentsline {subsection}{\numberline {2.3.1}Lenguajes}{8}
+\contentsline {subsubsection}{HTML}{8}
 \contentsline {subsubsection}{CSS}{9}
-\contentsline {subsubsection}{JSON}{9}
-\contentsline {subsection}{\numberline {2.3.2}Frameworks y librer\IeC {\'\i }as}{9}
-\contentsline {subsubsection}{Drupal}{9}
-\contentsline {subsubsection}{Angularjs}{9}
-\contentsline {subsubsection}{jQuery}{9}
-\contentsline {subsubsection}{JsPDF}{9}
-\contentsline {subsubsection}{Dragabilly}{9}
-\contentsline {subsubsection}{Html2Canvas}{9}
-\contentsline {subsection}{\numberline {2.3.3}Sistemas}{9}
-\contentsline {subsubsection}{Apache}{9}
-\contentsline {subsubsection}{MySQL}{9}
-\contentsline {subsection}{\numberline {2.3.4}Herramientas de desarrollo}{9}
-\contentsline {subsubsection}{Brackets}{9}
-\contentsline {subsubsection}{Git}{9}
-\contentsline {subsubsection}{Bower}{9}
-\contentsline {subsubsection}{Nodejs}{9}
-\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }a}{11}
-\contentsline {chapter}{\numberline {4}Descripci\'on Inform\'atica (20-35\%)}{13}
-\contentsline {section}{\numberline {4.1}La base de datos coleccionada (si tiene sentido).}{13}
-\contentsline {section}{\numberline {4.2}Los algoritmos para el desarrollo de la soluci\'on}{13}
-\contentsline {chapter}{\numberline {5}Resultados Experimentales (20-35\%)}{15}
-\contentsline {section}{\numberline {5.1}Resultados en forma de tablas, gr\'aficas e im\'agenes donde se describa cuantitativa y cualitativamente el funcionamiento de la aplicaci\'on}{15}
-\contentsline {section}{\numberline {5.2}An\'alisis cr\IeC {\'\i }tico de los resultados con el objetivo de decidir si el sistema implementado es v\'alido}{15}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros (5\%)}{17}
-\contentsline {section}{\numberline {6.1}Implementaci\'on}{17}
-\contentsline {section}{\numberline {6.2}Resultados}{17}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{19}
-\contentsline {chapter}{Anexo 1}{21}
+\contentsline {subsubsection}{Javascript}{10}
+\contentsline {subsubsection}{PHP}{12}
+\contentsline {subsubsection}{JSON}{13}
+\contentsline {subsection}{\numberline {2.3.2}Frameworks y librer\IeC {\'\i }as}{14}
+\contentsline {subsubsection}{Drupal}{14}
+\contentsline {subsubsection}{Angularjs}{15}
+\contentsline {subsubsection}{jQuery}{15}
+\contentsline {subsubsection}{JsPDF}{15}
+\contentsline {subsubsection}{Dragabilly}{15}
+\contentsline {subsubsection}{Html2Canvas}{15}
+\contentsline {subsection}{\numberline {2.3.3}Sistemas}{16}
+\contentsline {subsubsection}{Apache}{16}
+\contentsline {subsubsection}{MySQL}{16}
+\contentsline {subsection}{\numberline {2.3.4}Herramientas de desarrollo}{16}
+\contentsline {subsubsection}{Brackets}{16}
+\contentsline {subsubsection}{Git}{16}
+\contentsline {subsubsection}{Bower}{16}
+\contentsline {subsubsection}{Nodejs}{16}
+\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }a}{17}
+\contentsline {chapter}{\numberline {4}Descripci\'on Inform\'atica (20-35\%)}{19}
+\contentsline {section}{\numberline {4.1}La base de datos coleccionada (si tiene sentido).}{19}
+\contentsline {section}{\numberline {4.2}Los algoritmos para el desarrollo de la soluci\'on}{19}
+\contentsline {chapter}{\numberline {5}Resultados Experimentales (20-35\%)}{21}
+\contentsline {section}{\numberline {5.1}Resultados en forma de tablas, gr\'aficas e im\'agenes donde se describa cuantitativa y cualitativamente el funcionamiento de la aplicaci\'on}{21}
+\contentsline {section}{\numberline {5.2}An\'alisis cr\IeC {\'\i }tico de los resultados con el objetivo de decidir si el sistema implementado es v\'alido}{21}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros (5\%)}{23}
+\contentsline {section}{\numberline {6.1}Implementaci\'on}{23}
+\contentsline {section}{\numberline {6.2}Resultados}{23}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{25}
+\contentsline {chapter}{Anexo 1}{27}
