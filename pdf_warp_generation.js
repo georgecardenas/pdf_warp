@@ -51,8 +51,9 @@ var app = angular
       };
       img.src = url;
     }
+    var app = $location.path().split('/')[1];
     
-    $http.get('http://' + $location.host() + '/warpdf/store/product/' + id + '/json')
+    $http.get('http://' + $location.host() + '/' + app + '/store/product/' + id + '/json')
     .then(function(result) {
       vm.products = result.data.products;
       var templateInfo = Drupal.settings.pdf_warp.template_content;

@@ -21,7 +21,9 @@ var app = angular
     vm.height;
     vm.additionalData = {};
     
-    $http.get('http://localhost/warpdf/store/product/2/json')
+    var app = $location.path().split('/')[1];
+    
+    $http.get('http://' + $location.host() + '/' + app + '/store/product/2/json')
     .then(function(result) {
       vm.products = result.data.products;
       var templateInfo = Drupal.settings.pdf_warp.template_content;
