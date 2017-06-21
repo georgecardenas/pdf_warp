@@ -41,27 +41,23 @@
 \contentsline {subsection}{\numberline {2.3.2}Frameworks y librer\IeC {\'\i }as}{14}
 \contentsline {subsubsection}{Drupal}{14}
 \contentsline {subsubsection}{Angularjs}{15}
-\contentsline {subsubsection}{jQuery}{15}
-\contentsline {subsubsection}{JsPDF}{15}
-\contentsline {subsubsection}{Dragabilly}{15}
-\contentsline {subsubsection}{Html2Canvas}{15}
-\contentsline {subsection}{\numberline {2.3.3}Sistemas}{16}
-\contentsline {subsubsection}{Apache}{16}
-\contentsline {subsubsection}{MySQL}{16}
-\contentsline {subsection}{\numberline {2.3.4}Herramientas de desarrollo}{16}
-\contentsline {subsubsection}{Brackets}{16}
-\contentsline {subsubsection}{Git}{16}
-\contentsline {subsubsection}{Bower}{16}
-\contentsline {subsubsection}{Nodejs}{16}
-\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }a}{17}
-\contentsline {chapter}{\numberline {4}Descripci\'on Inform\'atica (20-35\%)}{19}
-\contentsline {section}{\numberline {4.1}La base de datos coleccionada (si tiene sentido).}{19}
-\contentsline {section}{\numberline {4.2}Los algoritmos para el desarrollo de la soluci\'on}{19}
-\contentsline {chapter}{\numberline {5}Resultados Experimentales (20-35\%)}{21}
-\contentsline {section}{\numberline {5.1}Resultados en forma de tablas, gr\'aficas e im\'agenes donde se describa cuantitativa y cualitativamente el funcionamiento de la aplicaci\'on}{21}
-\contentsline {section}{\numberline {5.2}An\'alisis cr\IeC {\'\i }tico de los resultados con el objetivo de decidir si el sistema implementado es v\'alido}{21}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros (5\%)}{23}
-\contentsline {section}{\numberline {6.1}Implementaci\'on}{23}
-\contentsline {section}{\numberline {6.2}Resultados}{23}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{25}
-\contentsline {chapter}{Anexo 1}{27}
+\contentsline {subsubsection}{JQuery}{16}
+\contentsline {subsubsection}{JsPDF}{17}
+\contentsline {subsubsection}{Dragabilly}{17}
+\contentsline {subsubsection}{Html2Canvas}{17}
+\contentsline {subsection}{\numberline {2.3.3}Sistemas}{17}
+\contentsline {subsubsection}{Apache HTTP Server}{17}
+\contentsline {subsubsection}{MySQL}{18}
+\contentsline {subsection}{\numberline {2.3.4}Herramientas de desarrollo}{19}
+\contentsline {subsubsection}{Brackets}{19}
+\contentsline {subsubsection}{Git}{20}
+\contentsline {subsubsection}{Bower}{21}
+\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }a}{23}
+\contentsline {chapter}{\numberline {4}Descripci\'on Inform\'atica (20-35\%)}{25}
+\contentsline {section}{\numberline {4.1}La base de datos coleccionada (si tiene sentido).}{25}
+\contentsline {section}{\numberline {4.2}Los algoritmos para el desarrollo de la soluci\'on}{25}
+\contentsline {chapter}{\numberline {5}Conclusiones y trabajos futuros (5\%)}{27}
+\contentsline {section}{\numberline {5.1}Implementaci\'on}{27}
+\contentsline {section}{\numberline {5.2}Resultados}{27}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{29}
+\contentsline {chapter}{Anexo 1}{31}

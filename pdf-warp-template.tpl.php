@@ -1,10 +1,16 @@
 <div id="pdf_warp" class="container">
   <div ng-controller="ProductCtrl as vm">
     <div class="pdf-toolbar">
-      <form class="textCenter" action="{vm.path}" ng-submit="vm.save()" method="post">
+      <div class="options-container">
+        <label for="renderProductSelect" class="inline">Producto ejemplo: </label>
+        <select name="renderProductSelect" class="inline" ng-model="vm.selectedProduct" ng-change="vm.productChange()">
+          <option ng-repeat="product in vm.selectProducts" value="{{product}}">{{product}}</option>
+        </select>
+      </div>
+      <form class="textCenter" action="{{vm.path}}" ng-submit="vm.save()" method="post" id="form">
         <input type="hidden" name="content" ng-value="vm.template">
         <div class="options-container">
-          <label for="renderModeSelect">Renderizado: </label>
+          <label for="renderModeSelect" class="inline">Renderizado: </label>
           <select name="renderModeSelect" class="inline" ng-model="vm.renderMode">
             <option value="text">Texto</option>
             <option value="image">Imagen</option>

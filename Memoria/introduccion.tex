@@ -211,6 +211,7 @@ En este capítulo se hace una recopilación de los frameworks y librerías de terce
 	\centering{\resizebox{3cm}{3cm}{\includegraphics{Drupal.png}}}
 	\caption{Logo de Drupal}
 \end{figure}
+\FloatBarrier
 Drupal es un sistema de gestión de contenidos (o CMS según sus siglas en inglés) de código abierto que es utilizado por un 2,3\% de sitios web del mundo. Es un sistema libre, modular y multipropósito que permite publicar artículos, imágenes, archivos y que también ofrece la posibilidad de otros servicios añadidos como foros, encuestas, votaciones, blogs y administración de usuarios y permisos. Es un sistema de carga dinámico, es decir, todos los recursos se almacenan en una base de datos y se cargan en tiempo real a la hora de generar una página. Este CMS está escrito utilizando el lenguaje PHP valiéndose de las librerías de Symfony, por lo que es un sistema multiplataforma soportado tanto por Windows como por sistemas Unix.\\
 
 Originalmente fue escrito por Dries Buytaert como un foro de opinión. En el año 2001 se convirtió en un proyecto de código abierto y ganó popularidad en 2004 al utilizarse para crear el sitio 'DeanSpace' para el candidato a las primarias por el Partido Demócrata de Estados Unidos Howard Dean.\\
@@ -220,19 +221,29 @@ Actualmente Drupal se encuentra en la versión 8, aunque aún brinda soporte a la 
 Algunos ejemplos de sitios desarrollados con Drupal son las webs de Ubuntu, Intel o Economist.
 
 \subsubsection {Angularjs}
-Angularjs es un framework para aplicaciones web de código abierto basado en Javascript especializado en aplicaciones single-page (SPA). Actualmente está soportado por Google y una comunidad formada por desarrolladores individuales y empresas. Fue inicialmente desarrollado en el año 2009 por Miško Hevery como un software base a una apicación on-line de almacenamiento de datos en JSON, aunque debido al pobre acogimiento que tuvo la idea, el producto se deshechó y se lanzo Angular como una librería de código abierto. Incialmente todo el contenido de Angularjs iba en un único paquete pero en las versiones más recientes, se ha modularizado para que cada desarrollador tenga una instalación personalizada de acuerdo a sus necesidades.\\
+\begin{figure}[htb]
+	\centering{\resizebox{3cm}{3cm}{\includegraphics{Angular.png}}}
+	\caption{Logo de Angularjs}
+\end{figure}
+\FloatBarrier
+Angularjs es un framework para aplicaciones web de código abierto basado en Javascript especializado en aplicaciones single-page (SPA). Actualmente está soportado por Google y una comunidad formada por desarrolladores individuales y empresas. Fue inicialmente programado en el año 2009 por Miko Hevery como un software base para una aplicación on-line de almacenamiento de datos en JSON, aunque debido al pobre acogimiento que tuvo la idea, el producto se desechó y se lanzo Angular como una librería de código abierto. Inicialmente todo el contenido de Angularjs iba en un único paquete pero en las versiones más recientes, se ha modularizado para que cada desarrollador tenga una instalación personalizada de acuerdo a sus necesidades.\\
 
-Actualmente tenemos dos vertientes de Angularjs, la versión 1.x y la versión 2.x. Aunque compartan el nombre, la versión 2.x no se trata de la siguiente iteración de Angularjs, si no que se trata de un remodelado completo incompatible con la versión anterior, por lo que se tratan como si fueran dos frameworks diferentes y ambos continúan recibiendo soporte.\\
+Actualmente tenemos dos vertientes de Angularjs, la versión 1.x y la versión 2.x. Aunque compartan el nombre, la Angularjs 2.x no se trata de la siguiente iteración del framework, si no que se trata de un remodelado completo incompatible con la versión anterior, por lo que se tratan como si fueran dos librerías diferentes y ambos continúan recibiendo soporte.\\
 
 El framework se basa en el modelo vista presentador con lo que nos brinda ficheros de vista (HTML), un modelo de datos y un presentador (controlador). Funciona mediante ciclos de digest, en los cuales Angularjs comprueba todos los scopes (ámbitos) y busca todas las variables que hayan podido sufrir cambios para actualizar las vistas. También al cambiar un valor en una vista se actualiza la variable asociada en el controlador (two-way data binding). Angular está compuesto por módulos y directivas, y los desarrolladores pueden crear sus propios elementos y compartirlos con otros a través de npm o bower. Algunas de las directivas estándar son: ng-app, ng-view, ng-controller ó ng-model.\\
 
 En este proyecto se usa la versión 1.6 del framework. Algunos sitios desarrollados con Angular son Wolfram Alpha, ABC News ó NBC
 
 \subsubsection {JQuery}
+\begin{figure}[htb]
+	\centering{\resizebox{3cm}{3cm}{\includegraphics{Jquery.png}}}
+	\caption{Logo de JQuery}
+\end{figure}
+\FloatBarrier
 Es una librería de Javascript diseñada para simplificar la programación en el lado del cliente. Es de código abierto y es la librería más usada de Javascript. Fue lanzado en el año 2006 por John Resig quien se inspiró en las librerías de cssQuery.\\
 
 Principalmente contiene funciones para manipular el DOM, realizar animaciones, gestionar eventos y desarrollar aplicaciones basadas en Ajax. Sus principales características son las siguientes:
-\begin{list_type}  
+\begin{itemize}  
 \item Selección de elementos DOM
 \item Interactividad y modificaciones del árbol DOM, incluyendo soporte para CSS 1-3 y un plugin básico de XPath
 \item Eventos
@@ -240,7 +251,7 @@ Principalmente contiene funciones para manipular el DOM, realizar animaciones, g
 \item Efectos y animaciones
 \item AJAX
 \item Soporte de extensiones
-\end{list_type}
+\end{itemize}
 
 Ejemplo: 
 \begin{verbatim}
@@ -261,15 +272,51 @@ Html2Canvas es una librería Javascript para la conversión de código HTML al obje
 Al ser compatible con JsPDF nos permite la generación de un documento PDF en modo imagen tal y como se muestra en la web y sin los problemas derivados de los estilos css de impresión.
 
 \subsection {Sistemas}
-\subsubsection {Apache}
+\subsubsection {Apache HTTP Server}
+\begin{figure}[htb]
+	\centering{\resizebox{3cm}{3cm}{\includegraphics{Apache.png}}}
+	\caption{Logo de Apache HTTP Server}
+\end{figure}
+\FloatBarrier
+Llamado coloquialmente Apache, es un servidor web multiplataforma de código abierto. La Apache Software Foundation es la encargada actualmente de dar soporte y programación del producto. Su desarrollo comenzó en el año 1995 y jugó un papel importante en el crecimiento de la World Wide Web sustituyendo rápidamente a NCSA HTTPd como servidor HTTP dominante en el mercado. Actualmente es el servidor más utilizado del mundo siendo utilizado por un 46\% de los sitios web en activo.\\
+
+Entre sus principales características se encuentra el soporte para lenguajes de programación como Perl, Python, Tcl y PHP, módulos de autenticación (mod\_access, mod\_auth, mod\_digest y mod\_auth\_digest), soporte para SSL y TLS, hosting virtual, y autenticación por contraseña o firma digital entre otros.
+
 \subsubsection {MySQL}
+\begin{figure}[htb]
+	\centering{\resizebox{3cm}{3cm}{\includegraphics{MySQL.png}}}
+	\caption{Logo de MySQL}
+\end{figure}
+\FloatBarrier
+
+MySQL es un sistema gestor de base de datos relacionales de código abierto creado por la compañía sueca MYSQL AB en el año 1995. Durante este tiempo MySQL fue ganando popularidad y en el año 2008 fue comprado por Sun Microsystems para posteriormente pasar a manos de Oracle, actuales propietarios. Antes de la adquisición por parte de Oracle, uno de los creadores y fundadores de MYSQL AB, Monty Widenius, realizó un fork de la versión 5.5 de MySQL para crear MariaDB y mantener la esencia del producto.\\
+
+Actualmente MySQL se encuentra en la versión 5.7 y se ofrece tanto la versión MySQL Community Server como Enterprise Server, siendo ésta última una licencia de pago. Aunque MySQL server ha evolucionado para poder albergar y tratar volúmenes altos de datos, se sigue utilizando principalmente para aplicaciones de pequeño a mediano tamaño.\\
+
+Sus principales características son:
+\begin{itemize}  
+	\item Sistema de base de datos relacional
+	\item Arquitectura cliente-servidor
+	\item Compatible con el estándar de SQL
+	\item Sentencias SELECT anidadas
+	\item Vistas
+	\item Procedimientos almacenados y triggers
+	\item Transacciones
+\end{itemize}
+
 \subsection {Herramientas de desarrollo}
 Las herramientas de desarrollo nos sirven para facilitarnos la vida a la hora de programar y gestionar recursos. A continuación se describen las principales herramientas usadas en el proyecto.
+
 \subsubsection {Brackets}
+\begin{figure}[htb]
+	\centering{\resizebox{3cm}{3cm}{\includegraphics{Brackets.png}}}
+	\caption{Logo de Brackets}
+\end{figure}
+\FloatBarrier
 Brackets es un editor de texto avanzado escrito en HTML, CSS y Javascript por Adobe Systems y que está orientado al desarrollo web. A diferencia de otros editores, contiene un pequeño servidor Nodejs para probar el código realizado en el momento. Es capaz de mostrar un correcto formato de múltiples lenguajes de programación como Javascript, PHP, Java, HTML y CSS entre otros. Es un programa de libre distribución y sus desarrolladores han publicado una API con la que se pueden desarrollar módulos para aumentar su funcionalidad.
 Su interfaz es sencilla, con una lista de archivos abiertos a la izquierda y espacio para escribir a la derecha ocupando el máximo espacio posible de la ventana.
 Sus principales características son:
-\begin{list_type}  
+\begin{itemize}  
 \item Edición rápida
 \item Acceso a archivos de forma rápida
 \item Previsualización en tiempo real
@@ -277,20 +324,30 @@ Sus principales características son:
 \item Soporte para LESS
 \item Integración con Theseus
 \item Extensible
-\end{list_type}
+\end{itemize}
 
 \subsubsection {Git}
+\begin{figure}[htb]
+	\centering{\resizebox{3cm}{3cm}{\includegraphics{Git.png}}}
+	\caption{Logo de Git}
+\end{figure}
+\FloatBarrier
 Es un sistema de control de versiones cuya función principal es la de mantener un registro de cambios locales realizados en un directorio y coordinar el trabajo sobre esos archivos entre un grupo de gente. Se usa mayoritariamente como gestión de código a la hora de desarrollar software de manera distribuida.
 Fue creado por Linus Torvalds en el año 2005 para el desarrollo del kernel de Linux con la finalidad de coordinar el trabajo con otros desarrolladores. A Torvalds no le convencían otros sistemas de control de versiones disponibles.
 Una de las características de Git es que cada directorio de Git en cada ordenador es un repositorio completo con histórico y rastreo de versiones independiente de cualquier servidor central. Esto hace posible que, en caso de perderse el repositorio remoto, este se pueda rehacer desde uno perteneciente a los desarrolladores.
 Sus principales características son:
-\begin{list_type}  
+\begin{itemize}  
 \item Soporte para desarrollo no lineal
 \item Desarrollo distribuido
 \item Compatibilidad con varios protocolos de comunicaciones, como HTTP, FTP o SSH
 \item Manejo eficiente de proyectos grandes
-\end{list_type}
+\end{itemize}
 
 \subsubsection {Bower}
+\begin{figure}[htb]
+	\centering{\resizebox{3cm}{3cm}{\includegraphics{Bower.png}}}
+	\caption{Logo de Bower}
+\end{figure}
+\FloatBarrier
 Bower es una herramienta de gestión de dependencias utilizado principalmente para gestionar componentes HTML, CSS y Javascript y obtener las últimas versiones de los mismos con tan sólo usar un comando de consola. Para instalar Bower, se requiere tener instalado previamente Nodejs, npm y git.
-La forma más sencilla de instalar un nuevo paquete es buscar en internet el paquete que deseemos y posteriormente ejecutar en una consola de comandos 'bower install <nombre_paquete>'. También es posible tener un archivo llamado bower.json en el que se guardan todas las dependencias de nuestro proyecto (con nombre de paquete y versión), de esta forma al ejecutar 'bower install', se instalaran todos los paquetes de nuestro fichero, en la versión especificada. Es posible también utilizar sentencias condicionales en las versiones.
+La forma más sencilla de instalar un nuevo paquete es buscar en internet el nombre del paquete que deseemos y posteriormente ejecutar en una consola de comandos \textit{bower install nombre\_paquete}. También es posible tener un archivo llamado bower.json en el que se guardan todas las dependencias de nuestro proyecto (con nombre de paquete y versión), de esta forma al ejecutar \textit{bower install}, se instalaran todos los paquetes de nuestro fichero, en la versión especificada. Es posible también utilizar sentencias condicionales en las versiones.

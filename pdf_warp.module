@@ -118,17 +118,17 @@ function pdf_warp_generate_product_page($id_template) {
   drupal_add_library('angularjs', 'angularjs');
   
   $path = drupal_get_path('module', 'pdf_warp');
-  drupal_add_css($path.'/pdf_warp_template.css');
-  drupal_add_js($path.'/pdf_warp_generation.js');
-  drupal_add_js($path.'/jspdf.min.js');
-  drupal_add_js($path.'/html2pdf.js');
-  drupal_add_js($path.'/bower_components/classie/classie.js');
-  drupal_add_js($path.'/bower_components/eventEmitter/EventEmitter.js');
-  drupal_add_js($path.'/bower_components/eventie/eventie.js');
-  drupal_add_js($path.'/bower_components/get-style-property/get-style-property.js');
-  drupal_add_js($path.'/bower_components/get-size/get-size.js');
-  drupal_add_js($path.'/bower_components/draggabilly/draggabilly.js');
-  drupal_add_js($path.'/bower_components/angular-draggabilly/dist/angular-draggabilly.js');
+  drupal_add_css($path.'/css/pdf_warp_template.css');
+  drupal_add_js($path.'/js/pdf_warp_generation.js');
+  drupal_add_js($path.'/js/vendor/jspdf.min.js');
+  drupal_add_js($path.'/js/vendor/html2pdf.js');
+  drupal_add_js($path.'/js/vendor/bower_components/classie/classie.js');
+  drupal_add_js($path.'/js/vendor/bower_components/eventEmitter/EventEmitter.js');
+  drupal_add_js($path.'/js/vendor/bower_components/eventie/eventie.js');
+  drupal_add_js($path.'/js/vendor/bower_components/get-style-property/get-style-property.js');
+  drupal_add_js($path.'/js/vendor/bower_components/get-size/get-size.js');
+  drupal_add_js($path.'/js/vendor/bower_components/draggabilly/draggabilly.js');
+  drupal_add_js($path.'/js/vendor/bower_components/angular-draggabilly/dist/angular-draggabilly.js');
   
   $sql = "SELECT * FROM {pdf_warp_templates} WHERE active=1 AND type='product'";
   $settings['pdf_warp']['template_content'] = db_query($sql)->fetchAll();
@@ -142,20 +142,22 @@ function pdf_warp_edit_template_page($id_template) {
   drupal_add_library('angularjs', 'angularjs');
   
   $path = drupal_get_path('module', 'pdf_warp');
-  drupal_add_css($path.'/pdf_warp_template.css');
-  drupal_add_js($path.'/pdf_warp.js');
-  drupal_add_js($path.'/jspdf.min.js');
-  drupal_add_js($path.'/html2pdf.js');
-  drupal_add_js($path.'/bower_components/classie/classie.js');
-  drupal_add_js($path.'/bower_components/eventEmitter/EventEmitter.js');
-  drupal_add_js($path.'/bower_components/eventie/eventie.js');
-  drupal_add_js($path.'/bower_components/get-style-property/get-style-property.js');
-  drupal_add_js($path.'/bower_components/get-size/get-size.js');
-  drupal_add_js($path.'/bower_components/draggabilly/draggabilly.js');
-  drupal_add_js($path.'/bower_components/angular-draggabilly/dist/angular-draggabilly.js');
+  drupal_add_css($path.'/css/pdf_warp_template.css');
+  drupal_add_js($path.'/js/pdf_warp.js');
+  drupal_add_js($path.'/js/vendor/jspdf.min.js');
+  drupal_add_js($path.'/js/vendor/html2pdf.js');
+  drupal_add_js($path.'/js/vendor/bower_components/classie/classie.js');
+  drupal_add_js($path.'/js/vendor/bower_components/eventEmitter/EventEmitter.js');
+  drupal_add_js($path.'/js/vendor/bower_components/eventie/eventie.js');
+  drupal_add_js($path.'/js/vendor/bower_components/get-style-property/get-style-property.js');
+  drupal_add_js($path.'/js/vendor/bower_components/get-size/get-size.js');
+  drupal_add_js($path.'/js/vendor/bower_components/draggabilly/draggabilly.js');
+  drupal_add_js($path.'/js/vendor/bower_components/angular-draggabilly/dist/angular-draggabilly.js');
   
   $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id_template;
   $settings['pdf_warp']['template_content'] = db_query($sql)->fetchAll();
+  $sql = "SELECT nid FROM {uc_products}";
+  $settings['pdf_warp']['products'] = db_query($sql)->fetchAll();
   drupal_add_js($settings, 'setting');
   
   return theme('pdf_warp_template');

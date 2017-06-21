@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  20 JUN 2017 20:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  21 JUN 2017 19:55
 entering extended mode
 **./plantilla_PFC.tex
 (plantilla_PFC.tex
@@ -225,8 +225,7 @@ LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  (agradecimientos.aux) (resumen.aux) (abstract.aux)
 (objetivo.aux) (introduccion.aux) (metodologia.aux)
-(descripcion_informatica.aux) (resultados_experimentales.aux) (conclusiones.aux
-) (anexos.aux))
+(descripcion_informatica.aux) (conclusiones.aux) (anexos.aux))
 \openout1 = `plantilla_PFC.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
@@ -643,44 +642,146 @@ File: Drupal.png Graphic file (type png)
 Package pdftex.def Info: Drupal.png used on input line 211.
 (pdftex.def)             Requested size: 120.44969pt x 123.58138pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 215.
+Package pdftex.def Info: logo_upm.png used on input line 216.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
  [14 <./Drupal.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
+Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-)
+<Angular.png, id=102, 270.65115pt x 286.9119pt>
+File: Angular.png Graphic file (type png)
+ <use Angular.png>
+Package pdftex.def Info: Angular.png used on input line 225.
+(pdftex.def)             Requested size: 270.65048pt x 286.91118pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
 File: logo_master.png Graphic file (type png)
- <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 141.
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 232.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [15]
+ [15 <./Angular.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+<Jquery.png, id=107, 200.75pt x 193.72375pt>
+File: Jquery.png Graphic file (type png)
+ <use Jquery.png>
+Package pdftex.def Info: Jquery.png used on input line 239.
+(pdftex.def)             Requested size: 200.7495pt x 193.72327pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
+ []
+
+File: logo_upm.png Graphic file (type png)
+<use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 252.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [16 <./Jquery.png>]
+<Apache.png, id=112, 356.33125pt x 111.41624pt>
+File: Apache.png Graphic file (type png)
+ <use Apache.png>
+Package pdftex.def Info: Apache.png used on input line 277.
+(pdftex.def)             Requested size: 356.33037pt x 111.41597pt.
+File: logo_master.png Graphic file (type png)
+
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 280.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [17]
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+<MySQL.png, id=116, 521.95pt x 513.92pt>
+File: MySQL.png Graphic file (type png)
+ <use MySQL.png>
+Package pdftex.def Info: MySQL.png used on input line 287.
+(pdftex.def)             Requested size: 521.94872pt x 513.91873pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--295
+
+ []
+
+File: logo_upm.png Graphic file (type png)
+<use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 295.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [18 <./Apache.png> <./MySQL.png>]
+<Brackets.png, id=122, 501.875pt x 501.875pt>
+File: Brackets.png Graphic file (type png)
+ <use Brackets.png>
+Package pdftex.def Info: Brackets.png used on input line 312.
+(pdftex.def)             Requested size: 501.87376pt x 501.87376pt.
+File: logo_master.png Graphic file (type png)
+
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 320.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [19 <./Brackets.png>]
+<Git.png, id=127, 200.75pt x 200.75pt>
+File: Git.png Graphic file (type png)
+ <use Git.png>
+Package pdftex.def Info: Git.png used on input line 331.
+(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 141.
+Package pdftex.def Info: logo_upm.png used on input line 344.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [16]
+
+[20 <./Git.png>] <Bower.png, id=133, 513.92pt x 513.92pt>
+File: Bower.png Graphic file (type png)
+ <use Bower.png>
+Package pdftex.def Info: Bower.png used on input line 348.
+(pdftex.def)             Requested size: 513.91873pt x 513.91873pt.
+)
+File: logo_master.png Graphic file (type png)
+
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 141.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [21 <./Bower.png>]
 \openout2 = `metodologia.aux'.
 
  (metodologia.tex
-Cap\'{\i }tulo 3.
-) [17
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 1.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+
+[22
 
 
 
 ]
+Cap\'{\i }tulo 3.
+) [23]
 \openout2 = `descripcion_informatica.aux'.
 
  (descripcion_informatica.tex
@@ -688,27 +789,13 @@ File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 1.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [18
+ [24
 
 
 
 ]
 Cap\'{\i }tulo 4.
-) [19]
-\openout2 = `resultados_experimentales.aux'.
-
- (resultados_experimentales.tex
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 1.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [20
-
-
-
-]
-Cap\'{\i }tulo 5.
-) [21]
+) [25]
 \openout2 = `conclusiones.aux'.
 
  (conclusiones.tex
@@ -716,21 +803,21 @@ File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 1.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [22
+ [26
 
 
 
 ]
-Cap\'{\i }tulo 6.
-) [23]
+Cap\'{\i }tulo 5.
+) [27]
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 151.
+Package pdftex.def Info: logo_upm.png used on input line 149.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [24
+ [28
 
 
-] (plantilla_PFC.bbl) [25
+] (plantilla_PFC.bbl) [29
 
 ]
 \openout2 = `anexos.aux'.
@@ -741,7 +828,7 @@ File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 1.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [26
+ [30
 
 
 ]
@@ -749,25 +836,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
-) [27] (plantilla_PFC.aux
+) [31] (plantilla_PFC.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  (agradecimientos.aux) (resumen.aux) (abstract.aux)
 (objetivo.aux) (introduccion.aux) (metodologia.aux)
-(descripcion_informatica.aux) (resultados_experimentales.aux) (conclusiones.aux
-) (anexos.aux))
+(descripcion_informatica.aux) (conclusiones.aux) (anexos.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4905 strings out of 493323
- 69532 string characters out of 3139051
- 145370 words of memory out of 3000000
- 8257 multiletter control sequences out of 15000+200000
+ 4934 strings out of 493323
+ 69801 string characters out of 3139051
+ 145121 words of memory out of 3000000
+ 8286 multiletter control sequences out of 15000+200000
  18587 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,16n,48p,791b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,16n,48p,794b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiK
@@ -777,9 +863,9 @@ pe1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on plantilla_PFC.pdf (38 pages, 497095 bytes).
+Output written on plantilla_PFC.pdf (42 pages, 651187 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
+ 207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

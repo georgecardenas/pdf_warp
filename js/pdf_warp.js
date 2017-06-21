@@ -20,10 +20,12 @@ var app = angular
     vm.width;
     vm.height;
     vm.additionalData = {};
+    vm.selectProducts = Drupal.settings.pdf_warp.products.map(item => item.nid);
+    vm.selectedProduct = vm.selectProducts[0];
     
     var app = $location.path().split('/')[1];
     
-    $http.get('http://' + $location.host() + '/' + app + '/store/product/2/json')
+    $http.get('http://' + $location.host() + '/' + app + '/store/product/'+ vm.selectedProduct + '/json')
     .then(function(result) {
       vm.products = result.data.products;
       var templateInfo = Drupal.settings.pdf_warp.template_content;
@@ -50,6 +52,13 @@ var app = angular
       }
       
       document.getElementById(vm.idSelected).style.fontSize = vm.fontSelected;
+    }
+    
+    vm.productChange = function() {
+      $http.get('http://' + $location.host() + '/' + app + '/store/product/'+ vm.selectedProduct + '/json')
+      .then(function(result) {
+        vm.products = result.data.products;
+      });
     }
     
     vm.heightChange = function() {
@@ -105,5 +114,8 @@ var app = angular
   });
 
 jQuery(document).ready(function () {
+  var form = jQuery("#form");
+  var action = form.attr('action');
+  form.attr('action', action.substring(0, action.lastIndexOf('?')));
   angular.bootstrap(document.getElementById('pdf_warp'), ['pdf_warp']);
 });
