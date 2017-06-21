@@ -220,6 +220,14 @@ Actualmente Drupal se encuentra en la versión 8, aunque aún brinda soporte a la 
 Algunos ejemplos de sitios desarrollados con Drupal son las webs de Ubuntu, Intel o Economist.
 
 \subsubsection {Angularjs}
+Angularjs es un framework para aplicaciones web de código abierto basado en Javascript especializado en aplicaciones single-page (SPA). Actualmente está soportado por Google y una comunidad formada por desarrolladores individuales y empresas. Fue inicialmente desarrollado en el año 2009 por Miško Hevery como un software base a una apicación on-line de almacenamiento de datos en JSON, aunque debido al pobre acogimiento que tuvo la idea, el producto se deshechó y se lanzo Angular como una librería de código abierto. Incialmente todo el contenido de Angularjs iba en un único paquete pero en las versiones más recientes, se ha modularizado para que cada desarrollador tenga una instalación personalizada de acuerdo a sus necesidades.\\
+
+Actualmente tenemos dos vertientes de Angularjs, la versión 1.x y la versión 2.x. Aunque compartan el nombre, la versión 2.x no se trata de la siguiente iteración de Angularjs, si no que se trata de un remodelado completo incompatible con la versión anterior, por lo que se tratan como si fueran dos frameworks diferentes y ambos continúan recibiendo soporte.\\
+
+El framework se basa en el modelo vista presentador con lo que nos brinda ficheros de vista (HTML), un modelo de datos y un presentador (controlador). Funciona mediante ciclos de digest, en los cuales Angularjs comprueba todos los scopes (ámbitos) y busca todas las variables que hayan podido sufrir cambios para actualizar las vistas. También al cambiar un valor en una vista se actualiza la variable asociada en el controlador (two-way data binding). Angular está compuesto por módulos y directivas, y los desarrolladores pueden crear sus propios elementos y compartirlos con otros a través de npm o bower. Algunas de las directivas estándar son: ng-app, ng-view, ng-controller ó ng-model.\\
+
+En este proyecto se usa la versión 1.6 del framework. Algunos sitios desarrollados con Angular son Wolfram Alpha, ABC News ó NBC
+
 \subsubsection {jQuery}
 \subsubsection {JsPDF}
 JsPDF es una librería Javascript para la generación de PDFs en el lado del cliente. Cuenta con un potente motor para dibujar elementos geométricos, incrustar imágenes y textos variando el tipo de letra y el tamaño. Su primera versión fue lanzada en el año 2012 y desde entonces sus creadores (Parallax) han ido incorporando funcionalidades y librerías para aumentar sus capacidades.
@@ -264,7 +272,6 @@ Sus principales características son:
 \item Manejo eficiente de proyectos grandes
 \end{list_type}
 
-\subsubsection {Nodejs}
 \subsubsection {Bower}
 Bower es una herramienta de gestión de dependencias utilizado principalmente para gestionar componentes HTML, CSS y Javascript y obtener las últimas versiones de los mismos con tan sólo usar un comando de consola. Para instalar Bower, se requiere tener instalado previamente Nodejs, npm y git.
 La forma más sencilla de instalar un nuevo paquete es buscar en internet el paquete que deseemos y posteriormente ejecutar en una consola de comandos 'bower install <nombre_paquete>'. También es posible tener un archivo llamado bower.json en el que se guardan todas las dependencias de nuestro proyecto (con nombre de paquete y versión), de esta forma al ejecutar 'bower install', se instalaran todos los paquetes de nuestro fichero, en la versión especificada. Es posible también utilizar sentencias condicionales en las versiones.
