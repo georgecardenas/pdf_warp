@@ -1,5 +1,5 @@
 <div id="pdf_warp" class="container">
-  <div ng-controller="ProductCtrl as vm">
+  <div ng-controller="GenerationCtrl as vm">
     <p>Generando pdf...</p>
     <div class="pdf-container" style="visibility:hidden">
       <div class="pdf-template" id="pdf-template" ng-click="vm.select(undefined)">

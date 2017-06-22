@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  21 JUN 2017 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  22 JUN 2017 19:52
 entering extended mode
 **./plantilla_PFC.tex
 (plantilla_PFC.tex
@@ -781,7 +781,46 @@ Package pdftex.def Info: logo_upm.png used on input line 1.
 
 ]
 Cap\'{\i }tulo 3.
-) [23]
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+File: logo_upm.png Graphic file (type png)
+<use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 30.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [24]
+Underfull \hbox (badness 3260) in paragraph at lines 55--55
+[]\OT1/cmr/m/n/12 Los re-qui-si-tos se van des-gra-nan-do
+ []
+
+)
+File: logo_master.png Graphic file (type png)
+ <use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 143.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [25]
 \openout2 = `descripcion_informatica.aux'.
 
  (descripcion_informatica.tex
@@ -789,13 +828,14 @@ File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 1.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [24
+
+[26
 
 
 
 ]
 Cap\'{\i }tulo 4.
-) [25]
+) [27]
 \openout2 = `conclusiones.aux'.
 
  (conclusiones.tex
@@ -803,21 +843,21 @@ File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 1.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [26
+ [28
 
 
 
 ]
 Cap\'{\i }tulo 5.
-) [27]
+) [29]
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 149.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [28
+ [30
 
 
-] (plantilla_PFC.bbl) [29
+] (plantilla_PFC.bbl) [31
 
 ]
 \openout2 = `anexos.aux'.
@@ -828,7 +868,7 @@ File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 1.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [30
+ [32
 
 
 ]
@@ -836,7 +876,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
-) [31] (plantilla_PFC.aux
+) [33] (plantilla_PFC.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
  (agradecimientos.aux) (resumen.aux) (abstract.aux)
@@ -849,11 +889,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  4934 strings out of 493323
  69801 string characters out of 3139051
- 145121 words of memory out of 3000000
+ 148121 words of memory out of 3000000
  8286 multiletter control sequences out of 15000+200000
  18587 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,16n,48p,794b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,16n,48p,854b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiK
@@ -863,9 +903,9 @@ pe1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on plantilla_PFC.pdf (42 pages, 651187 bytes).
+Output written on plantilla_PFC.pdf (44 pages, 658292 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
+ 214 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -52,12 +52,14 @@
 \contentsline {subsubsection}{Brackets}{19}
 \contentsline {subsubsection}{Git}{20}
 \contentsline {subsubsection}{Bower}{21}
-\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }a}{23}
-\contentsline {chapter}{\numberline {4}Descripci\'on Inform\'atica (20-35\%)}{25}
-\contentsline {section}{\numberline {4.1}La base de datos coleccionada (si tiene sentido).}{25}
-\contentsline {section}{\numberline {4.2}Los algoritmos para el desarrollo de la soluci\'on}{25}
-\contentsline {chapter}{\numberline {5}Conclusiones y trabajos futuros (5\%)}{27}
-\contentsline {section}{\numberline {5.1}Implementaci\'on}{27}
-\contentsline {section}{\numberline {5.2}Resultados}{27}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{29}
-\contentsline {chapter}{Anexo 1}{31}
+\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }as de desarrollo software}{23}
+\contentsline {section}{\numberline {3.1}\IeC {\textquestiondown }Por qu\'e usar metodolog\IeC {\'\i }as?}{23}
+\contentsline {section}{\numberline {3.2}Metodolog\IeC {\'\i }as tradicionales vs \'agiles}{24}
+\contentsline {chapter}{\numberline {4}Descripci\'on Inform\'atica (20-35\%)}{27}
+\contentsline {section}{\numberline {4.1}La base de datos coleccionada (si tiene sentido).}{27}
+\contentsline {section}{\numberline {4.2}Los algoritmos para el desarrollo de la soluci\'on}{27}
+\contentsline {chapter}{\numberline {5}Conclusiones y trabajos futuros (5\%)}{29}
+\contentsline {section}{\numberline {5.1}Implementaci\'on}{29}
+\contentsline {section}{\numberline {5.2}Resultados}{29}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{31}
+\contentsline {chapter}{Anexo 1}{33}

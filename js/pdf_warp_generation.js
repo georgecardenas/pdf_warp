@@ -9,7 +9,7 @@ var app = angular
       });
    })
 
-  .controller('ProductCtrl', function($http, $location, $timeout) {
+  .controller('GenerationCtrl', function($http, $location, $timeout) {
     var vm = this;
     var idEquivalence = {
       pdf_product_description: {id: 'Description', label: ''},

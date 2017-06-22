@@ -116,6 +116,8 @@ var app = angular
 jQuery(document).ready(function () {
   var form = jQuery("#form");
   var action = form.attr('action');
-  form.attr('action', action.substring(0, action.lastIndexOf('?')));
+  if (action.indexOf('?') !== -1) {
+    form.attr('action', action.substring(0, action.lastIndexOf('?')));
+  }
   angular.bootstrap(document.getElementById('pdf_warp'), ['pdf_warp']);
 });

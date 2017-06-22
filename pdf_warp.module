@@ -12,8 +12,9 @@ function pdf_warp_form_alter(&$form, $form_state, $form_id) {
 
 /** HOOK PAGE ALTER **/
 function pdf_warp_page_alter(&$page){
-  if (in_array('products',$page['content']['system_main']) && strpos($page['content']['system_main']['products']['#markup'], 'view-uc-catalog') != false){
-    $page['content']['system_main']['products']['#markup'] = $page['content']['system_main']['products']['#markup'].'<input type="button" value="Generar PDF"/>';
+  if (strpos($page['content']['system_main']['products']['#markup'], 'view-uc-catalog') != false){
+    $url = explode("/", current_path());
+    $page['content']['system_main']['products']['#markup'] = $page['content']['system_main']['products']['#markup'].'<a href="'.$GLOBALS['base_url'].'/pdf_warp/generate/catalog/'.$url[1].'" style="appearance: button;-moz-appearance: button;-webkit-appearance: button;text-decoration: none; font: menu; color: ButtonText;display: inline-block; padding: 2px 8px;">Generar PDF</a>';
   }
 }
 
@@ -23,6 +24,14 @@ function pdf_warp_menu() {
     'title'            => 'PDF Warp generación',
     'description'      => 'Generación de PDF',
     'page callback'    => 'pdf_warp_generate_product_page',
+    'page arguments' => array(3),
+    'access arguments' => array('access content'),
+  );
+  
+  $items['pdf_warp/generate/catalog/%'] = array(
+    'title'            => 'PDF Warp generación',
+    'description'      => 'Generación de PDF',
+    'page callback'    => 'pdf_warp_generate_catalog_page',
     'page arguments' => array(3),
     'access arguments' => array('access content'),
   );
@@ -76,6 +85,22 @@ function pdf_warp_menu() {
     'access arguments' => array('administer site configuration'),
     'type' => MENU_CALLBACK, 
   );
+  
+  $items['admin/appearance/pdf_warp/edit/catalog/%'] = array(
+    'title' => 'Nueva plantilla',
+    'page callback' => 'pdf_warp_edit_catalog_template_page',
+    'page arguments' => array(5),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_CALLBACK,
+  );
+  
+  $items['admin/appearance/pdf_warp/edit/catalog/%/save'] = array(
+    'title' => t('Guardar plantilla'),
+    'page callback' => 'pdf_warp_catalog_save_edit',
+    'page arguments' => array(5),
+    'access arguments' => array('administer site configuration'),
+    'type' => MENU_CALLBACK, 
+  );
 
   return $items;
 }
@@ -94,7 +119,7 @@ function pdf_warp_admin_page() {
       $v->id,
       $v->name,
       $v->type == 'product' ? 'Producto' : 'Catálogo',
-      "<a href='pdf_warp/edit/{$v->id}'>" . t('Editar') . "</a> | <a href='pdf_warp/delete/{$v->id}'>" . t('Borrar') . "</a> | <a href='pdf_warp/enable/{$v->id}'>" . t('Activar') . "</a>",
+      ($v->type == 'product' ? "<a href='pdf_warp/edit/{$v->id}'>" : "<a href='pdf_warp/edit/catalog/{$v->id}'>") . t('Editar') . "</a> | <a href='pdf_warp/delete/{$v->id}'>" . t('Borrar') . "</a> | <a href='pdf_warp/enable/{$v->id}'>" . t('Activar') . "</a>",
       $v->active == 1 ? 'SI' : '',
     );
   }
@@ -110,11 +135,19 @@ function pdf_warp_theme(){
     'pdf_warp_generation' => array (
       'template' => 'pdf-warp-generation'
     )
+    ,
+    'pdf_warp_catalog_template' => array (
+      'template' => 'pdf-warp-catalog-template'
+    )
+    ,
+    'pdf_warp_catalog_generation' => array (
+      'template' => 'pdf-warp-catalog-generation'
+    )
   );
 }
 
 /**** GENERATE PRODUCT PDF PAGE ****/
-function pdf_warp_generate_product_page($id_template) {
+function pdf_warp_generate_product_page($id_item) {
   drupal_add_library('angularjs', 'angularjs');
   
   $path = drupal_get_path('module', 'pdf_warp');
@@ -135,6 +168,29 @@ function pdf_warp_generate_product_page($id_template) {
   drupal_add_js($settings, 'setting');
   
   return theme('pdf_warp_generation');
+}
+
+function pdf_warp_generate_catalog_page($id_item) {
+  drupal_add_library('angularjs', 'angularjs');
+  
+  $path = drupal_get_path('module', 'pdf_warp');
+  drupal_add_css($path.'/css/pdf_warp_template.css');
+  drupal_add_js($path.'/js/pdf_warp_catalog_generation.js');
+  drupal_add_js($path.'/js/vendor/jspdf.min.js');
+  drupal_add_js($path.'/js/vendor/html2pdf.js');
+  drupal_add_js($path.'/js/vendor/bower_components/classie/classie.js');
+  drupal_add_js($path.'/js/vendor/bower_components/eventEmitter/EventEmitter.js');
+  drupal_add_js($path.'/js/vendor/bower_components/eventie/eventie.js');
+  drupal_add_js($path.'/js/vendor/bower_components/get-style-property/get-style-property.js');
+  drupal_add_js($path.'/js/vendor/bower_components/get-size/get-size.js');
+  drupal_add_js($path.'/js/vendor/bower_components/draggabilly/draggabilly.js');
+  drupal_add_js($path.'/js/vendor/bower_components/angular-draggabilly/dist/angular-draggabilly.js');
+  
+  $sql = "SELECT * FROM {pdf_warp_templates} WHERE active=1 AND type='catalog'";
+  $settings['pdf_warp']['template_content'] = db_query($sql)->fetchAll();
+  drupal_add_js($settings, 'setting');
+  
+  return theme('pdf_warp_catalog_generation');
 }
 
 /**** FUNCTIONS TO EDIT TEMPLATE ****/
@@ -164,6 +220,45 @@ function pdf_warp_edit_template_page($id_template) {
 }
 
 function pdf_warp_save_edit($id_template) {
+  $data = file_get_contents("php://input",  TRUE);
+  $decoded_data = urldecode($data);
+  
+  $result = db_update('pdf_warp_templates')
+  ->fields(array(
+    'content' => substr($decoded_data, strpos($decoded_data, "content=") + 8, strpos($decoded_data, "&") - 8)
+  ))
+  ->condition('id', $id_template, '=')
+  ->execute();
+  
+  drupal_set_message(t('La plantilla ha sido guardada con éxito.'));
+  drupal_goto("admin/appearance/pdf_warp");
+}
+
+
+function pdf_warp_edit_catalog_template_page($id_template) {
+  drupal_add_library('angularjs', 'angularjs');
+  
+  $path = drupal_get_path('module', 'pdf_warp');
+  drupal_add_css($path.'/css/pdf_warp_template.css');
+  drupal_add_js($path.'/js/pdf_warp_catalog.js');
+  drupal_add_js($path.'/js/vendor/jspdf.min.js');
+  drupal_add_js($path.'/js/vendor/html2pdf.js');
+  drupal_add_js($path.'/js/vendor/bower_components/classie/classie.js');
+  drupal_add_js($path.'/js/vendor/bower_components/eventEmitter/EventEmitter.js');
+  drupal_add_js($path.'/js/vendor/bower_components/eventie/eventie.js');
+  drupal_add_js($path.'/js/vendor/bower_components/get-style-property/get-style-property.js');
+  drupal_add_js($path.'/js/vendor/bower_components/get-size/get-size.js');
+  drupal_add_js($path.'/js/vendor/bower_components/draggabilly/draggabilly.js');
+  drupal_add_js($path.'/js/vendor/bower_components/angular-draggabilly/dist/angular-draggabilly.js');
+  
+  $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id_template;
+  $settings['pdf_warp']['template_content'] = db_query($sql)->fetchAll();
+  drupal_add_js($settings, 'setting');
+  
+  return theme('pdf_warp_catalog_template');
+}
+
+function pdf_warp_catalog_save_edit($id_template) {
   $data = file_get_contents("php://input",  TRUE);
   $decoded_data = urldecode($data);
   
@@ -214,7 +309,7 @@ function pdf_warp_form_add_template_submit(&$form, $form_state) {
   ->fields(array(
     'name' => $form_state['values']['template_name'],
     'type' => $form_state['values']['template_type'] == 0 ? 'product' : 'catalog',
-    'content' => $form_state['values']['template_type'] == 0 ? '{"pdf_elements":{"pdf_product_title":{"x":23,"y":27,"width":495,"height":25,"fontSize":"22px"},"pdf_product_image":{"x":546.109375,"y":23,"width":220,"height":226,"fontSize":"12px"},"pdf_product_description":{"x":23,"y":64,"width":495,"height":180,"fontSize":"12px"},"pdf_product_price":{"x":558.109375,"y":253,"width":200,"height":20,"fontSize":"18px"},"pdf_product_sku":{"x":1343.21875,"y":150,"width":83.328125,"height":20,"fontSize":"12px"},"pdf_product_length":{"x":31,"y":284,"width":120,"height":20,"fontSize":"12px"},"pdf_product_width":{"x":31.109375,"y":259,"width":120,"height":20,"fontSize":"12px"},"pdf_product_height":{"x":31.21875,"y":310,"width":120,"height":20,"fontSize":"12px"},"pdf_product_weight":{"x":239.328125,"y":260,"width":120,"height":20,"fontSize":"12px"}},"edit_elements":{"pdf_product_title":{"left":"23px","top":"-176px","width":"495px","height":"25px","fontSize":"22px"},"pdf_product_image":{"left":"47px","top":"23px","width":null,"height":null,"fontSize":"12px"},"pdf_product_description":{"left":"23px","top":"-166px","width":"495px","height":"180px","fontSize":"12px"},"pdf_product_price":{"left":"59px","top":"25px","width":"200px","height":"20px","fontSize":"18px"},"pdf_product_sku":{"left":"640px","top":"-80px","width":null,"height":null,"fontSize":"12px"},"pdf_product_length":{"left":"31px","top":"-126px","width":"120px","height":"20px","fontSize":"12px"},"pdf_product_width":{"left":"-93px","top":"-151px","width":"120px","height":"20px","fontSize":"12px"},"pdf_product_height":{"left":"-217px","top":"-100px","width":"120px","height":"20px","fontSize":"12px"},"pdf_product_weight":{"left":"-133px","top":"-150px","width":"120px","height":"20px","fontSize":"12px"}}}' : '{}',
+    'content' => $form_state['values']['template_type'] == 0 ? '{"pdf_elements":{"pdf_product_title":{"x":23,"y":27,"width":495,"height":25,"fontSize":"22px"},"pdf_product_image":{"x":546.109375,"y":23,"width":220,"height":226,"fontSize":"12px"},"pdf_product_description":{"x":23,"y":64,"width":495,"height":180,"fontSize":"12px"},"pdf_product_price":{"x":558.109375,"y":253,"width":200,"height":20,"fontSize":"18px"},"pdf_product_sku":{"x":1343.21875,"y":150,"width":83.328125,"height":20,"fontSize":"12px"},"pdf_product_length":{"x":31,"y":284,"width":120,"height":20,"fontSize":"12px"},"pdf_product_width":{"x":31.109375,"y":259,"width":120,"height":20,"fontSize":"12px"},"pdf_product_height":{"x":31.21875,"y":310,"width":120,"height":20,"fontSize":"12px"},"pdf_product_weight":{"x":239.328125,"y":260,"width":120,"height":20,"fontSize":"12px"}},"edit_elements":{"pdf_product_title":{"left":"23px","top":"-176px","width":"495px","height":"25px","fontSize":"22px"},"pdf_product_image":{"left":"47px","top":"23px","width":null,"height":null,"fontSize":"12px"},"pdf_product_description":{"left":"23px","top":"-166px","width":"495px","height":"180px","fontSize":"12px"},"pdf_product_price":{"left":"59px","top":"25px","width":"200px","height":"20px","fontSize":"18px"},"pdf_product_sku":{"left":"640px","top":"-80px","width":null,"height":null,"fontSize":"12px"},"pdf_product_length":{"left":"31px","top":"-126px","width":"120px","height":"20px","fontSize":"12px"},"pdf_product_width":{"left":"-93px","top":"-151px","width":"120px","height":"20px","fontSize":"12px"},"pdf_product_height":{"left":"-217px","top":"-100px","width":"120px","height":"20px","fontSize":"12px"},"pdf_product_weight":{"left":"-133px","top":"-150px","width":"120px","height":"20px","fontSize":"12px"}}}' : '{"pdf_elements":{"pdf_product_0":{"x":30,"y":30,"width":350,"height":350},"pdf_product_1":{"x":420,"y":30,"width":350,"height":350},"pdf_product_2":{"x":30,"y":386,"width":350,"height":350},"pdf_product_3":{"x":420,"y":386,"width":350,"height":350},"pdf_product_4":{"x":30,"y":742,"width":350,"height":350},"pdf_product_5":{"x":420,"y":742,"width":350,"height":350}},"edit_elements":{"pdf_product_0":{"left":"30px","top":"30px","width":null,"height":null},"pdf_product_1":{"left":"70px","top":"30px","width":null,"height":null},"pdf_product_2":{"left":"30px","top":"30px","width":null,"height":null},"pdf_product_3":{"left":"70px","top":"30px","width":null,"height":null},"pdf_product_4":{"left":"30px","top":"30px","width":null,"height":null},"pdf_product_5":{"left":"70px","top":"30px","width":null,"height":null}},"renderMode":"text","itemsPerPage":"6"}',
   ))
   ->execute();
   drupal_set_message(t('La plantilla ' .$result.' ha sido creada con éxito.'));
