@@ -10,18 +10,19 @@
 %\usepackage[T1]{fontenc}
 \usepackage[latin1]{inputenc}
 \usepackage{babel}
+\usepackage{makecell}
 \usepackage{fancyhdr}
 \usepackage{caption2}
 \usepackage{geometry}
 \usepackage{makeidx}
 \usepackage{graphicx}
 \usepackage{placeins}
-%\usepackage{hthtml}
 \usepackage{latexsym}
 \usepackage{amssymb}
 \usepackage{eucal}
 \usepackage{xcolor}
 \usepackage{sectsty}
+\usepackage{acronym}
 \usepackage{setspace}\singlespacing
 % Para otros interlineados: \renewcommand{\baselinestretch}{1.05}
 %\usepackage{dsfont} %Para las formulitas
@@ -51,8 +52,8 @@
 \fancyhead[RO]{\color{blue}{[UPM] Máster en Ingeniería Web}} % En las páginas impares, parte izquierda del encabezado, aparecerá el nombre del máster
 \fancyhead[LO]{\resizebox{1.31cm}{0.61cm}{\includegraphics{logo_master.png}}}
 
-\fancyhead[RE]{\color{blue}{Módulo de Drupal para Generación de PDF con Ubercart}} % En las páginas pares, parte derecha del encabezado, aparecerá el título del proyecto
-\fancyhead[LE]{\resizebox{0.56cm}{0.67cm}{\includegraphics{logo_upm.png}}}
+\fancyhead[RE]{\color{blue}{Generación de catálogos en PDF para comercio electrónico}} % En las páginas pares, parte derecha del encabezado, aparecerá el título del proyecto
+\fancyhead[LE]{\resizebox{0.56cm}{0.67cm}{\includegraphics{logo_upm}}}
 %
 
 % para no numerar la página
@@ -66,8 +67,7 @@
 %
 \begin{figure}[htb]
 %%Escudo de la Universidad/Logo
-%Para que inserte la imagen en el pdf ejecutar DVI2DPF
-\centering{\resizebox{8.2cm}{8.7cm}{\includegraphics{logo_upm.png}}}
+\centering{\resizebox{8.2cm}{8.7cm}{\includegraphics{logo_upm}}}
 \end{figure}
 %
 \begin{center}
@@ -86,7 +86,7 @@
 \textcolor{blue}{\line(1,0){450}}
 
 %
-{\large {Módulo de Drupal para Generación de PDF con Ubercart}}
+{\large {Generación de catálogos en PDF para comercio electrónico}}
 
 %
 \vspace{4cm}
@@ -99,7 +99,7 @@
 {\large\bf{Tutor}\\}
 {\bf{Eduardo García Pardo}\\}
 
-\vspace{1cm} \today
+\vspace{1cm} {\normalsize Junio, 2017}
 
 %
 \end{center}
@@ -125,9 +125,11 @@
 \include{resumen}
 % ----------------- ABSTRACT ----------------------------
 \include{abstract}
+% ----------------- ACRÓNIMOS -----------------------
+\include{acronimos}
+% ----------------- OBJETIVOS ---------------------------
+\include{objetivo}
 
-% para que vuelva a poner "Capítulo n" donde corresponda a partir de esta línea
-\renewcommand{\chaptermark}[1]{\markboth{\small{\chaptername \ \thechapter. #1}}{}}
 % ----------------- ÍNDICE GENERAL ---------------------
 \tableofcontents
 % ----------------- ÍNDICE DE FIGURAS ------------------
@@ -135,8 +137,9 @@
 
 \mainmatter
 
-% ----------------- OBJETIVOS ---------------------------
-\include{objetivo}
+% para que vuelva a poner "Capítulo n" donde corresponda a partir de esta línea
+\renewcommand{\chaptermark}[1]{\markboth{\small{\chaptername \ \thechapter. #1}}{}}
+
 % ----------------- INTRODUCCIÓN --------------------
 \include{introduccion}
 % ----------------- ESTADO DEL ARTE --------------------

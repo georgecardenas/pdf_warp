@@ -1,5 +1,5 @@
-\chapter{Metodologías de desarrollo software}
-Una metodología de desarrollo software, es un framework utilizado para estructurar, planificar y controlar el proceso de desarrollo de software. Tanto escogiendo metodologías tradicionales o ligeras, de su correcta implantación en el proyecto dependerá mucho el éxito o fracaso del mismo.
+\chapter{Metodologías de desarrollo}
+Una metodología de desarrollo \textit{software}, es un \textit{framework} utilizado para estructurar, planificar y controlar el proceso de desarrollo de \textit{software}. Tanto escogiendo metodologías tradicionales o ligeras, de su correcta implantación en el proyecto dependerá mucho el éxito o fracaso del mismo.
 
 \section{¿Por qué usar metodologías?}
 Hoy en día el número de empresas y proyectos que fallan en su ejecución por una mala gestión es muy alto, un gran número de proyectos son ejecutados sin usar una metodología clara. Esto es debido, en numerosas ocasiones, a que el cliente encuentra dificultad a la hora de ver el valor inmediato de los requerimientos del negocio, análisis de casos de uso y especificaciones de diseño que se requieren para generar un producto de calidad. En vez de eso, sienten que pueden simplemente decir lo que desean y que los desarrolladores serán capaces de dárselo sin hacer preguntas adicionales. Sin una metodología clara, los proyectos se suelen entregar tarde, con sobrecostes, y en muchos casos sin alcanzar las expectativas del cliente o del usuario final. Puede incluso llevar al fracaso del proyecto.\\ 
@@ -14,25 +14,28 @@ Algunas de las ventajas de implantar una metodología bien definida son las sigui
 	\item Mejor gestión de tiempo
 \end{itemize}
 
-Cuando una metodología no se implementa correctamente, pueden surgir numerosos problemas. Por ejemplo, una pérdida de comunicación entre el cliente y el equipo de desarrollo lleva a desarrollas sistemas que no cumplen las expectativas del cliente. Además el mal uso de conceptos o procesos de una metodología de desarrollo conduce a menudo a desarrollar sistemas con numerosos defectos.\\
+Cuando una metodología no se implementa correctamente, pueden surgir numerosos problemas. Por ejemplo, una pérdida de comunicación entre el cliente y el equipo de desarrollo lleva a desarrollar sistemas que no cumplen las expectativas del cliente. Además el mal uso de conceptos o procesos de una metodología de desarrollo conduce a menudo a desarrollar sistemas con numerosos defectos.\\
 
-Por otro lado, la calidad de vida del equipo humano también se ve afectada por la falta de uso de metodologías. Muchos desarrolladores sufren de falta de moral y motivación a causa de los continuos cambios de alcance o parches debidos a la falta de definición en las tareas. Por el contrario, usando los procesos de desarrollo adecuados, se puede gestionar debidamente el alcance de un proyecto y evitar muchos problemas comunes de desarrollo software. Siempre ocurrirán imprevistos, pero con una metodología adecuada, estos son de poco impacto y mínima ocurrencia.\\
+Por otro lado, la calidad de vida del equipo humano también se ve afectada por la falta de uso de metodologías. Muchos desarrolladores sufren de falta de moral y motivación a causa de los continuos cambios de alcance o parches debidos a la falta de definición en las tareas. Por el contrario, usando los procesos de desarrollo adecuados, se puede gestionar debidamente el alcance de un proyecto y evitar muchos problemas comunes de desarrollo \textit{software}. Siempre ocurrirán imprevistos, pero con una metodología adecuada, estos son de poco impacto y mínima ocurrencia.\\
 
 No todas la metodologías de desarrollo funcionan con todos los proyectos. Elegir la adecuada también es uno de los retos que tienen que afrontar los desarrolladores. Algunas metodologías funcionan mejor con proyectos grandes y de larga duración, y otras son más adecuadas para proyectos medianos y pequeños con equipos de desarrollo más modestos. Sin embargo es un hecho que, aplicar una metodología de desarrollo a un proyecto, aumenta mucho las posibilidades de que termine con éxito.
 
 \section{Metodologías tradicionales vs ágiles}
-Dentro de las metodologías de desarrollo software, podemos encontrar una división entre metodologías tradicionales (o metodologías pesadas) y metodologías ágiles.\\
+Dentro de las metodologías de desarrollo \textit{software}, se puede encontrar una división entre metodologías tradicionales (o metodologías pesadas) y metodologías ágiles.\\
 
-Las metodologías de desarrollo tradicionales se caracterizan por tener una serie secuencial de fases: requisitos, análisis, diseño, implementación, pruebas y despliegue. Primero, los requisitos del cliente son meticulosamente documentados. Después se analiza y diseña la arquitectura general del software y en la siguiente fase comienza la implementación, finalizando con el período de pruebas y el despliegue. La idea principal es tener una visión completa del proyecto antes de su inicio y realizar la implementación de acuerdo al esquema planificado.\\
+Las metodologías de desarrollo tradicionales se caracterizan por tener una serie secuencial de fases: requisitos, análisis, diseño, implementación, pruebas y despliegue. Primero, los requisitos del cliente son meticulosamente documentados. Después se analiza y diseña la arquitectura general del \textit{software} y en la siguiente fase comienza la implementación, finalizando con el período de pruebas y el despliegue. La idea principal es tener una visión completa del proyecto antes de su inicio y realizar la implementación de acuerdo al esquema planificado.\\
+Algunas características de este tipo de metodologías son:
 \begin{itemize}  
-	\item Desarrollo Predictivo
+	\item Desarrollo predictivo
 	\item Las decisiones se toman en las primeras fases del ciclo de vida y se especifican mediante modelos gráficos
-	\item Las decisiones se interpretan y materializan en la fase de desarrollo
+	\item Las decisiones se interpretan y materializan en la fase de desarrollo
+
 	\item Orientado a la documentación
 	\item Orientado al proceso
 \end{itemize}
 
-Las metodologías ágiles son menos rigurosas a la hora de gestionar la documentanción. La clave reside en que el desarrollo se realiza de manera incremental e iterativa, en la que las fases de diseño se ejecutan una y otra vez. Como resultado, el software deja ser ser tan rígido para convertirse en una estructura más orgánica con mayor interactividad entre sus componentes. Se le da mayor importancia a la adaptabilidad y a las pruebas de integración.
+Las metodologías ágiles son menos rigurosas a la hora de gestionar la documentanción. La clave reside en que el desarrollo se realiza de manera incremental e iterativa, en la que las fases de diseño se ejecutan una y otra vez. Como resultado, el \textit{software} deja ser tan rígido para convertirse en una estructura más orgánica con mayor interactividad entre sus componentes. Se le da mayor importancia a la adaptabilidad y a las pruebas de integración.
+Algunas características destacadas de este tipo de metodologías son:
 \begin{itemize}  
 	\item Preparado para soportar cambios
 	\item Desarrollo iterativo
@@ -41,13 +44,15 @@ Las metodologías ágiles son menos rigurosas a la hora de gestionar la documentan
 	\item Orientado a las personas
 \end{itemize}
 
-\begin{center}
+En la tabla \ref{tab:tradvsagil} se presenta una comparativa entre las metodologías tradicionales y ágiles.
+\begin{table}
+	\centering
 	\begin{tabular}{ | p{7cm} || p{7cm} |}
 		\hline
 		TRADICIONALES & ÁGILES \\ \hline
 		Proceso secuencial & Proceso iterativo e incremental. Fases en paralelo \\ \hline
 		Estructurado & Flexible. Adaptable. Mejora continua \\ \hline
-		Grandes y pocas entregas de software & Entregas pequeñas y frecuentes de software, que siempre aportan valor \\ \hline
+		Grandes y pocas entregas de \textit{software} & Entregas pequeñas y frecuentes de \textit{software}, que siempre aportan valor \\ \hline
 		Un gran proyecto & Muchos pequeños proyectos \\ \hline
 		Adecuado para situaciones donde los cambios no son frecuentes & Adecuado cuando el usuario no conoce al detalle todas las necesidades al principio, y, además, serán cambiantes \\ \hline
 		El usuario participa fundamentalmente en la fase inicial de toma de requisitos & El usuario está involucrado constantemente en el proyecto. Comunicación fluida \\ \hline
@@ -55,4 +60,68 @@ Las metodologías ágiles son menos rigurosas a la hora de gestionar la documentan
 		Plazos y costes son conocidos al principio & Ámbito y costes varían según evoluciona el proyecto \\ \hline
 		Proyecto bien documentado & La documentación no es prioritaria \\ \hline
 	\end{tabular}
-\end{center}
+	\caption{Comparativa tradicionales vs ágiles}\label{tab:tradvsagil}
+\end{table}
+
+\section{Metodología escogida}
+Se ha optado por implementar metodologías ágiles en este proyecto ya que, debido al limitado tiempo para su desarrollo, se necesita la máxima flexibilidad posible. Por otro lado, las continuas reuniones entre cliente (tutor) y desarrollador (alumno) son beneficiosas a la hora de realizar revisiones y correcciones de pequeñas iteraciones del proyecto y poder aplicar una mejora continua.
+Al haber escogido esta metodología, no se requiere que todos los requisitos estén definidos al principio del proyecto, si no que se puede definir un conjunto básico de requisitos y en las revisiones añadir más o adaptarlos según se crea conveniente.
+
+\subsection{Scrum}
+Scrum es una metodología ágil, iterativa e incremental. Aunque fue creada por empresas dedicadas a productos tecnológicos, es posible adaptar la metodología a todo tipo de proyectos con requisitos inestables o cambiantes para otros negocios, como desarrollo de hardware, programas de marketing o iniciativas de equipos de ventas.\\
+En Scrum participa un equipo de trabajo multidisciplinar y autoorganizado que debe actuar como una unidad para alcanzar un objetivo común manteniendo una colaboración activa tanto de forma presencial como \textit{online}.\\
+Uno de los puntos clave de Scrum es la asunción de que el cliente cambiará de opinión sobre lo que quiere o necesita y que se presentarán retos impredecibles para los cuales una planificación previa no son suficientes. De este modo, la metodología implica que el problema no puede entenderse en su totalidad o ser totalmente definido previamente, de manera que se enfoca en maximizar la capacidad del equipo de realizar entregas rápidas y la adaptabilidad a nuevos requisitos y cambios, tanto del cliente como el mercado.\\
+
+Scrum es relativamente reciente. En 1986 Hirotaka Takeuchi e Ikujiro Nonaka presentaron el artículo "New New Product Development Game" para la Harvard Business Review centrándose en la innovación continua, icremental y en espiral. Los autores describían una nueva aproximación al desarrollo comercial de productos, que llamaron la "Aproximación rugby", ya que todo el proceso es llevado a cabo por un equipo multifuncional a través de fases solapadas en dónde el equipo "intenta avanzar como una unidad pasándose el balón hacia atrás y hacia delante".\\
+En 1993 Ken Schwaber y Jeff Sutherland usaron, por primera vez, en sus empresas la aproximación propuesta por Hirotaka e Ikujiro, refiriéndose a ella como Scrum. En 1995 Schwaber y Sutherland, presentaron su artículo "The SCRUM Development Process" en la conferencia OOPSLA (Texas), popularizando de este modo el término y abriendo nuevos horizontes a la expansión de la metodología.
+Más tarde, en el año 2001, Schwaber trabajó con Mike Beedle para describir el método Scrum en el libro "Agile Software Development with Scrum" y en el año 2002 fundó junto con otros miembros, la Scrum Alliance, iniciando con ello las series de certificación en Scrum.
+
+Las principales características de Scrum son las siguientes:
+\begin{itemize}  
+	\item Apropiada para proyectos con requisitos inestables o cambiantes
+	\item Equipo de trabajo multidisciplinar y autoorganizado.
+	\item Basado en un modelo de proceso iterativo y en los valores del manifiesto ágil.
+	\item La velocidad para el desarrollo de un producto está marcada por el eslabón que tiene la menor velocidad en el equipo.
+	\item Se destaca el trabajo en equipo, el aprendizaje constante y una estructura de desarrollo dinámico, flexible a los cambios durante el desarrollo
+	\item Los requisitos se expresan en forma de lista priorizada de características y capacidades del producto
+	\item La priorización se hace teniendo en cuenta el riesgo y el valor de negocio
+	\item Las características más importantes se abordan primero
+	\item Se realizan entregas iterativas del producto en ciclos cortos y fijos (time boxed)
+	\item La planificación es adaptativa. Solo se compromete la próxima entrega
+	\item Cada entrega contiene un conjunto de características completas que permiten ponerse en explotación
+\end{itemize}
+
+Para aplicar Scrum con eficiencia, el equipo de trabajo ideal se compone de entre 5 y 9 personas ya que se consigue un balance entre la dificultad de comunicación entre equipos mas grandes y los retrasos por imprevistos personales que puedan surgir en equipos más pequeños.
+En el equipo de trabajo se pueden encontrar los siguientes roles:
+\begin{itemize}  
+	\item \textit{Product Owner}:  es el jefe del producto y la persona que interactúa con el cliente para extraer los requisitos y sus prioridades y le representa en el equipo.
+	\item \textit{Scrum Master}: es el director del proyecto. Será el encargado de que se cumpla lo planificado en cada sprint.
+	\item \textit{Development Team}: programadores, diseñadores, personal de pruebas, etc.
+	\item Roles externos: usuarios, clientes, especialistas, etc.
+\end{itemize}
+
+El equipo de trabajo lleva a cabo las diferentes actividades del proceso Scrum que le corresponden según su rol asignado. Este proceso se resume en 6 actividades:
+\begin{itemize}  
+	\item Creación de la pila de producto: También llamado \textit{product backlog}. Es un listado priorizado de los requisitos del sistema (historias de usuario). Su responsable es el \textit{Product Owner}.
+	\item Creación del \textit{sprint planning}: Se decide que historias de usuario serán implementadas en el próximo \textit{sprint}, se estiman y se dividen en tareas si fuera necesario.
+	\item Ejecución de las tareas de un \textit{sprint}: Se realizan las tareas de diseño, ejecución y pruebas. Cada día se realizan reuniones de equipo (\textit{daily scrum}) de no más de 15 minutos para poner en común las tareas realizadas por cada miembro del equipo.
+	\item Reunión de inspección del producto: participa el equipo y los \textit{stakeholders} (usuarios, clientes...), se entrega un producto potencialmente explotable y se valida. En caso de que algún requisito no funcione correctamente, vuelve al \textit{product backlog}.
+	\item Reunión de retrospectiva del proceso: Reunión de equipo dirigida por el Scrum máster para evaluar el proceso y proponer mejoras.
+	\item Repetición de las iteraciones: Se repite todo el proceso hasta completar la implementación del producto.
+\end{itemize}
+
+\subsection{Adaptación de Scrum a un \ac{TFM}}
+\label{sec:scrumtfm}
+Como se ha comentado en la sección anterior, Scrum está pensado para equipos multidisciplinares en los que suele haber varios integrantes, por lo tanto no es posible aplicar la metodología con todas sus características, sino que hay que realizar una adaptación de las mismas.\\
+
+Se distribuyen los roles donde el tutor o tutores desempeñarán el rol de propietarios del producto, en conjunto el alumno y el tutor actuarán como \textit{Scrum Master} y el alumno como miembro del equipo. En un \ac{TFM} es el profesor el que suele conocer el dominio del problema y los alumnos los encargados de su desarrollo, de ahi la asignación de roles anteriormente propuesta, la labor del \textit{Scrum Master} se hace manera conjunta ya que no debe recaer por completo en el alumno (que actúa principalmente como desarrollador) ni en el profesor (que actúa como cliente).\\
+
+Además de la asignación de roles, se toman en cuenta las siguientes consideraciones:
+\begin{itemize}  
+	\item El tutor, al actuar como propietario, elabora la pila de producto.
+	\item En la primera reunión se fijan las primeras tareas, se planifican y se fija una fecha para que el alumno las realice.
+	\item En cada fecha de entrega de cada Sprint, el alumno realizará una pequeña exposición al tutor.
+	\item La división de las historias en tareas es opcional.
+	\item Ante la probale imposibilidad de llevar a cabo las \textit{Daily Scrum}, se propone el uso de recursos compartidos para que el profesor pueda comprobar las tareas diarias llevadas a cabo. Estos recursos pueden ser: blog, repositorio, carpetas en la nube...
+	\item La pizarra de Scrum puede ser virtual. Es posible usar soluciones \textit{online} de terceros.
+\end{itemize}

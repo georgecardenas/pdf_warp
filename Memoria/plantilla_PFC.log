@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  22 JUN 2017 19:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  25 JUN 2017 18:50
 entering extended mode
 **./plantilla_PFC.tex
 (plantilla_PFC.tex
@@ -79,18 +79,33 @@ Package: inputenc 2015/03/17 v1.2c Input encoding file
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 ))
+("C:\Program Files\MiKTeX 2.9\tex\latex\makecell\makecell.sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen106
+\extrarowheight=\dimen107
+\NC@list=\toks18
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+\rotheadsize=\dimen108
+\c@nlinenum=\count90
+\TeXr@lab=\toks19
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2016/10/11 v3.9 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip43
-\f@nch@O@elh=\skip44
-\f@nch@O@erh=\skip45
-\f@nch@O@olh=\skip46
-\f@nch@O@orh=\skip47
-\f@nch@O@elf=\skip48
-\f@nch@O@erf=\skip49
-\f@nch@O@olf=\skip50
-\f@nch@O@orf=\skip51
+\f@nch@headwidth=\skip45
+\f@nch@O@elh=\skip46
+\f@nch@O@erh=\skip47
+\f@nch@O@olh=\skip48
+\f@nch@O@orh=\skip49
+\f@nch@O@elf=\skip50
+\f@nch@O@erf=\skip51
+\f@nch@O@olf=\skip52
+\f@nch@O@orf=\skip53
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption2.sty"
 Package: caption2 2015/09/15 v2.2-100 Customising captions (AR)
@@ -108,18 +123,18 @@ Package caption2 Warning: ****************************************************
 ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen106
-\captionmargin@=\dimen107
-\captionwidth=\dimen108
-\caption@tempdima=\dimen109
-\caption@indent=\dimen110
-\caption@parindent=\dimen111
-\caption@hangindent=\dimen112
+\captionmargin=\dimen109
+\captionmargin@=\dimen110
+\captionwidth=\dimen111
+\caption@tempdima=\dimen112
+\caption@indent=\dimen113
+\caption@parindent=\dimen114
+\caption@hangindent=\dimen115
 )
 Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
 e 221.
-\captionlinewidth=\dimen113
-\realcaptionwidth=\dimen114
+\captionlinewidth=\dimen116
+\realcaptionwidth=\dimen117
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
@@ -134,18 +149,18 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count90
-\Gm@cntv=\count91
-\c@Gm@tempcnt=\count92
-\Gm@bindingoffset=\dimen115
-\Gm@wd@mp=\dimen116
-\Gm@odd@mp=\dimen117
-\Gm@even@mp=\dimen118
-\Gm@layoutwidth=\dimen119
-\Gm@layoutheight=\dimen120
-\Gm@layouthoffset=\dimen121
-\Gm@layoutvoffset=\dimen122
-\Gm@dimlist=\toks18
+\Gm@cnth=\count91
+\Gm@cntv=\count92
+\c@Gm@tempcnt=\count93
+\Gm@bindingoffset=\dimen118
+\Gm@wd@mp=\dimen119
+\Gm@odd@mp=\dimen120
+\Gm@even@mp=\dimen121
+\Gm@layoutwidth=\dimen122
+\Gm@layoutheight=\dimen123
+\Gm@layouthoffset=\dimen124
+\Gm@layoutvoffset=\dimen125
+\Gm@dimlist=\toks20
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\makeidx.sty"
@@ -165,7 +180,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks19
+\@emptytoks=\toks21
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -193,7 +208,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count93
+\Gread@gobject=\count94
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -208,11 +223,27 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\acronym\acronym.sty"
+Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty"
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
+\@xs@message=\write3
+\integerpart=\count95
+\decimalpart=\count96
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\AC@clearlist=\toks22
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-\@indexfile=\write3
-\openout3 = `plantilla_PFC.idx'.
+\@indexfile=\write4
+\openout4 = `plantilla_PFC.idx'.
 
 
 Writing index file plantilla_PFC.idx
@@ -221,27 +252,27 @@ LaTeX Warning: Unused global option(s):
     [twosides].
 
 (plantilla_PFC.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
  (agradecimientos.aux) (resumen.aux) (abstract.aux)
-(objetivo.aux) (introduccion.aux) (metodologia.aux)
+(acronimos.aux) (objetivo.aux) (introduccion.aux) (metodologia.aux)
 (descripcion_informatica.aux) (conclusiones.aux) (anexos.aux))
 \openout1 = `plantilla_PFC.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -281,17 +312,17 @@ Package caption Info: End \AtBeginDocument code.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count94
-\scratchdimen=\dimen123
+\scratchcounter=\count97
+\scratchdimen=\dimen126
 \scratchbox=\box26
-\nofMPsegments=\count95
-\nofMParguments=\count96
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count97
-\MPscratchDim=\dimen124
-\MPnumerator=\count98
-\makeMPintoPDFobject=\count99
-\everyMPtoPDFconversion=\toks21
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen127
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks24
 ) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -334,15 +365,28 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-<logo_upm.png, id=1, 334.24875pt x 355.3275pt>
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 70.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 70.
+Package epstopdf Info: Output file is already uptodate.
+
+<logo_upm-eps-converted-to.pdf, id=1, 616.3025pt x 676.5275pt>
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 70.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
  [0
 Non-PDF special ignored!
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo_upm.png>]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./logo_upm-eps-converted-
+to.pdf>]
 \openout2 = `agradecimientos.aux'.
 
  (agradecimientos.tex) [1
@@ -353,14 +397,25 @@ Non-PDF special ignored!
 \openout2 = `resumen.aux'.
 
  (resumen.tex
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 1.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 33.56323pt.
+ Make it at least 33.55618pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -374,7 +429,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
 
  []
 
@@ -382,10 +437,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 \openout2 = `abstract.aux'.
 
  (abstract.tex
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 1.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
  [4
 
 
@@ -401,14 +466,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
  []
 
 ) [5]
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 132.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+\openout2 = `acronimos.aux'.
+
+ (acronimos.tex
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
  [6
 
 
-] (plantilla_PFC.toc
+
+]) [7]
+\openout2 = `objetivo.aux'.
+
+ (objetivo.tex
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [8
+
+
+
+]
+Package acronym Info: Label `acro:TFM' newly defined as it shall be overridden
+although it is yet undefined on input line 2.
+Package acronym Info: Label `acro:CMS' newly defined as it shall be overridden
+although it is yet undefined on input line 12.
+ [9])
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 131.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [10] (plantilla_PFC.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -428,95 +550,100 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
 (spanish)                faked small caps on input line 4.
 
-LaTeX Font Info:    Try loading font information for U+lasy on input line 6.
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 5.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 6.
+
+LaTeX Font Info:    Try loading font information for U+lasy on input line 7.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 6.
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [7])
-\tf@toc=\write4
-\openout4 = `plantilla_PFC.toc'.
+) [11
 
-File: logo_upm.png Graphic file (type png)
 
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 134.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [8] (plantilla_PFC.lof
+])
+\tf@toc=\write5
+\openout5 = `plantilla_PFC.toc'.
+
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 136.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 136.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [12] (plantilla_PFC.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-\tf@lof=\write5
-\openout5 = `plantilla_PFC.lof'.
+\tf@lof=\write6
+\openout6 = `plantilla_PFC.lof'.
 
- [9
-
-]
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 136.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [10
+ [13
 
 ]
-\openout2 = `objetivo.aux'.
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 138.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
 
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 138.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [14
 
-(objetivo.tex
+]
+\openout2 = `introduccion.aux'.
+
+ (introduccion.tex
 Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+
+ []
+
 [1
 
 
 ]
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 33.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [2]) <logo_master.png, id=48, 91.42155pt x 42.27795pt>
-File: logo_master.png Graphic file (type png)
-
-<use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 139.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [3 <./logo_master.png>]
-\openout2 = `introduccion.aux'.
-
- (introduccion.tex
-File: logo_upm.png Graphic file (type png)
-
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 1.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [4
-
-
-
-]
-Cap\'{\i }tulo 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-[5]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
@@ -526,261 +653,294 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 18.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 18.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 23.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [6]
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+<logo_master.png, id=81, 91.42155pt x 42.27795pt>
 File: logo_master.png Graphic file (type png)
  <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 50.
+Package pdftex.def Info: logo_master.png used on input line 34.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+
+[3 <./logo_master.png>]
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 58.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 58.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [4]
+Package acronym Info: Label `acro:HTML' newly defined as it shall be overridden
+
+although it is yet undefined on input line 62.
+Package acronym Info: Label `acro:CSS' newly defined as it shall be overridden
+although it is yet undefined on input line 62.
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--64
+
+ []
+
+File: logo_master.png Graphic file (type png)
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 80.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [5]
+Package acronym Info: Label `acro:W3C' newly defined as it shall be overridden
+although it is yet undefined on input line 83.
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--85
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
+
+ []
+
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 104.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 104.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [6]
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+File: logo_master.png Graphic file (type png)
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 122.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
  [7]
-<HTML5.png, id=66, 513.92pt x 513.92pt>
-File: HTML5.png Graphic file (type png)
- <use HTML5.png>
-Package pdftex.def Info: HTML5.png used on input line 76.
-(pdftex.def)             Requested size: 513.91873pt x 513.91873pt.
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 79.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
 
  []
 
-<CSS3.png, id=72, 401.5pt x 301.125pt>
-File: CSS3.png Graphic file (type png)
- <use CSS3.png>
-Package pdftex.def Info: CSS3.png used on input line 100.
-(pdftex.def)             Requested size: 401.49901pt x 301.12425pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+
+ []
+
+Package acronym Info: Label `acro:JSON' newly defined as it shall be overridden
+
+although it is yet undefined on input line 148.
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+
+Underfull \vbox (badness 4205) has occurred while \output is active []
+
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 150.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 150.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [8]
 File: logo_master.png Graphic file (type png)
  <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 103.
+Package pdftex.def Info: logo_master.png used on input line 180.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
-
-[9 <./HTML5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 104--106
-
- []
-
-<Javascript.png, id=78, 345.29pt x 391.4625pt>
-File: Javascript.png Graphic file (type png)
- <use Javascript.png>
-Package pdftex.def Info: Javascript.png used on input line 121.
-(pdftex.def)             Requested size: 345.28914pt x 391.46153pt.
-File: logo_upm.png Graphic file (type png)
-
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 124.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [10 <./CSS3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
+ [9]
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
-<PHP.png, id=82, 501.875pt x 271.0125pt>
-File: PHP.png Graphic file (type png)
- <use PHP.png>
-Package pdftex.def Info: PHP.png used on input line 143.
-(pdftex.def)             Requested size: 501.87376pt x 271.01183pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+Package acronym Info: Label `acro:SPA' newly defined as it shall be overridden
+although it is yet undefined on input line 194.
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 195.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 195.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+Package acronym Info: Label `acro:DOM' newly defined as it shall be overridden
+although it is yet undefined on input line 206.
 File: logo_master.png Graphic file (type png)
- <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 145.
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 210.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [11]
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 240.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 240.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [12]
+Package acronym Info: Label `acro:HTTP' newly defined as it shall be overridden
 
-[11 <./Javascript.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+although it is yet undefined on input line 241.
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
-
- []
-
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 170.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [12 <./PHP.png>] <JSON.png, id=91, 2007.5pt x 2007.5pt>
-File: JSON.png Graphic file (type png)
-
-<use JSON.png>
-Package pdftex.def Info: JSON.png used on input line 174.
-(pdftex.def)             Requested size: 2007.49512pt x 2007.49512pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
 File: logo_master.png Graphic file (type png)
 <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 205.
+Package pdftex.def Info: logo_master.png used on input line 255.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [13 <./JSON.png>]
-<Drupal.png, id=96, 120.45pt x 123.5817pt>
-File: Drupal.png Graphic file (type png)
- <use Drupal.png>
-Package pdftex.def Info: Drupal.png used on input line 211.
-(pdftex.def)             Requested size: 120.44969pt x 123.58138pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 216.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [14 <./Drupal.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
-
- []
-
-<Angular.png, id=102, 270.65115pt x 286.9119pt>
-File: Angular.png Graphic file (type png)
- <use Angular.png>
-Package pdftex.def Info: Angular.png used on input line 225.
-(pdftex.def)             Requested size: 270.65048pt x 286.91118pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-File: logo_master.png Graphic file (type png)
-<use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 232.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [15 <./Angular.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-<Jquery.png, id=107, 200.75pt x 193.72375pt>
-File: Jquery.png Graphic file (type png)
- <use Jquery.png>
-Package pdftex.def Info: Jquery.png used on input line 239.
-(pdftex.def)             Requested size: 200.7495pt x 193.72327pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 252.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [16 <./Jquery.png>]
-<Apache.png, id=112, 356.33125pt x 111.41624pt>
-File: Apache.png Graphic file (type png)
- <use Apache.png>
-Package pdftex.def Info: Apache.png used on input line 277.
-(pdftex.def)             Requested size: 356.33037pt x 111.41597pt.
-File: logo_master.png Graphic file (type png)
-
-<use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 280.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [17]
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
-
- []
-
-<MySQL.png, id=116, 521.95pt x 513.92pt>
-File: MySQL.png Graphic file (type png)
- <use MySQL.png>
-Package pdftex.def Info: MySQL.png used on input line 287.
-(pdftex.def)             Requested size: 521.94872pt x 513.91873pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-
- []
-
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 295.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [18 <./Apache.png> <./MySQL.png>]
-<Brackets.png, id=122, 501.875pt x 501.875pt>
-File: Brackets.png Graphic file (type png)
- <use Brackets.png>
-Package pdftex.def Info: Brackets.png used on input line 312.
-(pdftex.def)             Requested size: 501.87376pt x 501.87376pt.
-File: logo_master.png Graphic file (type png)
-
-<use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 320.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [19 <./Brackets.png>]
-<Git.png, id=127, 200.75pt x 200.75pt>
-File: Git.png Graphic file (type png)
- <use Git.png>
-Package pdftex.def Info: Git.png used on input line 331.
-(pdftex.def)             Requested size: 200.7495pt x 200.7495pt.
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 344.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
-
-[20 <./Git.png>] <Bower.png, id=133, 513.92pt x 513.92pt>
-File: Bower.png Graphic file (type png)
- <use Bower.png>
-Package pdftex.def Info: Bower.png used on input line 348.
-(pdftex.def)             Requested size: 513.91873pt x 513.91873pt.
+ [13]
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 283.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 283.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [14]
+Package acronym Info: Label `acro:FTP' newly defined as it shall be overridden
+although it is yet undefined on input line 286.
+Package acronym Info: Label `acro:SSH' newly defined as it shall be overridden
+although it is yet undefined on input line 286.
 )
 File: logo_master.png Graphic file (type png)
 
 <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 141.
+Package pdftex.def Info: logo_master.png used on input line 144.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [21 <./Bower.png>]
+ [15]
 \openout2 = `metodologia.aux'.
 
  (metodologia.tex
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 1.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
 
-[22
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [16
 
 
 
 ]
-Cap\'{\i }tulo 3.
+Cap\'{\i }tulo 2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
@@ -791,7 +951,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-[23]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
@@ -801,59 +961,207 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 31.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [18]
+Underfull \hbox (badness 3260) in paragraph at lines 59--59
+[]|\OT1/cmr/m/n/12 Los re-qui-si-tos se van des-gra-nan-do
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
 
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 30.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [24]
-Underfull \hbox (badness 3260) in paragraph at lines 55--55
-[]\OT1/cmr/m/n/12 Los re-qui-si-tos se van des-gra-nan-do
+File: logo_master.png Graphic file (type png)
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 74.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [19]
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 78.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 78.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [20]
+File: logo_master.png Graphic file (type png)
+
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 98.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+
  []
 
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
+
+ []
+
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 118.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+<use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 118.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [22])
 File: logo_master.png Graphic file (type png)
  <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 143.
+Package pdftex.def Info: logo_master.png used on input line 146.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [25]
+ [23]
 \openout2 = `descripcion_informatica.aux'.
 
- (descripcion_informatica.tex
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 1.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
 
-[26
+(descripcion_informatica.tex
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [24
 
 
 
 ]
-Cap\'{\i }tulo 4.
-) [27]
+Cap\'{\i }tulo 3.
+
+Overfull \hbox (3.20665pt too wide) in paragraph at lines 14--14
+[]|\OT1/cmr/m/n/12 Sprint| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--15
+[]|\OT1/cmr/m/n/12 Instalacion de
+ []
+
+
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+ [25]
+Overfull \hbox (3.20665pt too wide) in paragraph at lines 44--44
+[]|\OT1/cmr/m/n/12 Sprint| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
+[]|\OT1/cmr/m/n/12 Instalacion de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+[]|\OT1/cmr/m/n/12 Generacion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+\OT1/cmr/m/n/12 de PDF de
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 48--48
+\OT1/cmr/m/n/12 tas pro-gramati-
+ []
+
+)
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 148.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 148.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
+ [26]
+File: logo_master.png Graphic file (type png)
+ <use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 148.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [27]
 \openout2 = `conclusiones.aux'.
 
- (conclusiones.tex
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 1.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+
+(conclusiones.tex
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
  [28
 
 
 
 ]
-Cap\'{\i }tulo 5.
+Cap\'{\i }tulo 4.
 ) [29]
-File: logo_upm.png Graphic file (type png)
- <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 149.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 152.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 152.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
  [30
 
 
@@ -862,12 +1170,22 @@ Package pdftex.def Info: logo_upm.png used on input line 149.
 ]
 \openout2 = `anexos.aux'.
 
- (anexos.tex
-File: logo_upm.png Graphic file (type png)
 
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 1.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+(anexos.tex
+Package epstopdf Info: Source file: <logo_upm.eps>
+(epstopdf)                    date: 2017-06-25 18:33:46
+(epstopdf)                    size: 1724776 bytes
+(epstopdf)             Output file: <logo_upm-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-25 18:36:53
+(epstopdf)                    size: 388950 bytes
+(epstopdf)             Command: <epstopdf --outfile=logo_upm-eps-converted-to.p
+df logo_upm.eps>
+(epstopdf)             \includegraphics on input line 1.
+Package epstopdf Info: Output file is already uptodate.
+File: logo_upm-eps-converted-to.pdf Graphic file (type pdf)
+ <use logo_upm-eps-converted-to.pdf>
+Package pdftex.def Info: logo_upm-eps-converted-to.pdf used on input line 1.
+(pdftex.def)             Requested size: 616.301pt x 676.52583pt.
  [32
 
 
@@ -877,35 +1195,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--10
  []
 
 ) [33] (plantilla_PFC.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
  (agradecimientos.aux) (resumen.aux) (abstract.aux)
-(objetivo.aux) (introduccion.aux) (metodologia.aux)
+(acronimos.aux) (objetivo.aux) (introduccion.aux) (metodologia.aux)
 (descripcion_informatica.aux) (conclusiones.aux) (anexos.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 4934 strings out of 493323
- 69801 string characters out of 3139051
- 148121 words of memory out of 3000000
- 8286 multiletter control sequences out of 15000+200000
- 18587 words of font info for 77 fonts, out of 3000000 for 9000
+ 5582 strings out of 493323
+ 77904 string characters out of 3139051
+ 167250 words of memory out of 3000000
+ 8907 multiletter control sequences out of 15000+200000
+ 14588 words of font info for 59 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,16n,48p,854b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,17n,51p,1170b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on plantilla_PFC.pdf (44 pages, 658292 bytes).
+c/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on plantilla_PFC.pdf (48 pages, 616435 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,8 +1,65 @@
-\chapter{Descripción Informática (20-35\%)}
+\chapter{Descripción informática}
+En este capítulo se realiza un análisis del proceso de desarrollo del proyecto, explicando la aplicación de la metodología, los hitos cumplidos en el desarrollo del proyecto e incluyendo toda la información relevante sobre el funcionamiento de la aplicación.
+\section{Aplicación de la metodología Scrum}
+En este proyecto se aplica la metodología Scrum adaptada a \ac{TFM} como hemos explicado en el apartado \ref{sec:scrumtfm}. El tutor del proyecto toma el rol de propietario del producto y el alumno de desarrollador. El rol de \textit{Scrum Master} se divide entre tutor y alumno.
 
-Para ello describirás:
+\subsection{Primera reunión 04/05/2017}
+En la primera reunión se trata todo lo referente al inicio del proyecto. El propietario del producto explica al desarrollador cual es el objetivo final del \ac{TFM}: desarrollar un módulo para Drupal para la generación de PDF a partir de catálogos y productos de Ubercart. Se dan también los primeros detalles que debería contener la herramienta.
+Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica de instalación, gestión y estudio de este \textit{framework}. A partir de este backlog se establece el primer sprint (cuadro \ref{tab:sb01}) y se da un plazo de 2 a 3 semanas para terminarlo. En el cuadro \ref{tab:pb01} se puede observar el estado del product backlog tras la primera reunión.
 
-\section{La base de datos coleccionada (si tiene sentido).}
-\dots
-\section{Los algoritmos para el desarrollo de la solución}
-\dots
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{2cm} | p{3cm} | p{7.5cm} | p{1cm} |}
+		\hline
+		ID Historia & Alias & Enunciado & Sprint\\ \hline
+		HT01 & Instalación de Entorno & Yo como desarrollador\newline necesito montar un entorno de Drupal 7\newline para poder desarrollar la aplicación & \#1\\ \hline
+	\end{tabular}
+	\caption{\textit{Product Backlog} 04/05/2017}\label{tab:pb01}
+\end{table}
+
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{2cm} | p{2cm} | p{7cm} | p{2cm} |}
+		\hline
+		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline
+		HT01 & TT01.1 & Instalar Drupal 7 & 8\\ \hline
+		HT01 & TT01.2 & Instalar Base de datos & 8\\ \hline
+		HT01 & TT01.3 & Instalar módulo & 5\\ \hline
+		HT01 & TT01.4 & Instalar tema & 5\\ \hline
+		HT01 & TT01.5 & Crear Contenido & 3\\ \hline
+		HT01 & TT01.6 & Crear tipos de contenido & 3\\ \hline
+		HT01 & TT01.7 & Crear Bloques & 2\\ \hline
+		HT01 & TT01.8 & Crear Vistas & 2\\ \hline
+	\end{tabular}
+	\caption{\textit{Sprint} \#1}\label{tab:sb01}
+\end{table}
+
+\subsection{Segunda reunión 25/05/2017}
+En la segunda reunión se muestra al propietario del producto las tareas realizadas con resultado satisfactorio. Al haber completado con éxito el primer sprint y haber demostrado el desarrollador soltura a la hora de utilizar el \textit{framework} de Drupal, se comienza a hablar de la funcionalidad que debe cumplir el \ac{TFM}. Se establecen nuevas historias de usuario para el \textit{product backlog} estableciendo como prioritarias aquellas relacionadas con la generación de documentos PDF. Se establece el nuevo sprint (cuadro \ref{tab:sb02}) y se establece una duración de una semana. El product backlog en este punto se puede observar en el cuadro \ref{tab:pb02}
+
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{2cm} | p{3cm} | p{7.5cm} | p{1cm} |}
+		\hline
+		ID Historia & Alias & Enunciado & Sprint\\ \hline
+		HT01 & Instalación de Entorno & Yo como desarrollador\newline necesito montar un entorno de Drupal 7\newline para poder desarrollar la aplicación & \#1\\ \hline
+		H01 & Botón de generación de PDF de producto & Yo como usuario\newline necesito ver un botón de generación de PDF para Productos\newline para poder generar un documento PDF & \#2\\ \hline
+		H02 & Generación de PDF de producto & Yo como usuario\newline debo ser capaz de generar PDFs a partir de Productos\newline para su posterior consulta offline & \#2\\ \hline
+		HT02 & Creación de vistas programáticamente & Yo como desarrollador\newline debo crear las vistas json del módulo programáticamente\newline para que el usuario no tenga que realizar trabajo extra en la fase de instalación & \#2\\ \hline
+	\end{tabular}
+	\caption{\textit{Product Backlog} 25/05/2017}\label{tab:pb02}
+\end{table}
+
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{2cm} | p{2cm} | p{7cm} | p{2cm} |}
+		\hline
+		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline
+		H01 & T01.1 & Crear Hooks & 2\\ \hline
+		H02 & T02.1 & Integrar librería pdf & 5\\ \hline
+		H02 & T02.2 & Programar funciones de conversión a PDF según la librería & 8\\ \hline
+		H02 & T02.3 & Añadir funcionalidad a botón H02 & 2\\ \hline
+		HT02 & TT02.1 & Añadir vistas por código en el fichero de instalación & 5\\ \hline
+	\end{tabular}
+	\caption{\textit{Sprint} \#2}\label{tab:sb02}
+\end{table}

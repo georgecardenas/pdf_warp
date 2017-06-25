@@ -2,64 +2,48 @@
 \contentsline {chapter}{Agradecimientos}{\es@scroman {i}}
 \contentsline {chapter}{Resumen}{\es@scroman {iii}}
 \contentsline {chapter}{Abstract}{\es@scroman {v}}
-\contentsline {chapter}{\numberline {1}Objetivos}{1}
-\contentsline {section}{\numberline {1.1}Objetivo general}{1}
-\contentsline {section}{\numberline {1.2}Objetivos espec\IeC {\'\i }ficos}{1}
-\contentsline {subsection}{\numberline {1.2.1}Stack tecnol\'ogico}{1}
-\contentsline {subsection}{\numberline {1.2.2}Framework base}{1}
-\contentsline {subsection}{\numberline {1.2.3}Plataforma de e-commerce}{2}
-\contentsline {subsection}{\numberline {1.2.4}Tecnolog\IeC {\'\i }a Front-End}{2}
-\contentsline {subsection}{\numberline {1.2.5}Generaci\'on de PDF}{2}
-\contentsline {subsection}{\numberline {1.2.6}Comunicaciones Back-End -> Front-End}{2}
-\contentsline {subsection}{\numberline {1.2.7}Capacidades del administrador}{2}
-\contentsline {subsection}{\numberline {1.2.8}Capacidades del usuario}{3}
-\contentsline {subsection}{\numberline {1.2.9}Empaquetado de la soluci\'on}{3}
-\contentsline {chapter}{\numberline {2}Introducci\'on}{5}
-\contentsline {section}{\numberline {2.1}Motivaci\'on}{6}
-\contentsline {section}{\numberline {2.2}Propuesta}{7}
-\contentsline {subsection}{\numberline {2.2.1}Requisitos funcionales}{7}
-\contentsline {subsubsection}{Bot\'on de generaci\'on de PDF}{7}
-\contentsline {subsubsection}{Administraci\'on de plantillas}{7}
-\contentsline {subsubsection}{Creaci\'on de plantillas}{7}
-\contentsline {subsubsection}{Borrado de plantillas}{7}
-\contentsline {subsubsection}{Activado de plantillas}{7}
-\contentsline {subsubsection}{Editado de plantillas}{7}
-\contentsline {subsubsection}{Mover elementos de una plantilla}{8}
-\contentsline {subsubsection}{Cambiar tama\~no de elementos}{8}
-\contentsline {subsubsection}{Cambiar tama\~no de fuente}{8}
-\contentsline {subsubsection}{Bot\'on de guardar cambios de plantilla}{8}
-\contentsline {subsection}{\numberline {2.2.2}Requisitos no funcionales}{8}
-\contentsline {subsubsection}{Uso de tecnolog\IeC {\'\i }as de libre distribuci\'on}{8}
-\contentsline {subsubsection}{M\'odulo exportable}{8}
-\contentsline {section}{\numberline {2.3}Tecnolog\IeC {\'\i }as}{8}
-\contentsline {subsection}{\numberline {2.3.1}Lenguajes}{8}
-\contentsline {subsubsection}{HTML}{8}
-\contentsline {subsubsection}{CSS}{9}
-\contentsline {subsubsection}{Javascript}{10}
-\contentsline {subsubsection}{PHP}{12}
-\contentsline {subsubsection}{JSON}{13}
-\contentsline {subsection}{\numberline {2.3.2}Frameworks y librer\IeC {\'\i }as}{14}
-\contentsline {subsubsection}{Drupal}{14}
-\contentsline {subsubsection}{Angularjs}{15}
-\contentsline {subsubsection}{JQuery}{16}
-\contentsline {subsubsection}{JsPDF}{17}
-\contentsline {subsubsection}{Dragabilly}{17}
-\contentsline {subsubsection}{Html2Canvas}{17}
-\contentsline {subsection}{\numberline {2.3.3}Sistemas}{17}
-\contentsline {subsubsection}{Apache HTTP Server}{17}
-\contentsline {subsubsection}{MySQL}{18}
-\contentsline {subsection}{\numberline {2.3.4}Herramientas de desarrollo}{19}
-\contentsline {subsubsection}{Brackets}{19}
-\contentsline {subsubsection}{Git}{20}
-\contentsline {subsubsection}{Bower}{21}
-\contentsline {chapter}{\numberline {3}Metodolog\IeC {\'\i }as de desarrollo software}{23}
-\contentsline {section}{\numberline {3.1}\IeC {\textquestiondown }Por qu\'e usar metodolog\IeC {\'\i }as?}{23}
-\contentsline {section}{\numberline {3.2}Metodolog\IeC {\'\i }as tradicionales vs \'agiles}{24}
-\contentsline {chapter}{\numberline {4}Descripci\'on Inform\'atica (20-35\%)}{27}
-\contentsline {section}{\numberline {4.1}La base de datos coleccionada (si tiene sentido).}{27}
-\contentsline {section}{\numberline {4.2}Los algoritmos para el desarrollo de la soluci\'on}{27}
-\contentsline {chapter}{\numberline {5}Conclusiones y trabajos futuros (5\%)}{29}
-\contentsline {section}{\numberline {5.1}Implementaci\'on}{29}
-\contentsline {section}{\numberline {5.2}Resultados}{29}
+\contentsline {chapter}{Lista de acr\'onimos}{\es@scroman {vii}}
+\contentsline {chapter}{Objetivos}{\es@scroman {ix}}
+\contentsline {section}{\numberline {0.1}Objetivo general}{\es@scroman {ix}}
+\contentsline {section}{\numberline {0.2}Objetivos espec\IeC {\'\i }ficos}{\es@scroman {ix}}
+\contentsline {chapter}{\numberline {1}Introducci\'on}{1}
+\contentsline {section}{\numberline {1.1}Motivaci\'on}{1}
+\contentsline {section}{\numberline {1.2}Propuesta}{3}
+\contentsline {subsection}{\numberline {1.2.1}Requisitos funcionales}{3}
+\contentsline {subsection}{\numberline {1.2.2}Requisitos no funcionales}{4}
+\contentsline {section}{\numberline {1.3}Tecnolog\IeC {\'\i }as}{5}
+\contentsline {subsection}{\numberline {1.3.1}Lenguajes}{5}
+\contentsline {subsubsection}{HTML}{5}
+\contentsline {subsubsection}{CSS}{6}
+\contentsline {subsubsection}{Javascript}{6}
+\contentsline {subsubsection}{PHP}{7}
+\contentsline {subsubsection}{JSON}{9}
+\contentsline {subsection}{\numberline {1.3.2}\textit {Frameworks} y librer\IeC {\'\i }as}{10}
+\contentsline {subsubsection}{Drupal}{10}
+\contentsline {subsubsection}{Angularjs}{10}
+\contentsline {subsubsection}{JQuery}{11}
+\contentsline {subsubsection}{JsPDF}{12}
+\contentsline {subsubsection}{Dragabilly}{12}
+\contentsline {subsubsection}{Html2Canvas}{12}
+\contentsline {subsection}{\numberline {1.3.3}Sistemas}{13}
+\contentsline {subsubsection}{Apache HTTP Server}{13}
+\contentsline {subsubsection}{MySQL}{13}
+\contentsline {subsection}{\numberline {1.3.4}Herramientas de desarrollo}{14}
+\contentsline {subsubsection}{Brackets}{14}
+\contentsline {subsubsection}{Git}{15}
+\contentsline {subsubsection}{Bower}{15}
+\contentsline {chapter}{\numberline {2}Metodolog\IeC {\'\i }as de desarrollo}{17}
+\contentsline {section}{\numberline {2.1}\IeC {\textquestiondown }Por qu\'e usar metodolog\IeC {\'\i }as?}{17}
+\contentsline {section}{\numberline {2.2}Metodolog\IeC {\'\i }as tradicionales vs \'agiles}{18}
+\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a escogida}{19}
+\contentsline {subsection}{\numberline {2.3.1}Scrum}{20}
+\contentsline {subsection}{\numberline {2.3.2}Adaptaci\'on de Scrum a un \ac {TFM}}{22}
+\contentsline {chapter}{\numberline {3}Descripci\'on inform\'atica}{25}
+\contentsline {section}{\numberline {3.1}Aplicaci\'on de la metodolog\IeC {\'\i }a Scrum}{25}
+\contentsline {subsection}{\numberline {3.1.1}Primera reuni\'on 04/05/2017}{25}
+\contentsline {subsection}{\numberline {3.1.2}Segunda reuni\'on 25/05/2017}{26}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajos futuros}{29}
+\contentsline {section}{\numberline {4.1}Implementaci\'on}{29}
+\contentsline {section}{\numberline {4.2}Resultados}{29}
 \contentsline {chapter}{Bibliograf\IeC {\'\i }a}{31}
 \contentsline {chapter}{Anexo 1}{33}

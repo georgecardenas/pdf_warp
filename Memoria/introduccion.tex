@@ -1,69 +1,56 @@
 \chapter{Introducción}
 
-El comercio electrónico tal y como lo conocemos hoy, consiste en la compra y venta de productos o servicios a través de medios electrónicos, como por ejemplo Internet. Con la llegada en masa de la red de redes a los hogares del mundo, se creó un nicho de mercado que en ese entonces estaba desaprovechado, como es el negocio de la venta on-line. Aunque anteriormente ya existían otros sistemas de e-commerce, basados en televisión, teléfono o incluso a través de Internet, no fue hasta la llegada de Amazon e EBay que el comercio on-line empezó a masificarse.
-A partir de este punto clave, y viendo el éxito que supone para un comercio satisfacer la demanda creciente del "e-cliente" surgieron cada vez más plataformas que ofertaban productos y servicios por Internet, como Netflix (Alquiler de DVDs con un sistema de reparto a domicilio), Alibaba.com (parecido a Amazon pero para el mercado chino), Zappos (plataforma de venta de zapatos) entre otros. También surgieron alrededor del e-commerce, otros servicios útiles para usuarios y vendedores, como Paypal (plataforma de pago on-line) o AdWords de Google, para mostrar publicidad relevante para el usuario.\\
-
-Al principio sólo las grandes empresas podían permitirse aumentar su visibilidad on-line mediante el uso de caras soluciones personalizadas, sin embargo, poco a poco, fueron surgiendo plataformas mucho más asequibles para el pequeño comercio como pueden ser osCommerce, Magento, o PrestaShop, o Shopify, además de soluciones gratuitas basadas en frameworks de software libre como Drupal, Joomla o Wordpress.
-
-A partir de este punto, es raro ver una tienda que no tenga opción de venta on-line, actualmente la única diferencia es el tiempo que tarda un cliente en recibir el producto, siendo las grandes aquellas que se pueden permitir envíos en un único día.\\
-
-Prácticamente la totalidad de las tiendas on-line se basan en los mismos principios: se presenta un catálogo de productos con imagen, descripción y precio y el usuario puede elegir tranquilamente y desde su hogar los elementos que va a adquirir. Actualmente, un sistema de ranking y comentarios pueden ayudar al usuario final a elegir un producto, siendo los de más valoración los que más posiblemente satisfarán sus necesidades.\\
-
-En ocasiones un usuario necesita guardar la información de un producto para su consulta posterior, o un comercial necesita ofrecer a un posible comprador un catálogo personalizado de productos. En estos casos existe una limitación muy grande a la hora de generar el documento con un formato atractivo y por lo general los resultados suelen ser muy pobres y no muestran la información más relevante como al vendedor le gustaría verla, por ejemplo el precio más grande, la foto al centro etc... Todos estos retoques se tienen que pensar previamente cuando se planifica el sistema de venta on-line y, por lo general, tienen que ser realizados por un experto en la materia que no todos los comercios poseen.
+En este documento se recoge la memoria del \ac{TFM} titulado ``Generación de catálogos en PDF para comercio electrónico''. En este capítulo se recoge la motivación del proyecto, la propuesta, los requisítos y las tecnologías utilizadas en el desarrollo.
 
 \section {Motivación}
-Como se ha explicado al final de la introducción, la motivación principal es la carencia de soluciones disponibles a la hora de elegir la disposición de elementos en un documento PDF, orientado en este caso al mundo del e-commerce.\\
+El comercio electrónico tal y como lo conocemos hoy, consiste en la compra y venta de productos o servicios a través de medios electrónicos, como por ejemplo Internet. Con la llegada en masa de la red de redes a los hogares del mundo, se creó un nicho de mercado que en ese entonces estaba desaprovechado, como es el negocio de la venta \textit{online}. Aunque anteriormente ya existían otros sistemas de comercio electrónico, basados en televisión, teléfono o incluso a través de Internet, no fue hasta la llegada de Amazon\footnote{https://www.amazon.es/} e eBay\footnote{http://www.ebay.com/} que el comercio \textit{online} empezó a masificarse.
+A partir de este punto clave y, viendo el éxito que supone para un comercio satisfacer la demanda creciente de clientes de comercio electrónico, surgieron cada vez más plataformas que ofertaban productos y servicios por Internet, como Netflix\footnote{https://www.netflix.com/es/} (En sus inicios un servicio de alquiler de DVD con un sistema de reparto a domicilio), Alibaba.com\footnote{https://www.alibaba.com/} (parecido a Amazon pero para el mercado chino) y Zappos\footnote{http://www.zappos.com/} (plataforma de venta de zapatos) entre otros. También surgieron alrededor del comercio electrónico, otros servicios útiles para usuarios y vendedores, como Paypal\footnote{https://www.paypal.com/es/home} (plataforma de pago \textit{online}) o AdWords\footnote{https://adwords.google.com/home/} de Google, para publicitar los productos y servicios a través de Internet, de manera dirigida al usuario con interés.\\
 
-Existen muchas soluciones de generación de PDFs, tanto a nivel de Back-End como de Front-End, con un alto nivel de personalización, pero son librerías que requieren conocimientos avanzados de programación y administración de sistemas para ser usadas, y estos conocimientos no suelen estar al alcance del propietario de una empresa que solamente quiere ofrecer sus productos en Internet.\\
+Al principio sólo las grandes empresas podían permitirse aumentar su visibilidad \textit{online} mediante el uso de caras soluciones personalizadas, sin embargo, poco a poco, fueron surgiendo plataformas mucho más asequibles para el pequeño comercio como pueden ser osCommerce\footnote{https://www.oscommerce.com/}, Magento\footnote{https://magento.com/}, o PrestaShop\footnote{https://www.prestashop.com/es}, o Shopify\footnote{https://www.shopify.es/}, además de soluciones gratuitas basadas en \textit{frameworks} de \textit{software} genéricos como Drupal, Joomla o Wordpress que poseen extensiones para comercio electrónico.
 
-También existen soluciones estándar, Chrome, por ejemplo nos permite convertir una página web a PDF, pero está limitado por la calidad del trabajo que el maquetador web haya realizado con el archivo print.css, en el que se guardan las reglas de estilo a la hora de imprimir las diferentes páginas de la web. De nuevo, la modificación de este archivo requiere conocimientos avanzados de maquetación web y no suele ser fácil conseguir que una página se imprima como de la forma deseada, además de que habría que ocultar elementos sobrantes, como publicidad y menús.\\
+A partir de este punto, es raro ver una tienda que no tenga opción de venta \textit{online}, actualmente la única diferencia es el tiempo que tarda un cliente en recibir el producto, siendo las grandes aquellas que se pueden permitir envíos en un único día.\\
 
-Por lo tanto para facilitar la labor de propietarios y administradores en la presentación de sus productos a la hora de generar un documento PDF, se propone la creación de una aplicación que brinde la funcionalidad deseada para una plataforma de e-commerce.
+Prácticamente la totalidad de las tiendas \textit{online} se basan en los mismos principios: se presenta un catálogo de productos con imagen, descripción y precio y el usuario puede elegir tranquilamente y desde su hogar los elementos que va a adquirir. Actualmente, los sistemas de ranking y los comentarios de otros clientes pueden ayudar al usuario final a elegir un producto, siendo los de más valoración los que más posiblemente satisfarán sus necesidades.\\
+
+Relacionado con el contexto anteriormente descrito, surge la necesidad que da lugar a este \ac{TFM}. En ocasiones un usuario necesita guardar la información de un producto para su consulta posterior, o un comercial necesita ofrecer a un posible comprador un catálogo personalizado de productos. En estos casos existe una limitación muy grande a la hora de generar el documento con un formato atractivo a partir de la propia tienda online y, por lo general, los resultados suelen ser muy pobres y no muestran la información más relevante como al vendedor le gustaría verla, por ejemplo, el precio más grande, la foto en el centro, etc. Además, es común encontrarse que, al imprimir una página de un sitio web en formato PDF, se obtenga en el documento numerosos elementos \acs{HTML} que nada tienen que ver con el producto deseado (cabeceras, menús, pies de página, etc.). Todos estos retoques se tienen que pensar previamente cuando se planifica el sistema de venta \textit{online} y, por lo general, tienen que ser realizados por un experto en la materia que no todos los comercios poseen.\\
+
+De manera resumida, la motivación principal de este \ac{TFM} radica en la carencia de soluciones disponibles a la hora de elegir la disposición de elementos en un documento PDF, orientado en este caso al mundo del comercio electrónico.\\
+
+Existen muchas soluciones de generación de PDF, tanto a nivel de \textit{back-end} como de \textit{front-end}, con un alto nivel de personalización, pero son librerías que requieren conocimientos avanzados de programación y administración de sistemas para ser usadas, y estos conocimientos no suelen estar al alcance del propietario de una empresa que solamente quiere ofrecer sus productos en Internet.\\
+
+También existen soluciones estándar, Chrome, por ejemplo, permite convertir una página web a PDF, pero está limitado por la calidad del trabajo que el maquetador web haya realizado con el archivo print.css, en el que se guardan las reglas de estilo a la hora de imprimir las diferentes páginas de la web. De nuevo, la modificación de este archivo requiere conocimientos avanzados de maquetación web y no suele ser fácil conseguir que una página se imprima como de la forma deseada, además de que habría que ocultar elementos sobrantes, como publicidad y menús.\\
 
 \section {Propuesta}
-A partir de lo elaborado en la introducción, motivación y objetivos, se propone por tanto la realización de un módulo para una de las plataformas libres de e-commerce más utilizadas como es Ubercart par Drupal que permita a un administrador la gestión de plantillas para generación de PDFs de productos del catálogo que el comercio tenga a la venta.
+A partir de lo elaborado en la introducción, motivación y objetivos, se propone por tanto la realización de un módulo para una de las plataformas libres de comercio electrónico más utilizadas como es Ubercart par Drupal que permita a un administrador la gestión de plantillas para generación de PDF de productos del catálogo que el comercio tenga a la venta.
 
 \subsection{Requisitos funcionales}
-El módulo deberá implementar la siguiente funcionalidad
-
-\subsubsection{Botón de generación de PDF}
-Un usuario debe ser capaz de generar un documento PDF de un producto con tan sólo pulsar un botón.
-
-\subsubsection{Administración de plantillas}
-Un administrador puede acceder a una sección de administración de plantillas, protegida por privilegios especiales.
-
-\subsubsection{Creación de plantillas}
-Un administrador puede crear plantillas nuevas proporcionando un nombre de plantilla y un tipo.
-
-\subsubsection{Borrado de plantillas}
-Un administrador puede borrar plantillas antiguas para no sobrecargar la base de datos.
-
-\subsubsection{Activado de plantillas}
-Un administrador puede activar una plantilla para ser usada en la generación de PDFs.
-
-\subsubsection{Editado de plantillas}
-Un administrador puede editar las plantillas entrando en una pantalla de edición en la que se muestran diferentes opciones.
-
-\subsubsection{Mover elementos de una plantilla}
-Un administrador en modo de edición de plantilla puede mover los elementos y posicionarlos dónde desee.
-
-\subsubsection{Cambiar tamaño de elementos}
-Un administrador en modo de edición de plantilla puede cambiar el tamaño de los elementos de la misma.
-
-\subsubsection{Cambiar tamaño de fuente}
-Un administrador en modo de edición de plantilla puede cambiar el tamaño de fuente de los elementos de la misma.
-
-\subsubsection{Botón de guardar cambios de plantilla}
-Un administrador en modo de edición de plantilla puede pulsar un botón para guardar los cambios de la misma.
+El módulo deberá implementar la siguiente funcionalidad:
+\begin{itemize}
+	\item Botón de generación de PDF: Un usuario debe ser capaz de generar un documento PDF de un producto con tan sólo pulsar un botón.
+	\item Administración de plantillas: Un administrador puede acceder a una sección de administración de plantillas, protegida por privilegios especiales.
+	\item Creación de plantillas: Un administrador puede crear plantillas nuevas proporcionando un nombre de plantilla y un tipo.
+	\item Borrado de plantillas: Un administrador puede borrar plantillas antiguas para no sobrecargar la base de datos.
+	\item Activado de plantillas: Un administrador puede activar una plantilla para ser usada en la generación de PDF.
+	\item Editado de plantillas: Un administrador puede editar las plantillas entrando en una pantalla de edición en la que se muestran diferentes opciones.
+	\item Mover elementos de una plantilla: Un administrador en modo de edición de plantilla puede mover los elementos y posicionarlos dónde desee.
+	\item Cambiar tamaño de elementos: Un administrador en modo de edición de plantilla puede cambiar el tamaño de los elementos de la misma.
+	\item Cambiar tamaño de fuente: Un administrador en modo de edición de plantilla puede cambiar el tamaño de fuente de los elementos de la misma.
+	\item Botón de guardar cambios de plantilla: Un administrador en modo de edición de plantilla puede pulsar un botón para guardar los cambios de la misma.
+\end{itemize}
 
 \subsection{Requisitos no funcionales}
 El módulo deberá cumplir los siguientes requisitos no funcionales
+\begin{itemize}
+	\item Uso de tecnologías de libre distribución: Las tecnologías usadas para el desarrollo del módulo deben ser de libre distribución.
+	\item Módulo exportable: El módulo desarrollado debe poderse instalar en otras instalaciones de Drupal que cumplan los requisitos y dependencias.
+	\item Stack tecnológico: Uso de \acs{WAMP} o \acs{LAMP}.
+	\item Uso de Drupal: Drupal tiene a su disposición varios módulos que expanden su funcionalidad para satisfacer las necesidades de los propietarios de tiendas on-line.
+	\item Uso de Ubercart: Dentro de las opciones de comercio electrónico disponibles para Drupal, debe usarse la extensión de Ubercart.
+	\item JSON para comunicaciones entre \textit{back-end} y \textit{front-end}.
+	\item Uso de Angularjs para el \textit{front-end}.
+\end{itemize}
 
-\subsubsection{Uso de tecnologías de libre distribución}
-Las tecnologías usadas para el desarrollo del módulo deben ser de libre distribución.
-
-\subsubsection{Módulo exportable}
-El módulo desarrollado debe poderse instalar en otras instalaciones de Drupal que cumplan los requisitos y dependencias.
+Por lo tanto para facilitar la labor de propietarios y administradores en la presentación de sus productos a la hora de generar un documento PDF, se propone la creación de una aplicación que brinde la funcionalidad deseada para una plataforma de comercio electrónico.
 
 \section{Tecnologías}
 En este capítulo se enumerarán las tecnologías que se han utilizado para la realización de éste proyecto.
@@ -72,177 +59,151 @@ En este capítulo se enumerarán las tecnologías que se han utilizado para la real
 Los lenguajes de programación usados para el desarrollo del proyecto aparecen explicados a continuación.
 
 \subsubsection{HTML}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{HTML5.png}}}
-	\caption{Logo de HTML 5}
-\end{figure}
-\FloatBarrier
-El lenguaje Hypertext Markup Language ó HTML sirve principalmente para la publicación y estructuración de documentos y especificación de hipervínculos. Junto a CSS y Javascript, forman la base de la programación web actual. Es un lenguaje basado en etiquetas y todo el contenido de un documento está almacenado entre una etiqueta de apertura y otra de cierre.
-La primera descripción publica de HTML fue un documento llamado 'HTML Tags' publicado por Tim Berners-Lee a finales de 1991 y describe los primeros 18 elementos incluidos en el lenguaje. Durante todo este tiempo se han ido publicando nuevas versiones de HTML en las que se añadían nuevas etiquetas y se eliminaban otras obsoletas. La versión actual es HTML5 que añade múltiples etiquetas avanzadas para controles multimedia, validaciones de formularios y maquetación de páginas web optimizadas para buscadores.\\
+El lenguaje \ac{HTML} sirve principalmente para la publicación y estructuración de documentos y especificación de hipervínculos. Junto a \ac{CSS} y Javascript, forman la base de la programación web actual. Es un lenguaje basado en etiquetas y todo el contenido de un documento está almacenado entre una etiqueta de apertura y otra de cierre.
+La primera descripción publica de \ac{HTML} fue un documento llamado ``HTML Tags'' publicado por Tim Berners-Lee a finales de 1991 y describe los primeros 18 elementos incluidos en el lenguaje. Durante todo este tiempo se han ido publicando nuevas versiones de \ac{HTML} en las que se añadían nuevas etiquetas y se eliminaban otras obsoletas. La versión actual es \ac{HTML}5 que añade múltiples etiquetas avanzadas para controles multimedia, validaciones de formularios y maquetación de páginas web optimizadas para buscadores.\\
 
-Para programar en HTML basta con usar un editor de texto cualquiera y un navegador web para su renderizado. La extensión de un documento HTML es '.html' o '.htm'.
+Para programar en HTML basta con usar un editor de texto cualquiera y un navegador web para ver la página web interpretada desde el código escrito. La extensión de un documento HTML es ``.html'' o ``.htm''.
 
 Ejemplo:
 \begin{verbatim}
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Ejemplo</title>
-  </head>
-  <body>
-    <p>¡Hola, Mundo!</p>
-  </body>
-</html>
+    <!DOCTYPE HTML>
+    <!-- Muestra una página web con el título "Ejemplo"
+    y el texto "!Hola Mundo!" -->
+    <html>
+      <head>
+        <title>Ejemplo</title>
+      </head>
+      <body>
+        <p>¡Hola, Mundo!</p>
+      </body>
+    </html>
 \end{verbatim}
 
 \subsubsection {CSS}
-\begin{figure}[htb]
-	\centering{\resizebox{4cm}{3cm}{\includegraphics{CSS3.png}}}
-	\caption{Logo de CSS 3}
-\end{figure}
-\FloatBarrier
-CSS es el acrónimo de Cascale Style Sheets el cuál es un lenguaje de estilo usado para describir la presentación de un lenguaje basado en etiquetas o marcas como HTML. Su diseño está enfocado principalmente a separar la presentación del contenido del documento, incluyendo aspectos como la estructura, colores y fuentes. Las especificaciones CSS son mantenidas por el World Wide Web Consortium (W3C).
-La primera propuesta de CSS la realizó Håkon Wium Lie en 1994 y a pesar de que en el momento habían más propuestas de lenguajes de estilo, CSS se impuso y acabó siendo lanzado en 1996 por el W3C. El lenguaje tuvo unos inicios complicados ya que los navegadores inicialmente ofrecían soporte muy limitado para CSS. No fue sino hasta la versión 5 de Internet Explorer que se dio soporte a la totalidad del lenguaje, y aun así muchos otros navegadores seguían ofreciendo compatibilidades limitadas. Actualmente la especificación CSS utilizada es la 3, aunque a partir de esta versión, el lenguaje se partió en módulos y podemos hacer uso de algunos de la especificación 4.\\
+\ac{CSS} es el acrónimo de \textit{Cascale Style Sheets} el cuál es un lenguaje de estilo usado para describir la presentación de un lenguaje basado en etiquetas o marcas como HTML. Su diseño está enfocado principalmente a separar la presentación del contenido del documento, incluyendo aspectos como la estructura, colores y fuentes. Las especificaciones \ac{CSS} son mantenidas por el \ac{W3C}.
+La primera propuesta de \ac{CSS} la realizó Håkon Wium Lie en 1994 y a pesar de que en el momento habían más propuestas de lenguajes de estilo, \ac{CSS} se impuso y acabó siendo lanzado en 1996 por el W3C. El lenguaje tuvo unos inicios complicados ya que los navegadores inicialmente ofrecían soporte muy limitado para \ac{CSS}. No fue sino hasta la versión 5 de Internet Explorer que se dio soporte a la totalidad del lenguaje, y aun así muchos otros navegadores seguían ofreciendo compatibilidades limitadas. Actualmente la especificación \ac{CSS} utilizada es la 3, aunque a partir de esta versión, el lenguaje se partió en módulos y se puede hacer uso de algunos de la especificación 4.\\
 
-Al igual que con HTML, para programar en CSS basta con un programa editor de texto y un navegador web. Es un lenguaje ligado a HTML y puede aparecer o bien incrustado en el mismo documento '.html' o bien en su propio archivo '.css' que luego es importado al documento web.
+Al igual que con HTML, para programar en CSS basta con un programa editor de texto y un navegador web. Es un lenguaje ligado a HTML y puede aparecer o bien incrustado en el mismo documento ``.html'' o bien en su propio archivo ``.css'' que luego es importado al documento web.
 
 Ejemplo:
 \begin{verbatim}
-body {
-  font-size: 12px;
-}
-div {
-  color: #fff;
-}
+    body {
+      font-size: 12px;
+      //Cambio de tamaño de fuente a 12 en la etiqueta <body>
+    }
+    div {
+      color: #fff;
+      // Cambio de color de fuente en la etiqueta <div>
+    }
 \end{verbatim}
 
 \subsubsection {Javascript}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{Javascript.png}}}
-	\caption{Logo de Javascript}
-\end{figure}
-\FloatBarrier
-Javascript es un lenguaje de programación de alto nivel creado originalmente en el año 1995 para ser un lenguaje de scripting complementario a los navegadores web. Inicialmente se le dio el nombre de Mocha en su fase de desarrollo, aunque luego su nombre cambió a LiveScript para más tarde ser reemplazado por Javascript en su lanzamiento junto a Netscape Navigator 2.0. Se cree que se le dio este nombre para aprovechar la popularidad de Java.
+Javascript es un lenguaje de programación de alto nivel creado originalmente en el año 1995 para ser un lenguaje de \textit{scripting} complementario a los navegadores web. Inicialmente se le dio el nombre de Mocha en su fase de desarrollo, aunque luego su nombre cambió a LiveScript para más tarde ser reemplazado por Javascript en su lanzamiento junto a Netscape Navigator 2.0. Se cree que se le dio este nombre para aprovechar la popularidad de Java.
 Un año después fue adoptado por Microsoft bajo el nombre de JScript para evitar problemas legales de nomenclatura y más tarde fue estandarizado por ECMA Internacional lanzando la especificación de lenguaje ECMAScript.
-Las especificaciones de ECMAScript se han ido adaptando a los tiempos modernos, añadiendo nuevas funcionalidades y corrigiendo otras. Actualmente se trabaja mucho con la especificación ECMAScript 5, aunque la especificación 6 está ganando popularidad desde su salida en el año 2015 y sobre todo por la adopción de la misma por los desarrolladores de los frameworks y librerías más populares como Angularjs, Reactjs y Babel.\\
+Las especificaciones de ECMAScript se han ido adaptando a los tiempos modernos, añadiendo nuevas funcionalidades y corrigiendo otras. Actualmente se trabaja mucho con la especificación ECMAScript 5, aunque la especificación 6 está ganando popularidad desde su salida en el año 2015 y sobre todo por la adopción de la misma por los desarrolladores de los \textit{frameworks} y librerías más populares como Angularjs, Reactjs y Babel.\\
 
 Javascript es un lenguaje dinámico, sin tipado e interpretado en tiempo de ejecución. Es un lenguaje con múltiples paradigmas: funcional, imperativo e incluso en las últimas especificaciones, integra orientación a objetos.\\
 
-Para programar en Javascript, basta con usar un editor de texto y un navegador web, aunque para aprovechar todas sus funcionalidades, se requiere de un servidor web configurado adecuadamente, ya que, por ejemplo el acceso a archivos de la máquina podría darnos problemas.
-Es posible incrustar scripts de Javascript en un documento HTML o bien desarrollar en un documento aparte e incrustarlo posteriormente. La extensión de Javascript es '.js'.
+Para programar en Javascript, basta con usar un editor de texto y un navegador web, aunque para aprovechar todas sus funcionalidades, se requiere de un servidor web configurado adecuadamente, ya que, por ejemplo, el acceso a archivos de la máquina podría producir problemas.
+Es posible incrustar \textit{scripts} de Javascript en un documento HTML o bien desarrollar en un documento aparte e incrustarlo posteriormente. La extensión de Javascript es ``.js''.
 
 Ejemplo:
 \begin{verbatim}
-function hello() {
-  console.log("!Hola Mundo!");
-}
+	// Muestra en la consola de desarrollo del navegador web el
+	// mensaje "¡Hola Mundo!"
+    function hello() {
+      console.log("!Hola Mundo!");
+    }
 \end{verbatim}
 
 \subsubsection{PHP}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{1.6cm}{\includegraphics{PHP.png}}}
-	\caption{Logo de PHP}
-\end{figure}
-\FloatBarrier
-PHP es un lenguaje de scripting para Back-End diseñado principalmente para diseño web, pero que es utilizado también como lenguaje de propósito general. Fue creado en el año 1995 por Rasmus Lerdorf quien escribió unas aplicaciones de consola en C para mantener su página web personal. Posteriormente las amplió para funcionar con WebForms y comunicarlas con bases de datos y lo llamó "Personal Home Page/Forms Interpreter" o PHP/FI. Inicialmente no fue concebido para ser un lenguaje de programación, pero Lerdorf fue paulatinamente añadiendo funcionalidades hasta que se formó un equipo de desarrollo, lanzando su primera versión oficial en 1997.\\
+PHP es un lenguaje de scripting para \textit{back-end} diseñado principalmente para diseño web, pero que es utilizado también como lenguaje de propósito general. Fue creado en el año 1995 por Rasmus Lerdorf quien escribió unas aplicaciones de consola en C para mantener su página web personal. Posteriormente las amplió para funcionar con WebForms y comunicarlas con bases de datos y lo llamó ``\textit{Personal Home Page/Forms Interpreter}'' o PHP/FI. Inicialmente no fue concebido para ser un lenguaje de programación, pero Lerdorf fue paulatinamente añadiendo funcionalidades hasta que se formó un equipo de desarrollo, lanzando su primera versión oficial en 1997.\\
 
-Durante su tiempo de vida, el lenguaje ha recibido numerosas actualizaciones. Actualmente nos encontramos en la séptima iteración de PHP, con la salida de la versión 7.2 programada para noviembre de 2017.\\
+Durante su tiempo de vida, el lenguaje ha recibido numerosas actualizaciones. Actualmente se encuentra en la séptima iteración de PHP, con la salida de la versión 7.2 programada para noviembre de 2017.\\
 
 Es un lenguaje orientado objetos pero que nos permite utilizar varios paradigmas de programación como el estructurado, imperativo, funcional y reflexivo.
-Como suele ocurrir con los lenguajes de scripting, PHP es un lenguaje interpretado, es decir, no requiere de compilación previa para su ejecución. Además es de tipado dinámico, por lo que las variables no están asociadas a un tipo de datos en el momento de su declaración, si no que se le asigna un tipo automáticamente en el momento de su uso.\\
+Como suele ocurrir con los lenguajes de \textit{scripting}, PHP es un lenguaje interpretado, es decir, no requiere de compilación previa para su ejecución. Además es de tipado dinámico, por lo que las variables no están asociadas a un tipo de datos en el momento de su declaración, sino que se les asigna un tipo automáticamente en el momento de su uso.\\
 
 Para empezar a programar en PHP se requiere un servidor web capacitado para su ejecución y además los paquetes de comandos de consola requeridos para el inicio de programas escritos en este lenguaje. Un servidor muy utilizado es Apache.
-Escribir programas en PHP es sencillo y la forma más rápida consiste en incrustar pequeños scripts en los documentos HTML de nuestra web que serán interpretados por el servidor y completamente invisibles para un usuario final. Los ficheros de lenguaje PHP tienen la extensión '.php'.
+Escribir programas en PHP es sencillo y la forma más rápida consiste en incrustar pequeños \textit{scripts} en los documentos HTML de nuestra web que serán interpretados por el servidor y completamente invisibles para un usuario final. Los ficheros de lenguaje PHP tienen la extensión ``.php''.
 
 Ejemplo:
 \begin{verbatim}
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title>Ejemplo</title>
-  </head>
-  <body>
-    <?php
-      echo "¡Hola, Mundo!";
-    ?>
-  </body>
-</html>
+    <!DOCTYPE HTML>
+    <!-- Crea una página con título Ejemplo -->
+    <html>
+      <head>
+        <title>Ejemplo</title>
+      </head>
+      <body>
+        <?php
+          // Muestra "!Hola, Mundo!" por la salida estándar
+          echo "¡Hola, Mundo!";
+        ?>
+      </body>
+    </html>
 \end{verbatim}
 
 \subsubsection {JSON}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{JSON.png}}}
-	\caption{Logo de JSON}
-\end{figure}
-\FloatBarrier
-JSON es el acrónimo de JavaScript Object Notation y más que un lenguaje de programación, se trata de un estándar abierto de formato de archivo para el envío de información a través de pares clave-valor. Es muy utilizado hoy en día para las comunicaciones entre cliente y servidor.
-La primera especificación de JSON vino de la mano de Douglas Crockford quien lo creó originariamente para ser un subconjunto de Javascript. De hecho es actualmente muy utilizado junto a este lenguaje, sin embargo JSON es independiente del lenguaje con el que sea usado. En el año 2013 se estableció un estándar por ECMA Internacional.\\
+\ac{JSON} se trata de un estándar abierto de formato de archivo para el envío de información a través de pares clave-valor. Es muy utilizado hoy en día para las comunicaciones entre cliente y servidor.
+La primera especificación de JSON vino de la mano de Douglas Crockford quien lo creó originariamente para ser un subconjunto de Javascript. De hecho es actualmente muy utilizado junto a este lenguaje, sin embargo, JSON es independiente del lenguaje con el que sea usado. En el año 2013 se estableció un estándar por ECMA Internacional.\\
 
 Los tipos de datos que pueden ser usados en un documento JSON son: Boolean, String, Number, Array, Object y null.
 
 Ejemplo:
 \begin{verbatim}
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25,
-  "address": {
-    "streetAddress": "21 2nd Street",
-    "city": "New York"
-  },
-  "phoneNumbes": [
     {
-      "type": "home",
-      "number": "212 555-1234"
-    },
-    {
-      "type": "office",
-      "number": "646 555-4567"
+      "firstName": "John",
+      "lastName": "Smith",
+      "age": 25,
+      "address": {
+        "streetAddress": "21 2nd Street",
+        "city": "New York"
+      },
+      "phoneNumbes": [
+        {
+          "type": "home",
+          "number": "212 555-1234"
+        },
+        {
+          "type": "office",
+          "number": "646 555-4567"
+        }
+      ],
+      "spouse": null
     }
-  ],
-  "spouse": null
-}
+    Este código representa un objeto con los datos personales de
+    un individuo. 
+    Nombre, apellido, edad, dirección compuesta por calle y ciudad,
+    una lista de números de teléfono, en la que se incluye el
+    número de su casa y de la oficina y si tiene cónyuge.
 \end{verbatim}
-\subsection {Frameworks y librerías}
-En este capítulo se hace una recopilación de los frameworks y librerías de terceros usados durante el desarrollo del proyecto y sus características.
+\subsection {\textit{Frameworks} y librerías}
+En esta sección se hace una recopilación de los \textit{frameworks} y librerías de terceros usados durante el desarrollo del proyecto y sus características.
 
 \subsubsection {Drupal}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{Drupal.png}}}
-	\caption{Logo de Drupal}
-\end{figure}
-\FloatBarrier
-Drupal es un sistema de gestión de contenidos (o CMS según sus siglas en inglés) de código abierto que es utilizado por un 2,3\% de sitios web del mundo. Es un sistema libre, modular y multipropósito que permite publicar artículos, imágenes, archivos y que también ofrece la posibilidad de otros servicios añadidos como foros, encuestas, votaciones, blogs y administración de usuarios y permisos. Es un sistema de carga dinámico, es decir, todos los recursos se almacenan en una base de datos y se cargan en tiempo real a la hora de generar una página. Este CMS está escrito utilizando el lenguaje PHP valiéndose de las librerías de Symfony, por lo que es un sistema multiplataforma soportado tanto por Windows como por sistemas Unix.\\
+Drupal es un sistema de gestión de contenidos (o \ac{CMS} según sus siglas en inglés derivadas de \textit{Content Management System}) de código abierto que es utilizado por un 2,3\% de sitios web del mundo. Es un sistema libre, modular y multipropósito que permite publicar artículos, imágenes, archivos y que también ofrece la posibilidad de otros servicios añadidos como foros, encuestas, votaciones, blogs y administración de usuarios y permisos. Es un sistema de carga dinámico, es decir, todos los recursos se almacenan en una base de datos y se cargan en tiempo real a la hora de generar una página. Este CMS está escrito utilizando el lenguaje PHP valiéndose de las librerías de Symfony, por lo que es un sistema multiplataforma soportado tanto por Windows como por sistemas Unix.\\
 
-Originalmente fue escrito por Dries Buytaert como un foro de opinión. En el año 2001 se convirtió en un proyecto de código abierto y ganó popularidad en 2004 al utilizarse para crear el sitio 'DeanSpace' para el candidato a las primarias por el Partido Demócrata de Estados Unidos Howard Dean.\\
+Originalmente fue escrito por Dries Buytaert como un foro de opinión. En el año 2001 se convirtió en un proyecto de código abierto y ganó popularidad en 2004 al utilizarse para crear el sitio \textit{DeanSpace} para el candidato a las primarias por el Partido Demócrata de Estados Unidos Howard Dean.\\
 
 Actualmente Drupal se encuentra en la versión 8, aunque aún brinda soporte a la versión 7 que cuenta con muchos adeptos. La mayoría de los módulos y temas de Drupal desarrollados por sus usuarios son compatibles con la versión 7.\\
 
-Algunos ejemplos de sitios desarrollados con Drupal son las webs de Ubuntu, Intel o Economist.
+Algunos ejemplos de sitios desarrollados con Drupal son las webs de Ubuntu, Intel o Economist, entre otros.
 
 \subsubsection {Angularjs}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{Angular.png}}}
-	\caption{Logo de Angularjs}
-\end{figure}
-\FloatBarrier
-Angularjs es un framework para aplicaciones web de código abierto basado en Javascript especializado en aplicaciones single-page (SPA). Actualmente está soportado por Google y una comunidad formada por desarrolladores individuales y empresas. Fue inicialmente programado en el año 2009 por Miko Hevery como un software base para una aplicación on-line de almacenamiento de datos en JSON, aunque debido al pobre acogimiento que tuvo la idea, el producto se desechó y se lanzo Angular como una librería de código abierto. Inicialmente todo el contenido de Angularjs iba en un único paquete pero en las versiones más recientes, se ha modularizado para que cada desarrollador tenga una instalación personalizada de acuerdo a sus necesidades.\\
+Angularjs es un \textit{framework} para aplicaciones web de código abierto basado en Javascript especializado en \textit{\ac{SPA}}. Actualmente está soportado por Google y una comunidad formada por desarrolladores individuales y empresas. Fue inicialmente programado en el año 2009 por Miko Hevery como un \textit{software} base para una aplicación \textit{online} de almacenamiento de datos en JSON, aunque debido al pobre acogimiento que tuvo la idea, el producto se desechó y se lanzo Angular como una librería de código abierto. Inicialmente todo el contenido de Angularjs iba en un único paquete pero en las versiones más recientes, se ha modularizado para que cada desarrollador tenga una instalación personalizada de acuerdo a sus necesidades.\\
 
-Actualmente tenemos dos vertientes de Angularjs, la versión 1.x y la versión 2.x. Aunque compartan el nombre, la Angularjs 2.x no se trata de la siguiente iteración del framework, si no que se trata de un remodelado completo incompatible con la versión anterior, por lo que se tratan como si fueran dos librerías diferentes y ambos continúan recibiendo soporte.\\
+Actualmente se dispone de dos vertientes de Angularjs, la versión 1.x y la versión 2.x. Aunque compartan el nombre, la Angularjs 2.x no se trata de la siguiente iteración del \textit{framework}, si no que se trata de un remodelado completo incompatible con la versión anterior, por lo que se tratan como si fueran dos librerías diferentes y ambos continúan recibiendo soporte.\\
 
-El framework se basa en el modelo vista presentador con lo que nos brinda ficheros de vista (HTML), un modelo de datos y un presentador (controlador). Funciona mediante ciclos de digest, en los cuales Angularjs comprueba todos los scopes (ámbitos) y busca todas las variables que hayan podido sufrir cambios para actualizar las vistas. También al cambiar un valor en una vista se actualiza la variable asociada en el controlador (two-way data binding). Angular está compuesto por módulos y directivas, y los desarrolladores pueden crear sus propios elementos y compartirlos con otros a través de npm o bower. Algunas de las directivas estándar son: ng-app, ng-view, ng-controller ó ng-model.\\
+El \textit{framework} se basa en el modelo vista presentador con lo que proporciona ficheros de vista (\ac{HTML}), un modelo de datos y un presentador (controlador). Cada vez que Angularjs detecta un cambio de estado, ejecuta un proceso que chequea a cuantos ámbitos (\textit{scopes}) puede afectar dicho cambio de estado y busca todas las variables que hayan podido sufrir cambios para actualizar las vista. Este proceso de chequeo se llama ciclo de digest y constituye el núcleo del funcionamiento de Angularjs. También al cambiar un valor en una vista se actualiza la variable asociada en el controlador (\textit{two-way data binding}). Angular está compuesto por módulos y directivas, y los desarrolladores pueden crear sus propios elementos y compartirlos con otros a través de repositorios públicos.\\
 
-En este proyecto se usa la versión 1.6 del framework. Algunos sitios desarrollados con Angular son Wolfram Alpha, ABC News ó NBC
+En este proyecto se usa la versión 1.6 del \textit{framework}. Algunos sitios desarrollados con Angular son Wolfram Alpha, ABC News o NBC
 
 \subsubsection {JQuery}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{Jquery.png}}}
-	\caption{Logo de JQuery}
-\end{figure}
 \FloatBarrier
 Es una librería de Javascript diseñada para simplificar la programación en el lado del cliente. Es de código abierto y es la librería más usada de Javascript. Fue lanzado en el año 2006 por John Resig quien se inspiró en las librerías de cssQuery.\\
 
-Principalmente contiene funciones para manipular el DOM, realizar animaciones, gestionar eventos y desarrollar aplicaciones basadas en Ajax. Sus principales características son las siguientes:
+Principalmente contiene funciones para manipular el \ac{DOM} que es un conjunto estándar de objetos para representar documentos HTML, y una interfaz estándar para acceder a ellos y manipularlos. También permite realizar animaciones, gestionar eventos y desarrollar aplicaciones basadas en Ajax. Sus principales características son las siguientes:
 \begin{itemize}  
 \item Selección de elementos DOM
 \item Interactividad y modificaciones del árbol DOM, incluyendo soporte para CSS 1-3 y un plugin básico de XPath
@@ -255,40 +216,33 @@ Principalmente contiene funciones para manipular el DOM, realizar animaciones, g
 
 Ejemplo: 
 \begin{verbatim}
-$(document).ready(function() {
-  console.log('¡Hola Mundo!');
-});
+    // Pinta por la consola del navegador la frase "¡Hola Mundo!"
+    // al terminar de cargar la página
+    $(document).ready(function() {
+      console.log(`¡Hola Mundo!');
+    });
 \end{verbatim}
 \subsubsection {JsPDF}
-JsPDF es una librería Javascript para la generación de PDFs en el lado del cliente. Cuenta con un potente motor para dibujar elementos geométricos, incrustar imágenes y textos variando el tipo de letra y el tamaño. Su primera versión fue lanzada en el año 2012 y desde entonces sus creadores (Parallax) han ido incorporando funcionalidades y librerías para aumentar sus capacidades.
+JsPDF es una librería Javascript para la generación de PDF en el lado del cliente. Cuenta con un potente motor para dibujar elementos geométricos, incrustar imágenes y textos variando el tipo de letra y el tamaño. Su primera versión fue lanzada en el año 2012 y desde entonces sus creadores (Parallax) han ido incorporando funcionalidades y librerías para aumentar sus capacidades.
 
 \subsubsection {Dragabilly}
-Se trata de una librería creada para JQuery que permite utilizar las características de Drag and Drop en una página web. La ventaja que nos ofrece es que podemos mover un elemento web a cualquier punto de un contenedor.
-Cuenta con un wrapper para Angularjs que nos permite añadirlo como una directiva para ser usado directamente sin necesidad de JQuery.
+Se trata de una librería creada para JQuery que permite utilizar las características de \textit{drag and drop} en una página web. La ventaja que ofrece es que permite mover un elemento web a cualquier punto de un contenedor.
+Cuenta con un \textit{wrapper} para Angularjs que permite añadirlo como una directiva para ser usado directamente sin necesidad de JQuery.
 En el proyecto es usado para mover los elementos de una plantilla PDF.
 
 \subsubsection {Html2Canvas}
 Html2Canvas es una librería Javascript para la conversión de código HTML al objeto Canvas de HTML5. Este objeto permite renderizar la página web con todos sus estilos y guardarla como si fuera una imagen.
-Al ser compatible con JsPDF nos permite la generación de un documento PDF en modo imagen tal y como se muestra en la web y sin los problemas derivados de los estilos css de impresión.
+Al ser compatible con JsPDF permite la generación de un documento PDF en modo imagen tal y como se muestra en la web y sin los problemas derivados de los estilos css de impresión.
 
 \subsection {Sistemas}
+En esta sección se enumeran los sistemas principales del \textit{back-end} sobre los que se monta la aplicación.
+
 \subsubsection {Apache HTTP Server}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{Apache.png}}}
-	\caption{Logo de Apache HTTP Server}
-\end{figure}
-\FloatBarrier
-Llamado coloquialmente Apache, es un servidor web multiplataforma de código abierto. La Apache Software Foundation es la encargada actualmente de dar soporte y programación del producto. Su desarrollo comenzó en el año 1995 y jugó un papel importante en el crecimiento de la World Wide Web sustituyendo rápidamente a NCSA HTTPd como servidor HTTP dominante en el mercado. Actualmente es el servidor más utilizado del mundo siendo utilizado por un 46\% de los sitios web en activo.\\
+Llamado coloquialmente Apache, es un servidor web multiplataforma de código abierto. La Apache Software Foundation\footnote{https://www.apache.org/} es la encargada actualmente de dar soporte y programación del producto. Su desarrollo comenzó en el año 1995 y jugó un papel importante en el crecimiento de la World Wide Web sustituyendo rápidamente a NCSA HTTPd como servidor \ac{HTTP} dominante en el mercado. Actualmente es el servidor más utilizado del mundo siendo utilizado por un 46\% de los sitios web en activo.\\
 
 Entre sus principales características se encuentra el soporte para lenguajes de programación como Perl, Python, Tcl y PHP, módulos de autenticación (mod\_access, mod\_auth, mod\_digest y mod\_auth\_digest), soporte para SSL y TLS, hosting virtual, y autenticación por contraseña o firma digital entre otros.
 
 \subsubsection {MySQL}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{MySQL.png}}}
-	\caption{Logo de MySQL}
-\end{figure}
-\FloatBarrier
-
 MySQL es un sistema gestor de base de datos relacionales de código abierto creado por la compañía sueca MYSQL AB en el año 1995. Durante este tiempo MySQL fue ganando popularidad y en el año 2008 fue comprado por Sun Microsystems para posteriormente pasar a manos de Oracle, actuales propietarios. Antes de la adquisición por parte de Oracle, uno de los creadores y fundadores de MYSQL AB, Monty Widenius, realizó un fork de la versión 5.5 de MySQL para crear MariaDB y mantener la esencia del producto.\\
 
 Actualmente MySQL se encuentra en la versión 5.7 y se ofrece tanto la versión MySQL Community Server como Enterprise Server, siendo ésta última una licencia de pago. Aunque MySQL server ha evolucionado para poder albergar y tratar volúmenes altos de datos, se sigue utilizando principalmente para aplicaciones de pequeño a mediano tamaño.\\
@@ -305,14 +259,9 @@ Sus principales características son:
 \end{itemize}
 
 \subsection {Herramientas de desarrollo}
-Las herramientas de desarrollo nos sirven para facilitarnos la vida a la hora de programar y gestionar recursos. A continuación se describen las principales herramientas usadas en el proyecto.
+Las herramientas de desarrollo facilitan las tareas de programación y gestión de recursos. A continuación se describen las principales herramientas usadas en el proyecto.
 
 \subsubsection {Brackets}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{Brackets.png}}}
-	\caption{Logo de Brackets}
-\end{figure}
-\FloatBarrier
 Brackets es un editor de texto avanzado escrito en HTML, CSS y Javascript por Adobe Systems y que está orientado al desarrollo web. A diferencia de otros editores, contiene un pequeño servidor Nodejs para probar el código realizado en el momento. Es capaz de mostrar un correcto formato de múltiples lenguajes de programación como Javascript, PHP, Java, HTML y CSS entre otros. Es un programa de libre distribución y sus desarrolladores han publicado una API con la que se pueden desarrollar módulos para aumentar su funcionalidad.
 Su interfaz es sencilla, con una lista de archivos abiertos a la izquierda y espacio para escribir a la derecha ocupando el máximo espacio posible de la ventana.
 Sus principales características son:
@@ -327,27 +276,17 @@ Sus principales características son:
 \end{itemize}
 
 \subsubsection {Git}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{Git.png}}}
-	\caption{Logo de Git}
-\end{figure}
-\FloatBarrier
-Es un sistema de control de versiones cuya función principal es la de mantener un registro de cambios locales realizados en un directorio y coordinar el trabajo sobre esos archivos entre un grupo de gente. Se usa mayoritariamente como gestión de código a la hora de desarrollar software de manera distribuida.
-Fue creado por Linus Torvalds en el año 2005 para el desarrollo del kernel de Linux con la finalidad de coordinar el trabajo con otros desarrolladores. A Torvalds no le convencían otros sistemas de control de versiones disponibles.
+Es un sistema de control de versiones cuya función principal es la de mantener un registro de cambios locales realizados en un directorio y coordinar el trabajo sobre esos archivos entre un grupo de gente. Se usa mayoritariamente como gestión de código a la hora de desarrollar \textit{software} de manera distribuida.
+Fue creado por Linus Torvalds en el año 2005 para el desarrollo del \textit{kernel} de Linux con la finalidad de coordinar el trabajo con otros desarrolladores. A Torvalds no le convencían otros sistemas de control de versiones disponibles.
 Una de las características de Git es que cada directorio de Git en cada ordenador es un repositorio completo con histórico y rastreo de versiones independiente de cualquier servidor central. Esto hace posible que, en caso de perderse el repositorio remoto, este se pueda rehacer desde uno perteneciente a los desarrolladores.
 Sus principales características son:
 \begin{itemize}  
 \item Soporte para desarrollo no lineal
 \item Desarrollo distribuido
-\item Compatibilidad con varios protocolos de comunicaciones, como HTTP, FTP o SSH
+\item Compatibilidad con varios protocolos de comunicaciones, como \ac{HTTP}, \ac{FTP} o \ac{SSH}
 \item Manejo eficiente de proyectos grandes
 \end{itemize}
 
 \subsubsection {Bower}
-\begin{figure}[htb]
-	\centering{\resizebox{3cm}{3cm}{\includegraphics{Bower.png}}}
-	\caption{Logo de Bower}
-\end{figure}
-\FloatBarrier
 Bower es una herramienta de gestión de dependencias utilizado principalmente para gestionar componentes HTML, CSS y Javascript y obtener las últimas versiones de los mismos con tan sólo usar un comando de consola. Para instalar Bower, se requiere tener instalado previamente Nodejs, npm y git.
-La forma más sencilla de instalar un nuevo paquete es buscar en internet el nombre del paquete que deseemos y posteriormente ejecutar en una consola de comandos \textit{bower install nombre\_paquete}. También es posible tener un archivo llamado bower.json en el que se guardan todas las dependencias de nuestro proyecto (con nombre de paquete y versión), de esta forma al ejecutar \textit{bower install}, se instalaran todos los paquetes de nuestro fichero, en la versión especificada. Es posible también utilizar sentencias condicionales en las versiones.
+La forma más sencilla de instalar un nuevo paquete es buscar en Internet el nombre del paquete que deseemos y posteriormente ejecutar en una consola de comandos \textit{bower install nombre\_paquete}. También es posible tener un archivo llamado bower.json en el que se guardan todas las dependencias del proyecto (con nombre de paquete y versión), de esta forma al ejecutar \textit{bower install}, se instalarán todos los paquetes del fichero, en la versión especificada. Es posible también utilizar sentencias condicionales en las versiones.

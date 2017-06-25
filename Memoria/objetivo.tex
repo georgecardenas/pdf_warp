@@ -1,37 +1,20 @@
-\chapter {Objetivos}
-A continuación se explicarán de forma general y detallada los objetivos propuestos para este proyecto fin de máster.
+\chapter{Objetivos}
+A continuación se explicarán de forma general y detallada los objetivos propuestos para este \ac{TFM}.
 
 \section {Objetivo general}
-El objetivo general del proyecto, consiste en el diseño e implementación de una solución que permita la generación de documentos PDF a partir de la información obtenida de una plataforma de e-commerce. Un administrador de página debe ser capaz de gestionar la disposición de los elementos del PDF a generar de una forma ágil y sencilla. Todo este proceso será transparente para un usuario final, que únicamente con presionar un botón obtendrá la información de los productos en un documento.
+El objetivo general del proyecto consiste en el diseño e implementación de una solución que permita la generación de documentos PDF a partir de la información obtenida de los productos de una plataforma de comercio electrónico. Un administrador de un portal de comercio electrónico debe ser capaz de gestionar la disposición de los elementos que componen un producto (fotografía, descripción, título, precio, referencia, etc.) del PDF a generar de una forma ágil y sencilla. Todo este proceso será transparente para un usuario final, que únicamente con presionar un botón obtendrá la información de los productos en un documento PDF.
 
 \section {Objetivos específicos}
-A partir de los objetivos generales se extraen los siguientes objetivos específicos:
+Para alcanzar el objetivo general del proyecto es necesario cubrir los siguientes objetivos específicos:
 
-\subsection{Stack tecnológico}
-El proyecto será realizado utilizando tecnologías de libre distribución. En concreto se utilizará un stack WAMP, acrónimo de Windows como sistema operativo, Apache como servidor web, MySQL como base de datos, PHP como lenguaje en el que se programan las aplicaciones web. Se podría haber optado también por un stack LAMP, con Linux como sistema operativo, pero ya que la selección de SO no afecta al resultado final del proyecto, se decide utilizar Windows.
-
-\subsection{Framework base}
-El proyecto deberá realizarse utilizando Drupal como framework base. Drupal es un CMS, es decir, un sistema de gestión de contenidos (Content Management System) muy utilizado actualmente para la creación de aplicaciones web. Este sistema tiene una base de usuarios muy alta, lo que asegura una gran disponibilidad de documentación y soporte. Al ser open source, los usuarios pueden expandir la funcionalidad del mismo mediante módulos funcionales. En concreto son interesantes sus módulos de e-commerce.
-
-\subsection{Plataforma de e-commerce}
-Drupal tiene a su disposición varios módulos que expanden su funcionalidad para satisfacer las necesidades de los propietarios de tiendas on-line. Los más conocidos son Drupal commerce y Ubercart. El objetivo del proyecto es utilizar Ubercart ya que actualmente tiene más usuarios y una base funcional más sólida, al llevar más tiempo en el mercado.
-
-\subsection{Tecnología Front-End}
-Drupal viene integrado con JQuery, que durante años fue el referente en desarrollo de páginas web dinámicas, sin embargo hoy en día está siendo sustituido por nuevos frameworks de creación web como Reactjs y Angularjs. Se pide como objetivo el uso de Angularjs para toda la parte de la administración de plantillas para generación de PDF.
-
-\subsection{Generación de PDF}
-Se pide que la generación de PDF sea realizada en el lado del cliente para evitar mayores sobrecargas del servidor. Por lo tanto se utilizará una librería Javascript que permita esta generación. La librería escogida es jsPDF ya que permite generar documentos tanto en modo imagen como en modo texto, además de permitir un mayor control del posicionado de elementos en un pdf.
-
-\subsection{Comunicaciones Back-End -> Front-End}
-Para las comunicaciones de los sistemas de Front-End y Back-End se utilizará JSON ya que es un lenguaje ligero que Javascript entiende sin necesidad de transformaciones y nos permitirá un tratamiento de la información más ágil.
-
-\subsection{Capacidades del administrador}
-Un administrador de la web debe ser capaz de gestionar las plantillas PDF que serán usadas para generar los documentos. Deberá poder crear, borrar, editar y activar.
-A la hora de editar una plantilla, deberá ser capaz de seleccionar dónde quiere posicionar cada elemento (título del producto, precio, imagen...), además de establecer sus dimensiones y su tamaño de letra.
-La funcionalidad de activar una plantilla servirá para elegir cual plantilla debe ser usada para la generación de PDF.
-
-\subsection{Capacidades del usuario}
-Un usuario debe ser capaz de obtener el PDF de un producto con tan sólo pulsar un botón. Este PDF se generará de acuerdo con la plantilla escogida por el administrador.
-
-\subsection{Empaquetado de la solución}
-La solución debe ser exportable a otras instalaciones de Drupal que cumplan los requisitos mínimos para su instalación (Drupal 7, Ubercart, y otras dependencias). Por lo tanto, se pide la realización de un módulo de Drupal que contenga todo lo necesario para su correcto funcionamiento.
+\begin{itemize}
+	\item Elegir una plataforma base entre \acs{LAMP} y \acs{WAMP} para el desarrollo del \ac{TFM}
+	\item Instalar y aprender a utilizar el \ac{CMS} Drupal cogiendo soltura con sus elementos: vistas, tipos de contenido, módulos, etc.
+	\item Coger soltura con el lenguaje de programación PHP.
+	\item Utilizar Ubercart como extensión de comercio electrónico para la realización del \ac{TFM}.
+	\item Permitir que el administrador de la plataforma de comercio electrónico pueda gestionar distintas plantillas PDF.
+	\item Permitir la edición ágil del contenido de una plantilla PDF en el lado del cliente.
+	\item Elegir una tecnología para el lado del cliente que permita crear un interfaz de usuario ágil.
+	\item Permitir que un usuario anónimo genere documentos PDF a partir de productos y catálogos de productos.
+	\item Crear una solución exportable a otras instalaciones de Drupal mediante la creación de un módulo
+\end{itemize}
