@@ -10,7 +10,6 @@
 %\usepackage[T1]{fontenc}
 \usepackage[latin1]{inputenc}
 \usepackage{babel}
-\usepackage{makecell}
 \usepackage{fancyhdr}
 \usepackage{caption2}
 \usepackage{geometry}
@@ -23,6 +22,7 @@
 \usepackage{xcolor}
 \usepackage{sectsty}
 \usepackage{acronym}
+\usepackage{url}
 \usepackage{setspace}\singlespacing
 % Para otros interlineados: \renewcommand{\baselinestretch}{1.05}
 %\usepackage{dsfont} %Para las formulitas
@@ -53,7 +53,7 @@
 \fancyhead[LO]{\resizebox{1.31cm}{0.61cm}{\includegraphics{logo_master.png}}}
 
 \fancyhead[RE]{\color{blue}{Generación de catálogos en PDF para comercio electrónico}} % En las páginas pares, parte derecha del encabezado, aparecerá el título del proyecto
-\fancyhead[LE]{\resizebox{0.56cm}{0.67cm}{\includegraphics{logo_upm}}}
+\fancyhead[LE]{\resizebox{0.56cm}{0.67cm}{\includegraphics{logo_upm.png}}}
 %
 
 % para no numerar la página
@@ -67,7 +67,7 @@
 %
 \begin{figure}[htb]
 %%Escudo de la Universidad/Logo
-\centering{\resizebox{8.2cm}{8.7cm}{\includegraphics{logo_upm}}}
+\centering{\resizebox{8.2cm}{8.7cm}{\includegraphics{logo_upm.png}}}
 \end{figure}
 %
 \begin{center}
@@ -125,15 +125,23 @@
 \include{resumen}
 % ----------------- ABSTRACT ----------------------------
 \include{abstract}
-% ----------------- ACRÓNIMOS -----------------------
-\include{acronimos}
-% ----------------- OBJETIVOS ---------------------------
-\include{objetivo}
 
 % ----------------- ÍNDICE GENERAL ---------------------
 \tableofcontents
 % ----------------- ÍNDICE DE FIGURAS ------------------
 \listoffigures
+
+% ----------------- ACRÓNIMOS -----------------------
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Lista de acrónimos}
+\include{acronimos}
+
+% ----------------- OBJETIVOS ---------------------------
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Objetivos}
+\addcontentsline{toc}{section}{Objetivo general}
+\addcontentsline{toc}{section}{Objetivos específicos}
+\include{objetivo}
 
 \mainmatter
 
@@ -157,7 +165,7 @@
 % ----------------- BIBLIOGRAFÍA -----------------------
 % para que funcione bien esto se debe compilar allá donde halla una cita usando "bibtext"
 % el "alpha" es para que ordene la bibliografía por orden alfabético
-\bibliographystyle{alpha} \bibliography{librero}
+\bibliographystyle{plain} \bibliography{librero}
 % incluye la bibliografía en el índice
 \addcontentsline{toc}{chapter}{Bibliografía}
 

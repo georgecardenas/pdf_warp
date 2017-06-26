@@ -21,7 +21,7 @@ Existen muchas soluciones de generación de PDF, tanto a nivel de \textit{back-en
 También existen soluciones estándar, Chrome, por ejemplo, permite convertir una página web a PDF, pero está limitado por la calidad del trabajo que el maquetador web haya realizado con el archivo print.css, en el que se guardan las reglas de estilo a la hora de imprimir las diferentes páginas de la web. De nuevo, la modificación de este archivo requiere conocimientos avanzados de maquetación web y no suele ser fácil conseguir que una página se imprima como de la forma deseada, además de que habría que ocultar elementos sobrantes, como publicidad y menús.\\
 
 \section {Propuesta}
-A partir de lo elaborado en la introducción, motivación y objetivos, se propone por tanto la realización de un módulo para una de las plataformas libres de comercio electrónico más utilizadas como es Ubercart par Drupal que permita a un administrador la gestión de plantillas para generación de PDF de productos del catálogo que el comercio tenga a la venta.
+A partir de lo elaborado en la introducción, motivación y objetivos, se propone por tanto la realización de un módulo para una de las plataformas libres de comercio electrónico más utilizadas como es Ubercart para Drupal que permita a un administrador la gestión de plantillas para generación de PDF de productos del catálogo que el comercio tenga a la venta.
 
 \subsection{Requisitos funcionales}
 El módulo deberá implementar la siguiente funcionalidad:
@@ -60,7 +60,7 @@ Los lenguajes de programación usados para el desarrollo del proyecto aparecen ex
 
 \subsubsection{HTML}
 El lenguaje \ac{HTML} sirve principalmente para la publicación y estructuración de documentos y especificación de hipervínculos. Junto a \ac{CSS} y Javascript, forman la base de la programación web actual. Es un lenguaje basado en etiquetas y todo el contenido de un documento está almacenado entre una etiqueta de apertura y otra de cierre.
-La primera descripción publica de \ac{HTML} fue un documento llamado ``HTML Tags'' publicado por Tim Berners-Lee a finales de 1991 y describe los primeros 18 elementos incluidos en el lenguaje. Durante todo este tiempo se han ido publicando nuevas versiones de \ac{HTML} en las que se añadían nuevas etiquetas y se eliminaban otras obsoletas. La versión actual es \ac{HTML}5 que añade múltiples etiquetas avanzadas para controles multimedia, validaciones de formularios y maquetación de páginas web optimizadas para buscadores.\\
+La primera descripción pública de \ac{HTML} fue un documento llamado ``HTML Tags'' publicado por Tim Berners-Lee a finales de 1991 y describe los primeros 18 elementos incluidos en el lenguaje\cite{htmlTags}. Durante todo este tiempo se han ido publicando nuevas versiones de \ac{HTML} en las que se añadían nuevas etiquetas y se eliminaban otras obsoletas. La versión actual es \ac{HTML}5 que añade múltiples etiquetas avanzadas para controles multimedia, validaciones de formularios y maquetación de páginas web optimizadas para buscadores.\\
 
 Para programar en HTML basta con usar un editor de texto cualquiera y un navegador web para ver la página web interpretada desde el código escrito. La extensión de un documento HTML es ``.html'' o ``.htm''.
 
@@ -81,7 +81,7 @@ Ejemplo:
 
 \subsubsection {CSS}
 \ac{CSS} es el acrónimo de \textit{Cascale Style Sheets} el cuál es un lenguaje de estilo usado para describir la presentación de un lenguaje basado en etiquetas o marcas como HTML. Su diseño está enfocado principalmente a separar la presentación del contenido del documento, incluyendo aspectos como la estructura, colores y fuentes. Las especificaciones \ac{CSS} son mantenidas por el \ac{W3C}.
-La primera propuesta de \ac{CSS} la realizó Håkon Wium Lie en 1994 y a pesar de que en el momento habían más propuestas de lenguajes de estilo, \ac{CSS} se impuso y acabó siendo lanzado en 1996 por el W3C. El lenguaje tuvo unos inicios complicados ya que los navegadores inicialmente ofrecían soporte muy limitado para \ac{CSS}. No fue sino hasta la versión 5 de Internet Explorer que se dio soporte a la totalidad del lenguaje, y aun así muchos otros navegadores seguían ofreciendo compatibilidades limitadas. Actualmente la especificación \ac{CSS} utilizada es la 3, aunque a partir de esta versión, el lenguaje se partió en módulos y se puede hacer uso de algunos de la especificación 4.\\
+La primera propuesta de \ac{CSS} la realizó Håkon Wium Lie en 1994\cite{Hak94} y a pesar de que en el momento habían más propuestas de lenguajes de estilo, \ac{CSS} se impuso y acabó siendo lanzado en 1996 por el W3C\cite{W3cCSS}. El lenguaje tuvo unos inicios complicados ya que los navegadores inicialmente ofrecían soporte muy limitado para \ac{CSS}. No fue sino hasta la versión 5 de Internet Explorer que se dio soporte a la totalidad del lenguaje\cite{Bert94}, y aun así muchos otros navegadores seguían ofreciendo compatibilidades limitadas. Actualmente la especificación \ac{CSS} utilizada es la 3, aunque a partir de esta versión, el lenguaje se partió en módulos y se puede hacer uso de algunos de la especificación 4.\\
 
 Al igual que con HTML, para programar en CSS basta con un programa editor de texto y un navegador web. Es un lenguaje ligado a HTML y puede aparecer o bien incrustado en el mismo documento ``.html'' o bien en su propio archivo ``.css'' que luego es importado al documento web.
 
@@ -99,7 +99,7 @@ Ejemplo:
 
 \subsubsection {Javascript}
 Javascript es un lenguaje de programación de alto nivel creado originalmente en el año 1995 para ser un lenguaje de \textit{scripting} complementario a los navegadores web. Inicialmente se le dio el nombre de Mocha en su fase de desarrollo, aunque luego su nombre cambió a LiveScript para más tarde ser reemplazado por Javascript en su lanzamiento junto a Netscape Navigator 2.0. Se cree que se le dio este nombre para aprovechar la popularidad de Java.
-Un año después fue adoptado por Microsoft bajo el nombre de JScript para evitar problemas legales de nomenclatura y más tarde fue estandarizado por ECMA Internacional lanzando la especificación de lenguaje ECMAScript.
+Un año después fue adoptado por Microsoft bajo el nombre de JScript para evitar problemas legales de nomenclatura y más tarde fue estandarizado por ECMA Internacional lanzando la especificación de lenguaje ECMAScript\cite{News95,Marc08}.
 Las especificaciones de ECMAScript se han ido adaptando a los tiempos modernos, añadiendo nuevas funcionalidades y corrigiendo otras. Actualmente se trabaja mucho con la especificación ECMAScript 5, aunque la especificación 6 está ganando popularidad desde su salida en el año 2015 y sobre todo por la adopción de la misma por los desarrolladores de los \textit{frameworks} y librerías más populares como Angularjs, Reactjs y Babel.\\
 
 Javascript es un lenguaje dinámico, sin tipado e interpretado en tiempo de ejecución. Es un lenguaje con múltiples paradigmas: funcional, imperativo e incluso en las últimas especificaciones, integra orientación a objetos.\\
@@ -117,9 +117,9 @@ Ejemplo:
 \end{verbatim}
 
 \subsubsection{PHP}
-PHP es un lenguaje de scripting para \textit{back-end} diseñado principalmente para diseño web, pero que es utilizado también como lenguaje de propósito general. Fue creado en el año 1995 por Rasmus Lerdorf quien escribió unas aplicaciones de consola en C para mantener su página web personal. Posteriormente las amplió para funcionar con WebForms y comunicarlas con bases de datos y lo llamó ``\textit{Personal Home Page/Forms Interpreter}'' o PHP/FI. Inicialmente no fue concebido para ser un lenguaje de programación, pero Lerdorf fue paulatinamente añadiendo funcionalidades hasta que se formó un equipo de desarrollo, lanzando su primera versión oficial en 1997.\\
+PHP es un lenguaje de scripting para \textit{back-end} diseñado principalmente para diseño web, pero que es utilizado también como lenguaje de propósito general. Fue creado en el año 1995 por Rasmus Lerdorf quien escribió unas aplicaciones de consola en C para mantener su página web personal\cite{Ras07}. Posteriormente las amplió para funcionar con WebForms y comunicarlas con bases de datos y lo llamó ``\textit{Personal Home Page/Forms Interpreter}'' o PHP/FI. Inicialmente no fue concebido para ser un lenguaje de programación, pero Lerdorf fue paulatinamente añadiendo funcionalidades hasta que se formó un equipo de desarrollo, lanzando su primera versión oficial en 1997.\cite{Ras03}\\
 
-Durante su tiempo de vida, el lenguaje ha recibido numerosas actualizaciones. Actualmente se encuentra en la séptima iteración de PHP, con la salida de la versión 7.2 programada para noviembre de 2017.\\
+Durante su tiempo de vida, el lenguaje ha recibido numerosas actualizaciones. Actualmente se encuentra en la séptima iteración de PHP, con la salida de la versión 7.2 programada para noviembre de 2017.\cite{PHP17}\\
 
 Es un lenguaje orientado objetos pero que nos permite utilizar varios paradigmas de programación como el estructurado, imperativo, funcional y reflexivo.
 Como suele ocurrir con los lenguajes de \textit{scripting}, PHP es un lenguaje interpretado, es decir, no requiere de compilación previa para su ejecución. Además es de tipado dinámico, por lo que las variables no están asociadas a un tipo de datos en el momento de su declaración, sino que se les asigna un tipo automáticamente en el momento de su uso.\\
@@ -146,7 +146,7 @@ Ejemplo:
 
 \subsubsection {JSON}
 \ac{JSON} se trata de un estándar abierto de formato de archivo para el envío de información a través de pares clave-valor. Es muy utilizado hoy en día para las comunicaciones entre cliente y servidor.
-La primera especificación de JSON vino de la mano de Douglas Crockford quien lo creó originariamente para ser un subconjunto de Javascript. De hecho es actualmente muy utilizado junto a este lenguaje, sin embargo, JSON es independiente del lenguaje con el que sea usado. En el año 2013 se estableció un estándar por ECMA Internacional.\\
+La primera especificación de JSON vino de la mano de Douglas Crockford quien lo creó originariamente para ser un subconjunto de Javascript\cite{Mag11}. De hecho es actualmente muy utilizado junto a este lenguaje, sin embargo, JSON es independiente del lenguaje con el que sea usado. En el año 2013 se estableció un estándar por ECMA Internacional.\\
 
 Los tipos de datos que pueden ser usados en un documento JSON son: Boolean, String, Number, Array, Object y null.
 
@@ -182,16 +182,16 @@ Ejemplo:
 En esta sección se hace una recopilación de los \textit{frameworks} y librerías de terceros usados durante el desarrollo del proyecto y sus características.
 
 \subsubsection {Drupal}
-Drupal es un sistema de gestión de contenidos (o \ac{CMS} según sus siglas en inglés derivadas de \textit{Content Management System}) de código abierto que es utilizado por un 2,3\% de sitios web del mundo. Es un sistema libre, modular y multipropósito que permite publicar artículos, imágenes, archivos y que también ofrece la posibilidad de otros servicios añadidos como foros, encuestas, votaciones, blogs y administración de usuarios y permisos. Es un sistema de carga dinámico, es decir, todos los recursos se almacenan en una base de datos y se cargan en tiempo real a la hora de generar una página. Este CMS está escrito utilizando el lenguaje PHP valiéndose de las librerías de Symfony, por lo que es un sistema multiplataforma soportado tanto por Windows como por sistemas Unix.\\
+Drupal es un sistema de gestión de contenidos (o \ac{CMS} según sus siglas en inglés derivadas de \textit{Content Management System}) de código abierto que es utilizado por un 2,3\% de sitios web del mundo\cite{W3t17}. Es un sistema libre, modular y multipropósito que permite publicar artículos, imágenes, archivos y que también ofrece la posibilidad de otros servicios añadidos como foros, encuestas, votaciones, blogs y administración de usuarios y permisos. Es un sistema de carga dinámico, es decir, todos los recursos se almacenan en una base de datos y se cargan en tiempo real a la hora de generar una página. Este CMS está escrito utilizando el lenguaje PHP valiéndose de las librerías de Symfony, por lo que es un sistema multiplataforma soportado tanto por Windows como por sistemas Unix.\\
 
-Originalmente fue escrito por Dries Buytaert como un foro de opinión. En el año 2001 se convirtió en un proyecto de código abierto y ganó popularidad en 2004 al utilizarse para crear el sitio \textit{DeanSpace} para el candidato a las primarias por el Partido Demócrata de Estados Unidos Howard Dean.\\
+Originalmente fue escrito por Dries Buytaert como un foro de opinión. En el año 2001 se convirtió en un proyecto de código abierto y ganó popularidad en 2004 al utilizarse para crear el sitio \textit{DeanSpace} para el candidato a las primarias por el Partido Demócrata de Estados Unidos Howard Dean.\cite{Ben11}\\
 
 Actualmente Drupal se encuentra en la versión 8, aunque aún brinda soporte a la versión 7 que cuenta con muchos adeptos. La mayoría de los módulos y temas de Drupal desarrollados por sus usuarios son compatibles con la versión 7.\\
 
 Algunos ejemplos de sitios desarrollados con Drupal son las webs de Ubuntu, Intel o Economist, entre otros.
 
 \subsubsection {Angularjs}
-Angularjs es un \textit{framework} para aplicaciones web de código abierto basado en Javascript especializado en \textit{\ac{SPA}}. Actualmente está soportado por Google y una comunidad formada por desarrolladores individuales y empresas. Fue inicialmente programado en el año 2009 por Miko Hevery como un \textit{software} base para una aplicación \textit{online} de almacenamiento de datos en JSON, aunque debido al pobre acogimiento que tuvo la idea, el producto se desechó y se lanzo Angular como una librería de código abierto. Inicialmente todo el contenido de Angularjs iba en un único paquete pero en las versiones más recientes, se ha modularizado para que cada desarrollador tenga una instalación personalizada de acuerdo a sus necesidades.\\
+Angularjs es un \textit{framework} para aplicaciones web de código abierto basado en Javascript especializado en \textit{\ac{SPA}}. Actualmente está soportado por Google y una comunidad formada por desarrolladores individuales y empresas. Fue inicialmente programado en el año 2009 por Miko Hevery como un \textit{software} base para una aplicación \textit{online} de almacenamiento de datos en JSON\cite{Misk09}, aunque debido al pobre acogimiento que tuvo la idea, el producto se desechó y se lanzo Angular como una librería de código abierto. Inicialmente todo el contenido de Angularjs iba en un único paquete pero en las versiones más recientes, se ha modularizado para que cada desarrollador tenga una instalación personalizada de acuerdo a sus necesidades.\\
 
 Actualmente se dispone de dos vertientes de Angularjs, la versión 1.x y la versión 2.x. Aunque compartan el nombre, la Angularjs 2.x no se trata de la siguiente iteración del \textit{framework}, si no que se trata de un remodelado completo incompatible con la versión anterior, por lo que se tratan como si fueran dos librerías diferentes y ambos continúan recibiendo soporte.\\
 
@@ -201,7 +201,7 @@ En este proyecto se usa la versión 1.6 del \textit{framework}. Algunos sitios de
 
 \subsubsection {JQuery}
 \FloatBarrier
-Es una librería de Javascript diseñada para simplificar la programación en el lado del cliente. Es de código abierto y es la librería más usada de Javascript. Fue lanzado en el año 2006 por John Resig quien se inspiró en las librerías de cssQuery.\\
+Es una librería de Javascript diseñada para simplificar la programación en el lado del cliente. Es de código abierto y es la librería más usada de Javascript\cite{W3tJquery17}. Fue lanzado en el año 2006 por John Resig quien se inspiró en las librerías de cssQuery.\cite{Joh07}\\
 
 Principalmente contiene funciones para manipular el \ac{DOM} que es un conjunto estándar de objetos para representar documentos HTML, y una interfaz estándar para acceder a ellos y manipularlos. También permite realizar animaciones, gestionar eventos y desarrollar aplicaciones basadas en Ajax. Sus principales características son las siguientes:
 \begin{itemize}  
@@ -238,12 +238,12 @@ Al ser compatible con JsPDF permite la generación de un documento PDF en modo im
 En esta sección se enumeran los sistemas principales del \textit{back-end} sobre los que se monta la aplicación.
 
 \subsubsection {Apache HTTP Server}
-Llamado coloquialmente Apache, es un servidor web multiplataforma de código abierto. La Apache Software Foundation\footnote{https://www.apache.org/} es la encargada actualmente de dar soporte y programación del producto. Su desarrollo comenzó en el año 1995 y jugó un papel importante en el crecimiento de la World Wide Web sustituyendo rápidamente a NCSA HTTPd como servidor \ac{HTTP} dominante en el mercado. Actualmente es el servidor más utilizado del mundo siendo utilizado por un 46\% de los sitios web en activo.\\
+Llamado coloquialmente Apache, es un servidor web multiplataforma de código abierto. La Apache Software Foundation\footnote{https://www.apache.org/} es la encargada actualmente de dar soporte y programación del producto. Su desarrollo comenzó en el año 1995 y jugó un papel importante en el crecimiento de la World Wide Web sustituyendo rápidamente a NCSA HTTPd como servidor \ac{HTTP} dominante en el mercado. Actualmente es el servidor más utilizado del mundo siendo utilizado por un 46\% de los sitios web en activo.\cite{Net16}\\
 
 Entre sus principales características se encuentra el soporte para lenguajes de programación como Perl, Python, Tcl y PHP, módulos de autenticación (mod\_access, mod\_auth, mod\_digest y mod\_auth\_digest), soporte para SSL y TLS, hosting virtual, y autenticación por contraseña o firma digital entre otros.
 
 \subsubsection {MySQL}
-MySQL es un sistema gestor de base de datos relacionales de código abierto creado por la compañía sueca MYSQL AB en el año 1995. Durante este tiempo MySQL fue ganando popularidad y en el año 2008 fue comprado por Sun Microsystems para posteriormente pasar a manos de Oracle, actuales propietarios. Antes de la adquisición por parte de Oracle, uno de los creadores y fundadores de MYSQL AB, Monty Widenius, realizó un fork de la versión 5.5 de MySQL para crear MariaDB y mantener la esencia del producto.\\
+MySQL es un sistema gestor de base de datos relacionales de código abierto creado por la compañía sueca MYSQL AB en el año 1995\cite{Bob09}. Durante este tiempo MySQL fue ganando popularidad y en el año 2008 fue comprado por Sun Microsystems para posteriormente pasar a manos de Oracle, actuales propietarios. Antes de la adquisición por parte de Oracle, uno de los creadores y fundadores de MYSQL AB, Monty Widenius, realizó un fork de la versión 5.5 de MySQL para crear MariaDB y mantener la esencia del producto.\cite{Mon09}\\
 
 Actualmente MySQL se encuentra en la versión 5.7 y se ofrece tanto la versión MySQL Community Server como Enterprise Server, siendo ésta última una licencia de pago. Aunque MySQL server ha evolucionado para poder albergar y tratar volúmenes altos de datos, se sigue utilizando principalmente para aplicaciones de pequeño a mediano tamaño.\\
 
@@ -277,7 +277,7 @@ Sus principales características son:
 
 \subsubsection {Git}
 Es un sistema de control de versiones cuya función principal es la de mantener un registro de cambios locales realizados en un directorio y coordinar el trabajo sobre esos archivos entre un grupo de gente. Se usa mayoritariamente como gestión de código a la hora de desarrollar \textit{software} de manera distribuida.
-Fue creado por Linus Torvalds en el año 2005 para el desarrollo del \textit{kernel} de Linux con la finalidad de coordinar el trabajo con otros desarrolladores. A Torvalds no le convencían otros sistemas de control de versiones disponibles.
+Fue creado por Linus Torvalds en el año 2005 para el desarrollo del \textit{kernel} de Linux con la finalidad de coordinar el trabajo con otros desarrolladores.\cite{Git14} A Torvalds no le convencían otros sistemas de control de versiones disponibles.
 Una de las características de Git es que cada directorio de Git en cada ordenador es un repositorio completo con histórico y rastreo de versiones independiente de cualquier servidor central. Esto hace posible que, en caso de perderse el repositorio remoto, este se pueda rehacer desde uno perteneciente a los desarrolladores.
 Sus principales características son:
 \begin{itemize}  

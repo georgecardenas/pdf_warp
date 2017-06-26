@@ -8,6 +8,32 @@ A level-1 auxiliary file: introduccion.aux
 A level-1 auxiliary file: metodologia.aux
 A level-1 auxiliary file: descripcion_informatica.aux
 A level-1 auxiliary file: conclusiones.aux
-The style file: alpha.bst
+The style file: plain.bst
 A level-1 auxiliary file: anexos.aux
 Database file #1: librero.bib
+Warning--empty journal in Marc08
+Warning--empty journal in Bert94
+Warning--empty journal in htmlTags
+Warning--empty journal in W3cCSS
+Warning--empty journal in Git14
+Warning--empty journal in Misk09
+Warning--empty journal in Mag11
+Warning--empty journal in Jef16
+Warning--empty publisher in Jef95
+Warning--empty journal in Ras03
+Warning--empty journal in Ras07
+Warning--empty publisher in Hak94
+Warning--empty publisher in Ben11
+Warning--empty journal in Net16
+Warning--empty journal in News95
+Warning--empty journal in PHP17
+Warning--empty journal in Bob09
+Warning--empty journal in Joh07
+Warning--empty journal in Jef04
+Warning--empty journal in Tak86
+Warning--empty journal in Seg15
+Warning--empty journal in Dav16
+Warning--empty journal in W3t17
+Warning--empty journal in W3tJquery17
+Warning--empty journal in Mon09
+(There were 25 warnings)

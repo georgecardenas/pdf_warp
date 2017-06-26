@@ -1,14 +1,171 @@
-\begin{thebibliography}{Pes03}
+\begin{thebibliography}{10}
 
-\bibitem[NC97]{NewCam97}
-Isaac Newton and Naomi Campbell.
-\newblock A re-formulation of gravity with respect to really cool models.
-\newblock {\em Jornal of Funny Physics}, 35:39--78, 1997.
+\bibitem{Marc08}
+Marc Andersen.
+\newblock \textit{TechVision: Innovators of the Net: Brendan Eich and
+  JavaScript}.
+\newblock 2008.
+\newblock
+  \url{https://web.archive.org/web/20080208124612/http://wp.netscape.com/comprod/columns/techvision/innovators_be.html}.
 
-\bibitem[Pes03]{Pesce}
-Mark~D. Pesce.
-\newblock {\em Programming Microsoft DirectShow for digital video and
-  television}.
-\newblock Microsoft Press, 2003.
+\bibitem{Bert94}
+Bert Bros.
+\newblock \textit{CSS software}.
+\newblock 1994-2017.
+\newblock \url{https://www.w3.org/Style/CSS/software.en.html#w26}.
+
+\bibitem{htmlTags}
+World Wide~Web Consortium.
+\newblock \textit{First mention of HTML Tags on the www-talk mailing list}.
+\newblock 1991.
+\newblock
+  \url{http://lists.w3.org/Archives/Public/www-talk/1991SepOct/0003.html}.
+
+\bibitem{W3cCSS}
+World Wide~Web Consortium.
+\newblock \textit{Cascading Style Sheets, level 1}.
+\newblock 1996.
+\newblock \url{https://www.w3.org/TR/1999/REC-CSS1-19990111}.
+
+\bibitem{Git14}
+Git.
+\newblock \textit{A Short History of Git}.
+\newblock 2014.
+\newblock
+  \url{https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git}.
+
+\bibitem{Misk09}
+Mi?ko Hever.
+\newblock \textit{Hello World, <angular/> is here}.
+\newblock 2009.
+\newblock
+  \url{http://misko.hevery.com/2009/09/28/hello-world-angular-is-here/}.
+
+\bibitem{Mag11}
+Magnus Holm.
+\newblock \textit{JSON: The JavaScript subset that isn't}.
+\newblock 2011.
+\newblock \url{http://timelessrepo.com/json-isnt-a-javascript-subset}.
+
+\bibitem{Jef16}
+Ken~Schwabe Jeffrey~Sutherland.
+\newblock \textit{The Scrum Guide}.
+\newblock 2016.
+\newblock
+  \url{http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-US.pdf}.
+
+\bibitem{Jef95}
+Ken~Schwaber Jeffrey~Sutherland.
+\newblock {\em \textit{Business object design and implementation: OOPSLA '95
+  workshop proceedings}}.
+\newblock 1995.
+\newblock p. 118. ISBN 3-540-76096-2.
+
+\bibitem{Ras03}
+Rasmus Lerdorf.
+\newblock \textit{PHP, Behind the Mic}.
+\newblock 2003.
+\newblock
+  \url{https://web.archive.org/web/20130728125152/http://itc.conversationsnetwork.org/shows/detail58.html}.
+
+\bibitem{Ras07}
+Rasmus Lerdorf.
+\newblock \textit{PHP on Hormones}.
+\newblock 2007.
+\newblock
+  \url{2009-06-22.http://web.archive.org/web/20130729204354id_/http://itc.conversationsnetwork.org/shows/detail3298.html}.
+
+\bibitem{Hak94}
+Håkon~Wium Lie.
+\newblock {\em \textit{Cascading HTML style sheets - a proposal}}.
+\newblock 1994.
+
+\bibitem{Ben11}
+Benjamin Melançon.
+\newblock {\em \textit{The Definitive Guide to Drupal 7}}.
+\newblock 2011.
+\newblock p. 823. ISBN 9781430231356.
+
+\bibitem{Net16}
+Netcraft.
+\newblock \textit{July 2016 Web Server Survey}.
+\newblock 2016.
+\newblock
+  \url{https://web.archive.org/web/20160810054429/http://news.netcraft.com/archives/2016/07/19/july-2016-web-server-survey.html}.
+
+\bibitem{News95}
+Newswire.
+\newblock \textit{Netscape and Sun announce JavaScript}.
+\newblock 1995.
+\newblock
+  \url{https://web.archive.org/web/20070916144913/http://wp.netscape.com/newsref/pr/newsrelease67.html}.
+
+\bibitem{PHP17}
+PHP.
+\newblock \textit{Preparation Tasks}.
+\newblock 2017.
+\newblock \url{https://wiki.php.net/todo/php72}.
+
+\bibitem{Bob09}
+Bob Remeika.
+\newblock \textit{Five Questions With Michael Widenius ? Founder And Original
+  Developer of MySQL}.
+\newblock 2009.
+\newblock
+  \url{https://web.archive.org/web/20090313160628/http://www.opensourcereleasefeed.com/interview/show/five-questions-with-michael-widenius-founder-and-original-developer-of-mysql}.
+
+\bibitem{Joh07}
+John resig.
+\newblock \textit{jQuery: past, present and future}.
+\newblock 2007.
+\newblock \url{https://www.slideshare.net/jeresig/history-of-jquery}.
+
+\bibitem{Jef04}
+Jeffrey Sutherland.
+\newblock \textit{Agile Development: Lessons learned from the first Scrum}.
+\newblock 2004.
+\newblock \url{https://www.scrumalliance.org/resources/35}.
+
+\bibitem{Tak86}
+Ikujiro Takeuchi, Hirotaka;~Nonaka.
+\newblock \textit{New New Product Development Game}.
+\newblock 1986.
+\newblock \url{https://cb.hbsp.harvard.edu/cbmp/product/86116-PDF-ENG}.
+
+\bibitem{Seg15}
+Segue Technologies.
+\newblock \textit{The Benefits of Adhering to Software Development Methodology
+  Concepts}.
+\newblock 2015.
+\newblock
+  \url{http://www.seguetech.com/benefits-adhering-software-development-methodology-concepts/}.
+
+\bibitem{Dav16}
+David Villafranca.
+\newblock \textit{Amazon volvió en 2015 a los beneficios y superó los 100.000
+  millones en venta}s.
+\newblock 2016.
+\newblock
+  \url{https://www.efe.com/efe/espana/economia/amazon-volvio-en-2015-a-los-beneficios-y-supero-100-000-millones-ventas/10003-2824141}.
+
+\bibitem{W3t17}
+W3Techs.
+\newblock \textit{Usage of content management systems for websites}.
+\newblock 2017.
+\newblock
+  \url{https://w3techs.com/technologies/overview/content_management/all}.
+
+\bibitem{W3tJquery17}
+W3Techs.
+\newblock \textit{Usage of JavaScript libraries for websites}.
+\newblock 2017.
+\newblock
+  \url{https://w3techs.com/technologies/overview/javascript_library/all}.
+
+\bibitem{Mon09}
+Monty Widenius.
+\newblock \textit{MariaDB versus MySQL ? Compatibility}.
+\newblock 2010.
+\newblock \url{https://mariadb.com/about-us/wiki/MariaDB_versus_MySQL}.
 
 \end{thebibliography}

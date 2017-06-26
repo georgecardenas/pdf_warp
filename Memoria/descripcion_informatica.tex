@@ -1,17 +1,18 @@
 \chapter{Descripción informática}
 En este capítulo se realiza un análisis del proceso de desarrollo del proyecto, explicando la aplicación de la metodología, los hitos cumplidos en el desarrollo del proyecto e incluyendo toda la información relevante sobre el funcionamiento de la aplicación.
 \section{Aplicación de la metodología Scrum}
+\label{sec:metscrum}
 En este proyecto se aplica la metodología Scrum adaptada a \ac{TFM} como hemos explicado en el apartado \ref{sec:scrumtfm}. El tutor del proyecto toma el rol de propietario del producto y el alumno de desarrollador. El rol de \textit{Scrum Master} se divide entre tutor y alumno.
 
 \subsection{Primera reunión 04/05/2017}
 En la primera reunión se trata todo lo referente al inicio del proyecto. El propietario del producto explica al desarrollador cual es el objetivo final del \ac{TFM}: desarrollar un módulo para Drupal para la generación de PDF a partir de catálogos y productos de Ubercart. Se dan también los primeros detalles que debería contener la herramienta.
-Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica de instalación, gestión y estudio de este \textit{framework}. A partir de este backlog se establece el primer sprint (cuadro \ref{tab:sb01}) y se da un plazo de 2 a 3 semanas para terminarlo. En el cuadro \ref{tab:pb01} se puede observar el estado del product backlog tras la primera reunión.
+Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica de instalación, gestión y estudio de este \textit{framework}. A partir de este backlog se establece el primer \textit{sprint} (cuadro \ref{tab:sb01}) y se da un plazo de 2 a 3 semanas para terminarlo. En el cuadro \ref{tab:pb01} se puede observar el estado del product backlog tras la primera reunión.
 
 \begin{table}
 	\centering
 	\begin{tabular}{ | p{2cm} | p{3cm} | p{7.5cm} | p{1cm} |}
 		\hline
-		ID Historia & Alias & Enunciado & Sprint\\ \hline
+		ID Historia & Alias & Enunciado & \textit{Sprint}\\ \hline
 		HT01 & Instalación de Entorno & Yo como desarrollador\newline necesito montar un entorno de Drupal 7\newline para poder desarrollar la aplicación & \#1\\ \hline
 	\end{tabular}
 	\caption{\textit{Product Backlog} 04/05/2017}\label{tab:pb01}
@@ -35,17 +36,17 @@ Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica
 \end{table}
 
 \subsection{Segunda reunión 25/05/2017}
-En la segunda reunión se muestra al propietario del producto las tareas realizadas con resultado satisfactorio. Al haber completado con éxito el primer sprint y haber demostrado el desarrollador soltura a la hora de utilizar el \textit{framework} de Drupal, se comienza a hablar de la funcionalidad que debe cumplir el \ac{TFM}. Se establecen nuevas historias de usuario para el \textit{product backlog} estableciendo como prioritarias aquellas relacionadas con la generación de documentos PDF. Se establece el nuevo sprint (cuadro \ref{tab:sb02}) y se establece una duración de una semana. El product backlog en este punto se puede observar en el cuadro \ref{tab:pb02}
+En la segunda reunión se muestra al propietario del producto las tareas realizadas con resultado satisfactorio. Al haber completado con éxito el primer \textit{sprint} y haber demostrado el desarrollador soltura a la hora de utilizar el \textit{framework} de Drupal, se comienza a hablar de la funcionalidad que debe cumplir el \ac{TFM}. Se establecen nuevas historias de usuario para el \textit{product backlog} estableciendo como prioritarias aquellas relacionadas con la generación de documentos PDF. Se establece el nuevo \textit{sprint} (cuadro \ref{tab:sb02}) y se establece una duración de una semana. El product backlog en este punto se puede observar en el cuadro \ref{tab:pb02}
 
 \begin{table}
 	\centering
 	\begin{tabular}{ | p{2cm} | p{3cm} | p{7.5cm} | p{1cm} |}
 		\hline
-		ID Historia & Alias & Enunciado & Sprint\\ \hline
+		ID Historia & Alias & Enunciado & \textit{Sprint}\\ \hline
 		HT01 & Instalación de Entorno & Yo como desarrollador\newline necesito montar un entorno de Drupal 7\newline para poder desarrollar la aplicación & \#1\\ \hline
 		H01 & Botón de generación de PDF de producto & Yo como usuario\newline necesito ver un botón de generación de PDF para Productos\newline para poder generar un documento PDF & \#2\\ \hline
-		H02 & Generación de PDF de producto & Yo como usuario\newline debo ser capaz de generar PDFs a partir de Productos\newline para su posterior consulta offline & \#2\\ \hline
-		HT02 & Creación de vistas programáticamente & Yo como desarrollador\newline debo crear las vistas json del módulo programáticamente\newline para que el usuario no tenga que realizar trabajo extra en la fase de instalación & \#2\\ \hline
+		H02 & Generación de PDF de producto & Yo como usuario\newline debo ser capaz de generar PDF a partir de Productos\newline para su posterior consulta offline & \#2\\ \hline
+		HT02 & Creación de vistas programáticamente & Yo como desarrollador\newline debo crear las vistas JSON del módulo programáticamente\newline para que el usuario no tenga que realizar trabajo extra en la fase de instalación & \#2\\ \hline
 	\end{tabular}
 	\caption{\textit{Product Backlog} 25/05/2017}\label{tab:pb02}
 \end{table}
@@ -63,3 +64,103 @@ En la segunda reunión se muestra al propietario del producto las tareas realizad
 	\end{tabular}
 	\caption{\textit{Sprint} \#2}\label{tab:sb02}
 \end{table}
+
+\subsection{Tercera reunión 01/06/2017}
+Tras la implementación del segundo \textit{sprint} se lleva a cabo la revisión de las tareas realizadas. En este momento el propietario del producto informa que hay nuevas historias de usuario que implican cambios en la idea inicial del procedimiento. Además de la generación PDF, debe ser posible que un usuario administrador cree y gestione nuevas plantillas que serán aplicadas en el momento de la generación. Se pide también que además de la generación de PDF de productos independientes se implemente la generación de PDF de catálogos de productos. Al haber demasiadas historias de usuario para el siguiente \textit{sprint} (ver cuadro \ref{tab:pb03}) se decide dividir las tareas en dos \textit{sprints} que serán ejecutados en sucesión. La definición del tercer \textit{sprint} se puede ver en el cuadro \ref{tab:sb03} la duración del mismo será de 2 semanas.
+
+\begin{table}
+	\centering
+	\scriptsize{
+	\begin{tabular}{ | p{2cm} | p{3cm} | p{7.5cm} | p{1cm} |}
+		\hline
+		ID Historia & Alias & Enunciado & \textit{Sprint}\\ \hline
+		HT01 & Instalación de Entorno & Yo como desarrollador\newline necesito montar un entorno de Drupal 7\newline para poder desarrollar la aplicación & \#1\\ \hline
+		H01 & Botón de generación de PDF de producto & Yo como usuario\newline necesito ver un botón de generación de PDF para Productos\newline para poder generar un documento PDF & \#2\\ \hline
+		H02 & Generación de PDF de producto & Yo como usuario\newline debo ser capaz de generar PDF a partir de Productos\newline para su posterior consulta offline & \#2\\ \hline
+		HT02 & Creación de vistas programáticamente & Yo como desarrollador\newline debo crear las vistas JSON del módulo programáticamente\newline para que el usuario no tenga que realizar trabajo extra en la fase de instalación & \#2\\ \hline
+		H03 & Creación de plantillas de producto & Yo como administrador\newline debo ser capaz de crear plantillas para la generación de PDFs de Productos\newline para que el usuario genere un PDF atractivo & \#3\\ \hline
+		H04 & Asignación de plantillas de producto & Yo como administrador\newline necesito poder asignar una plantilla de PDF a Productos\newline para que se genere un PDF con los elementos posicionados de acorde a la plantilla & \#3\\ \hline
+		H05 & Mover elementos en plantillas de producto & Yo como administrador\newline necesito poder mover elementos en una plantilla pdf de producto\newline para posicionarlos donde crea conveniente & \#3\\ \hline
+		H06 & Borrado de plantillas de producto & Yo como administrador\newline debo ser capaz de borrar plantillas PDF de producto\newline para que no se acumulen plantillas sin uso & \#2\\ \hline
+		H07 & Acceso a sección de gestión de plantillas & Yo como administrador\newline necesito un botón en la sección de admnistración\newline para poder acceder a la sección de gestión de plantillas & \#3\\ \hline
+		H08 & Botón de generación de PDF de catálogo & Yo como usuario\newline necesito ver un botón de generación de PDF para catálogos\newline para poder generar un documento PDF & \#4\\ \hline
+		H09 & Generación de PDF de catálogo & Yo como usuario\newline debo ser capaz de generar PDFs a partir de catálogos\newline para su posterior consulta offline & \#4\\ \hline
+		H10 & Creación de plantillas de catálogo & Yo como administrador\newline debo ser capaz de crear plantillas para la generación de PDFs de catálogos\newline para que el usuario genere un PDF atractivo & \#4\\ \hline
+		H11 & Asignación de plantillas de catálogo & Yo como administrador\newline necesito poder asignar una plantilla de PDF a catálogos\newline para que se genere un PDF con los elementos posicionados de acorde a la plantilla & \#4\\ \hline
+		H12 & Mover elementos en plantillas de catálogo & Yo como administrador\newline necesito poder mover elementos en una plantilla pdf de catálogo\newline para posicionarlos donde crea conveniente & \#4\\ \hline
+		H13 & Borrado de plantillas de catálogo & Yo como administrador\newline debo ser capaz de borrar plantillas PDF de catálogo\newline para que no se acumulen plantillas sin uso & \#4\\ \hline
+	\end{tabular}}
+	\caption{\textit{Product Backlog} 01/06/2017}\label{tab:pb03}
+\end{table}
+
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{2cm} | p{2cm} | p{7cm} | p{2cm} |}
+		\hline
+		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline		
+		H03 & T03.1 & Crear tablas de base de datos & 8\\ \hline
+		H03 & T03.2 & Crear vistas de administración & 8\\ \hline
+		H03 & T03.3 & Crear funciones en \textit{back-end} de creación de plantillas & 5\\ \hline
+		H04 & T04.1 & Crear funciones \textit{back-end} para la asignación de plantillas & 5\\ \hline
+		H04 & T04.2 & Crear vista para la asignación de plantillas & 5\\ \hline
+		H05 & T05.1 & Integración de librerías \textit{front-end} & 8\\ \hline
+		H05 & T05.2 & Creación de vistas & 3\\ \hline
+		H05 & T05.3 & Funciones de edición & 8\\ \hline
+		H05 & T05.4 & Funciones de actualización de base de datos & 5\\ \hline
+		H06 & T06.1 & Vistas para borrado & 3\\ \hline
+		H06 & T06.2 & Funciones de borrado de base de datos & 3\\ \hline
+		H07 & T07.1 & Creación de botón en \textit{back-end} & 5\\ \hline
+	\end{tabular}
+	\caption{\textit{Sprint} \#3}\label{tab:sb03}
+\end{table}
+
+\subsection{Cuarta reunión 16/06/2017}
+Se lleva a cabo la cuarta reunión revisando las tareas realizadas en el tercer \textit{sprint}. El resultado es satisfactorio y se planifica el siguiente conjunto de tareas a realizar a partir de las historias de usuario restantes en el \textit{product backlog}. Se define el \textit{sprint} del cuadro \ref{tab:sb04} mientras se mantiene el estado actual del \textit{product backlog} del cuadro \ref{tab:pb03}. la complejidad de estas tareas es menor, ya que están muy relacionadas con las tareas del tercer \textit{sprint} y la experiencia previa, permite que el tiempo asignado para estas tareas sea de una semana.
+
+\begin{table}
+	\centering
+	\begin{tabular}{ | p{2cm} | p{2cm} | p{7cm} | p{2cm} |}
+		\hline
+		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline
+		H08 & T08.1 & Crear Hooks & 2\\ \hline
+		H09 & T09.1 & Programar funciones de conversión a PDF según la librería & 5\\ \hline
+		H09 & T09.2 & Añadir funcionalidad a botón H02 & 2\\ \hline
+		H10 & T10.1 & Crear vistas de administración & 5\\ \hline
+		H10 & T10.2 & Crear funciones en back-end de creación de plantillas & 5\\ \hline
+		H11 & T11.1 & Crear funciones back-end para la asignación de plantillas & 5\\ \hline
+		H11 & T11.2 & Crear vista para la asignación de plantillas & 5\\ \hline
+		H12 & T12.1 & Creación de vistas & 3\\ \hline
+		H12 & T12.2 & Funciones de edición & 5\\ \hline
+		H12 & T12.3 & Funciones de actualización de base de datos & 5\\ \hline
+		H13 & T13.1 & Vistas para borrado & 3\\ \hline
+		H13 & T13.2 & Funciones de borrado de base de datos & 3\\ \hline
+	\end{tabular}
+	\caption{\textit{Sprint} \#4}\label{tab:sb04}
+\end{table}
+
+\subsection{Quinta reunión 23/06/2017}
+Se muestran los resultados de la implementación de las tareas del cuarto \textit{sprint}. El resultado es satisfactorio y se continúa con la elaboración de la documentación para el ac{TFM}.
+
+\section{Desarrollo del proyecto}
+En esta sección se expondrá el proceso de desarrollo del \ac{TFM}. Según lo expuesto en la sección \ref{sec:metscrum}, el desarrollo está dividido en cuatro \textit{sprints} y cada uno de ellos consta de diseño, desarrollo y pruebas.
+
+\subsection{Primer \textit{sprint}}
+Como se puede observar en el cuadro \ref{tab:sb01} el primer \textit{sprint} tiene sólo una historia de usuario: ``Instalación de Entorno'', que comprende 8 tareas básicas para desplegar y comprender el funcionamiento de un entorno Drupal.
+
+\subsubsection{Requisitos de Drupal}
+Para poder ejecutar una aplicación Drupal se tienen que cumplir los siguientes requisitos:
+\begin{itemize}  
+	\item Espacio en disco mínimo de 60MB.
+	\item Servidor web con soporte PHP como Apache, Nginx ó Microsoft IIS.
+	\item Base de datos MySQL, MariaDB, Percona Server, PostgreSQL o SQLite.
+	\item PHP 5.2.5 mínimo
+\end{itemize}
+Se decide utilizar una infraestructura \acf{WAMP} con lo que se cumplen todos los requisitos mínimos de Drupal. El esquema de WAMP se puede ver en la figura \{****** incluir imagen *****\}.
+Realizar una instalación para \ac{WAMP} es sencillo, simplemente hay que descargar un instalador de la página web de \ac{WAMP}\footnote{http://www.wampserver.es/} y seguir los pasos del wizard de instalación como se puede observar en la figura \{**** imagen del wizard****\}
+
+
+\subsection{Segundo \textit{sprint}}
+
+\subsection{Tercer \textit{sprint}}
+
+\subsection{Cuarto \textit{sprint}}
