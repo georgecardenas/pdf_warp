@@ -24,19 +24,19 @@ Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica
 		\hline
 		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline
 		HT01 & TT01.1 & Instalar Drupal 7 & 8\\ \hline
-		HT01 & TT01.2 & Instalar Base de datos & 8\\ \hline
+		HT01 & TT01.2 & Instalar base de datos & 8\\ \hline
 		HT01 & TT01.3 & Instalar módulo & 5\\ \hline
 		HT01 & TT01.4 & Instalar tema & 5\\ \hline
-		HT01 & TT01.5 & Crear Contenido & 3\\ \hline
+		HT01 & TT01.5 & Crear contenido & 3\\ \hline
 		HT01 & TT01.6 & Crear tipos de contenido & 3\\ \hline
-		HT01 & TT01.7 & Crear Bloques & 2\\ \hline
-		HT01 & TT01.8 & Crear Vistas & 2\\ \hline
+		HT01 & TT01.7 & Crear bloques & 2\\ \hline
+		HT01 & TT01.8 & Crear vistas & 2\\ \hline
 	\end{tabular}
 	\caption{\textit{Sprint} \#1}\label{tab:sb01}
 \end{table}
 
 \subsection{Segunda reunión 25/05/2017}
-En la segunda reunión se muestra al propietario del producto las tareas realizadas con resultado satisfactorio. Al haber completado con éxito el primer \textit{sprint} y haber demostrado el desarrollador soltura a la hora de utilizar el \textit{framework} de Drupal, se comienza a hablar de la funcionalidad que debe cumplir el \ac{TFM}. Se establecen nuevas historias de usuario para el \textit{product backlog} estableciendo como prioritarias aquellas relacionadas con la generación de documentos PDF. Se establece el nuevo \textit{sprint} (cuadro \ref{tab:sb02}) y se establece una duración de una semana. El product backlog en este punto se puede observar en el cuadro \ref{tab:pb02}
+En la segunda reunión se muestra al propietario del producto las tareas realizadas con resultado satisfactorio. Al haber completado con éxito el primer \textit{sprint} y haber demostrado el desarrollador soltura a la hora de utilizar el \textit{framework} de Drupal, se comienza a hablar de la funcionalidad que debe cumplir el \ac{TFM}. Se establecen nuevas historias de usuario para el \textit{product backlog} estableciendo como prioritarias aquellas relacionadas con la generación de documentos PDF. Se establece el nuevo \textit{sprint} (cuadro \ref{tab:sb02}) y se establece una duración de una semana. El \textit{product backlog} en este punto se puede observar en el cuadro \ref{tab:pb02}
 
 \begin{table}
 	\centering
@@ -145,7 +145,7 @@ Se muestran los resultados de la implementación de las tareas del cuarto \textit
 En esta sección se expondrá el proceso de desarrollo del \ac{TFM}. Según lo expuesto en la sección \ref{sec:metscrum}, el desarrollo está dividido en cuatro \textit{sprints} y cada uno de ellos consta de diseño, desarrollo y pruebas.
 
 \subsection{Primer \textit{sprint}}
-Como se puede observar en el cuadro \ref{tab:sb01} el primer \textit{sprint} tiene sólo una historia de usuario: ``Instalación de Entorno'', que comprende 8 tareas básicas para desplegar y comprender el funcionamiento de un entorno Drupal.
+Como se puede observar en el cuadro \ref{tab:sb01}, el primer \textit{sprint} tiene sólo una historia de usuario: ``Instalación de Entorno'', que comprende ocho tareas básicas para desplegar y comprender el funcionamiento de un entorno Drupal.
 
 \subsubsection{Requisitos de Drupal}
 Para poder ejecutar una aplicación Drupal se tienen que cumplir los siguientes requisitos:
@@ -156,10 +156,56 @@ Para poder ejecutar una aplicación Drupal se tienen que cumplir los siguientes r
 	\item PHP 5.2.5 mínimo
 \end{itemize}
 Se decide utilizar una infraestructura \acf{WAMP} con lo que se cumplen todos los requisitos mínimos de Drupal. El esquema de WAMP se puede ver en la figura \{****** incluir imagen *****\}.
-Realizar una instalación para \ac{WAMP} es sencillo, simplemente hay que descargar un instalador de la página web de \ac{WAMP}\footnote{http://www.wampserver.es/} y seguir los pasos del wizard de instalación como se puede observar en la figura \{**** imagen del wizard****\}
+Realizar una instalación para \ac{WAMP} es sencillo, simplemente hay que descargar un instalador de la página web de \ac{WAMP}\footnote{http://www.wampserver.es/} y seguir los pasos del wizard de instalación como se puede observar en la figura \{**** imagen del wizard****\}. Una vez completada la instalación, se arrancan los servicios de \ac{WAMP} navegando a la carpeta de instalación y ejecutando {*** ejecutable ***}.
 
+\subsubsection{Instalación de Drupal}
+Hay varias formas para instalar Drupal y sus extensiones. Inicialmente se intentó usar la herramienta Composer con la cual poder crear un archivo composer.json con todos los parámetros de la instalación de Drupal, incluyendo módulos extra, y posteriormente ejecutar la instalación con un único comando de consola. Sin embargo, tras múltiples problemas relacionados con la plataforma Windows elegida, y, dado que el proceso de instalación de Drupal en sí no está incluído dentro del alcance de los propósito del \ac{TFM}, se decidió utilizar un proceso de instalación manual.\\
+
+Para instalar Drupal manualmente, el proceso es el siguiente:
+\begin{enumerate}  
+	\item Descargar y extraer Drupal: El \textit{framework} no requiere instalación propiamente dicha, tan sólo hace falta descargar el archivo comprimido de la web de Drupal\footnote{https://www.drupal.org/project/drupal} y extraer los ficheros comprimidos dentro de la carpeta de aplicaciones web en la instalación de \ac{WAMP}.
+	\item Crear base de datos: En el servidor de MySQL incluido en \ac{WAMP}, se crea la base de datos para la aplicación de Drupal.
+	\item Ejecución de scripts de Drupal: Finalmente se navega a la aplicación creada en el punto 1 (ejemplo: http://localhsot/drupal) y se siguen los pasos para completar la instalación. Esto ejecutará los scripts necesarios para completar la instalación de Drupal como se puede ver en la figura \{****** incluir imagen de instalación de Drupal *****\}.
+\end{enumerate}
+
+\subsubsection{Expandiendo Drupal}
+Como \ac{CMS}, Drupal contiene mecanismos para que un administrador pueda agregar contenido y funcionalidad extra. Esto se realiza desde los menús de administración en la aplicación web. Para acceder a esta sección, se navega a la aplicación web del servidor local (creado en la sección anterior) y se introducen los credenciales de un usuario con privilegios, creado en el paso 3 de la instalación manual de Drupal. En la figura \{****** insertar imagen administracion ****\} se puede ver el menú de administración.\\
+
+Las siguientes acciones sobre la isntalación de Drupal se han llevado a cabo para el primer \textit{sprint}:
+\begin{itemize}  
+	\item Instalación de módulo: Para instalar un módulo de Drupal manualmente, hay que buscar el módulo deseado en su web\footnote{https://www.drupal.org/project/project_module} y descargar su fichero comprimido. Una vez descargado, se añade el módulo a Drupal mediante la opción ``Install new module'' del menú ``Modules'' como se puede observar en la figura \{****** menú modules ****\}. Una vez añadido, el módulo y sus dependencias, se activa desde la lista de módulos, como se muestra en la figura \{**** Lista de módulos ****\}. Para ganar tiempo en el futuro del desarrollo, se instala directamente el módulo de Ubercart y sus dependencias.
+	\item Instalación de tema: Se instala el tema Acquia Prosper de manera manual. Para ello se realiza una búsqueda en la web de descarga de temas\footnote{https://www.drupal.org/project/project_theme} y se obtiene el fichero comprimido. Luego desde la sección ``Appearance'', se elige la opción ``Install new theme'' y se elige el archivo descargado como se puede ver en la figura \{***** imagen de appearance ****\}. Por último se instalan us dependencias y se activa desde el listado de temas de la sección ``Appearance''.
+	\item Creación de contenido: Se crean contenidos, tipos de contenido, vistas y bloques de prueba para familiarizarse con la diferente funcionalidad de Drupal y productos para el posterior desarrollo del proyecto.
+\end{itemize}
+
+\subsubsection{Creación de un módulo de Drupal}
+Para crear un nuevo módulo de Drupal 7, se navega a la carpeta ``sites/all/modules/'' de la instalación de Drupal, y se crea un nuevo directorio con el nombre de la nueva extensión que en este caso será ``pdf_warp''. En este nuevo directorio se crea un fichero ``pdf_warp.info'' con el siguiente contenido:
+\begin{verbatim}
+    name = PDF Warp
+    description = A module that provides Drupal 7 with PDF functionality for Ubercart
+    core = 7.x
+    package = PDF Warp
+\end{verbatim}
+Esto indicará a Drupal las propiedades básicas del nuevo módulo para que lo reconozca como tal y se pueda activar desde el menú ``Modules'' de la administración.\\
+
+Por último se crea en el directorio un fichero pdf_warp.module que tendrá el código PHP con la funcionalidad de la extensión.
 
 \subsection{Segundo \textit{sprint}}
+Este \textit{sprint} consta de tres historias de usuario que se dividen en cinco tareas, como está reflejado en el cuadro \ref{tab:sb02}. A partir de este punto empieza el desarrollo de la funcionalidad del \ac{TFM}.
+
+\subsubsection{Diseño}
+La arquitectura del módulo constará de un directorio base que contiene el archivo .info de descripción del módulo, el archivo .install con las isntrucciones PHP a ejecutar durante la instalación, el archivo .module que contiene el código del módulo como la implementación de \textit{hooks} de Drupal y los archivos .tpl con las templates de PHP. Dentro del mismo directorio y como se puede observar en la figura \{***** imagen carpetas ****\} se incluirán una carpeta ``css'' para los estilos del módulo y una carpeta ``js'' para todo el contenido \textit{front-end} dinámico.\\
+
+La aplicación inicialmente seguirá el diseño de la figura \{**** arquitectura inicial ****\} con Drupal como fuente de datos, y comunicaciones JSON con el \textit{front-end} para la generación de PDF.
+
+\subsubsection{Desarrollo}
+Se decide abordar de principio la historia de usuario ``Botón de generación de PDF de producto'' ya que es la que presenta menor complejidad y la que es más necesaria para la interacción humano/máquina. Para mostrar un botón en los productos de Ubercart, es necesario implementar el \textit{hook} form_alter en el archivo .module. Esta es la función a la que Drupal llama cada vez que pinta un formulario, de modo que se usará para comprobar si se está renderizando un formulario de producto de Ubercart y, de este modo, añadir el botón ``Generar PDF'' a cada producto. La cabecera de este hook es la siguiente:
+\begin{verbatim}
+    function pdf_warp_form_alter(&$form, $form_state, $form_id){
+	  ...
+	}
+\end{verbatim}
+En dónde &$form contiene la información del formulario que se está renderizando, $form_state contiene la información del estado de formulario y $form_id contiene el id de formulario.
 
 \subsection{Tercer \textit{sprint}}
 
