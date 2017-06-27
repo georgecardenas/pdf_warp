@@ -24,7 +24,7 @@ function pdf_warp_menu() {
     'title'            => 'PDF Warp generación',
     'description'      => 'Generación de PDF',
     'page callback'    => 'pdf_warp_generate_product_page',
-    'page arguments' => array(3),
+    'page arguments'   => array(3),
     'access arguments' => array('access content'),
   );
   
@@ -32,7 +32,7 @@ function pdf_warp_menu() {
     'title'            => 'PDF Warp generación',
     'description'      => 'Generación de PDF',
     'page callback'    => 'pdf_warp_generate_catalog_page',
-    'page arguments' => array(3),
+    'page arguments'   => array(3),
     'access arguments' => array('access content'),
   );
   

@@ -48,9 +48,15 @@
 \contentsline {section}{\numberline {3.2}Desarrollo del proyecto}{30}
 \contentsline {subsection}{\numberline {3.2.1}Primer \textit {sprint}}{30}
 \contentsline {subsubsection}{Requisitos de Drupal}{30}
-\contentsline {subsection}{\numberline {3.2.2}Segundo \textit {sprint}}{30}
-\contentsline {subsection}{\numberline {3.2.3}Tercer \textit {sprint}}{30}
-\contentsline {subsection}{\numberline {3.2.4}Cuarto \textit {sprint}}{30}
-\contentsline {chapter}{\numberline {4}Conclusiones y trabajos futuros}{31}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{35}
-\contentsline {chapter}{Anexo 1}{37}
+\contentsline {subsubsection}{Instalaci\'on de Drupal}{30}
+\contentsline {subsubsection}{Expandiendo Drupal}{31}
+\contentsline {subsubsection}{Creaci\'on de un m\'odulo de Drupal}{32}
+\contentsline {subsection}{\numberline {3.2.2}Segundo \textit {sprint}}{32}
+\contentsline {subsubsection}{Dise\~no}{32}
+\contentsline {subsubsection}{Desarrollo}{33}
+\contentsline {subsubsection}{Pruebas}{37}
+\contentsline {subsection}{\numberline {3.2.3}Tercer \textit {sprint}}{37}
+\contentsline {subsection}{\numberline {3.2.4}Cuarto \textit {sprint}}{37}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajos futuros}{39}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{43}
+\contentsline {chapter}{Anexo 1}{45}

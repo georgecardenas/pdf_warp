@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  26 JUN 2017 22:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  27 JUN 2017 21:03
 entering extended mode
 **./plantilla_PFC.tex
 (plantilla_PFC.tex
@@ -971,27 +971,113 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 158.
-)
-File: logo_upm.png Graphic file (type png)
 
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 156.
+Package pdftex.def Info: logo_upm.png used on input line 163.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
  [30]
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+File: logo_master.png Graphic file (type png)
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 178.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [31]
+Overfull \hbox (69.63115pt too wide) in paragraph at lines 188--188
+[]    \OT1/cmtt/m/n/12 description = A module that provides Drupal 7 with PDF f
+unctionality for Ubercart[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--198
+
+ []
+
+File: logo_upm.png Graphic file (type png)
+<use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 198.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [32]
+Overfull \hbox (6.3808pt too wide) in paragraph at lines 215--215
+ []      \OT1/cmtt/m/n/12 if (strpos($form_id, 'uc_product_add_to_cart_form') !
+== false) {[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+
+ []
+
+File: logo_master.png Graphic file (type png)
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 219.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 234--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 237--239
+
+ []
+
+File: logo_upm.png Graphic file (type png)
+<use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 251.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [34]
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+
+ []
+
+File: logo_master.png Graphic file (type png)
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 276.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [35]
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 302.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [36])
+File: logo_master.png Graphic file (type png)
+ <use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 156.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+
+[37]
 \openout2 = `conclusiones.aux'.
 
  (conclusiones.tex
-Cap\'{\i }tulo 4.
-) [31
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 1.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [38
 
 
 
 ]
+Cap\'{\i }tulo 4.
+) [39]
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 160.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [32
+ [40
 
 
 ] (plantilla_PFC.bbl
@@ -1012,7 +1098,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--77
 network . org / shows /
  []
 
-[33
+[41
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 90--95
@@ -1084,12 +1170,12 @@ File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 158.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [34])
+ [42])
 File: logo_master.png Graphic file (type png)
  <use logo_master.png>
 Package pdftex.def Info: logo_master.png used on input line 173.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [35]
+ [43]
 \openout2 = `anexos.aux'.
 
  (anexos.tex
@@ -1098,10 +1184,10 @@ File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 1.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [36
+ [44
 
 
-]) [37] (plantilla_PFC.aux
+]) [45] (plantilla_PFC.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
  (agradecimientos.aux)
@@ -1113,13 +1199,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5527 strings out of 493323
- 77326 string characters out of 3139051
+ 5529 strings out of 493323
+ 77347 string characters out of 3139051
  186840 words of memory out of 3000000
- 8863 multiletter control sequences out of 15000+200000
- 14581 words of font info for 59 fonts, out of 3000000 for 9000
+ 8864 multiletter control sequences out of 15000+200000
+ 14933 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,17n,48p,1170b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,17n,48p,1170b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiK
@@ -1127,13 +1213,14 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on plantilla_PFC.pdf (52 pages, 320963 bytes).
+/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on plantilla_PFC.pdf (60 pages, 349254 bytes).
 PDF statistics:
- 221 PDF objects out of 1000 (max. 8388607)
+ 250 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

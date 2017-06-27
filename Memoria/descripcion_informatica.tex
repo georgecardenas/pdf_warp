@@ -171,15 +171,15 @@ Para instalar Drupal manualmente, el proceso es el siguiente:
 \subsubsection{Expandiendo Drupal}
 Como \ac{CMS}, Drupal contiene mecanismos para que un administrador pueda agregar contenido y funcionalidad extra. Esto se realiza desde los menús de administración en la aplicación web. Para acceder a esta sección, se navega a la aplicación web del servidor local (creado en la sección anterior) y se introducen los credenciales de un usuario con privilegios, creado en el paso 3 de la instalación manual de Drupal. En la figura \{****** insertar imagen administracion ****\} se puede ver el menú de administración.\\
 
-Las siguientes acciones sobre la isntalación de Drupal se han llevado a cabo para el primer \textit{sprint}:
+Las siguientes acciones sobre la instalación de Drupal se han llevado a cabo para el primer \textit{sprint}:
 \begin{itemize}  
-	\item Instalación de módulo: Para instalar un módulo de Drupal manualmente, hay que buscar el módulo deseado en su web\footnote{https://www.drupal.org/project/project_module} y descargar su fichero comprimido. Una vez descargado, se añade el módulo a Drupal mediante la opción ``Install new module'' del menú ``Modules'' como se puede observar en la figura \{****** menú modules ****\}. Una vez añadido, el módulo y sus dependencias, se activa desde la lista de módulos, como se muestra en la figura \{**** Lista de módulos ****\}. Para ganar tiempo en el futuro del desarrollo, se instala directamente el módulo de Ubercart y sus dependencias.
-	\item Instalación de tema: Se instala el tema Acquia Prosper de manera manual. Para ello se realiza una búsqueda en la web de descarga de temas\footnote{https://www.drupal.org/project/project_theme} y se obtiene el fichero comprimido. Luego desde la sección ``Appearance'', se elige la opción ``Install new theme'' y se elige el archivo descargado como se puede ver en la figura \{***** imagen de appearance ****\}. Por último se instalan us dependencias y se activa desde el listado de temas de la sección ``Appearance''.
+	\item Instalación de módulo: Para instalar un módulo de Drupal manualmente, hay que realizar una búsqueda del mismo en su web\footnote{https://www.drupal.org/project/project\_module} y descargar su fichero comprimido. Una vez descargado, se añade el módulo a Drupal mediante la opción ``Install new module'' del menú ``Modules'' como se puede observar en la figura \{****** menú modules ****\}. Una vez añadido, el módulo y sus dependencias, se activa desde la lista de módulos, como se muestra en la figura \{**** Lista de módulos ****\}. Para ganar tiempo en el futuro del desarrollo, se instala directamente el módulo de Ubercart y sus dependencias.
+	\item Instalación de tema: Se instala el tema Acquia Prosper de manera manual. Para ello se realiza una búsqueda en la web de descarga de temas\footnote{https://www.drupal.org/project/project\_theme} y se obtiene el fichero comprimido. Luego desde la sección ``Appearance'', se elige la opción ``Install new theme'' y se elige el archivo descargado como se puede ver en la figura \{***** imagen de appearance ****\}. Por último se instalan us dependencias y se activa desde el listado de temas de la sección ``Appearance''.
 	\item Creación de contenido: Se crean contenidos, tipos de contenido, vistas y bloques de prueba para familiarizarse con la diferente funcionalidad de Drupal y productos para el posterior desarrollo del proyecto.
 \end{itemize}
 
 \subsubsection{Creación de un módulo de Drupal}
-Para crear un nuevo módulo de Drupal 7, se navega a la carpeta ``sites/all/modules/'' de la instalación de Drupal, y se crea un nuevo directorio con el nombre de la nueva extensión que en este caso será ``pdf_warp''. En este nuevo directorio se crea un fichero ``pdf_warp.info'' con el siguiente contenido:
+Para crear un nuevo módulo de Drupal 7, se navega a la carpeta ``sites/all/modules/'' de la instalación de Drupal, y se crea un nuevo directorio con el nombre de la nueva extensión que en este caso será ``pdf\_warp''. En este nuevo directorio se crea un fichero ``pdf\_warp.info'' con el siguiente contenido:
 \begin{verbatim}
     name = PDF Warp
     description = A module that provides Drupal 7 with PDF functionality for Ubercart
@@ -188,26 +188,130 @@ Para crear un nuevo módulo de Drupal 7, se navega a la carpeta ``sites/all/modul
 \end{verbatim}
 Esto indicará a Drupal las propiedades básicas del nuevo módulo para que lo reconozca como tal y se pueda activar desde el menú ``Modules'' de la administración.\\
 
-Por último se crea en el directorio un fichero pdf_warp.module que tendrá el código PHP con la funcionalidad de la extensión.
+Por último se crea en el directorio un fichero pdf\_warp.module que tendrá el código PHP con la funcionalidad de la extensión.
 
 \subsection{Segundo \textit{sprint}}
 Este \textit{sprint} consta de tres historias de usuario que se dividen en cinco tareas, como está reflejado en el cuadro \ref{tab:sb02}. A partir de este punto empieza el desarrollo de la funcionalidad del \ac{TFM}.
 
 \subsubsection{Diseño}
-La arquitectura del módulo constará de un directorio base que contiene el archivo .info de descripción del módulo, el archivo .install con las isntrucciones PHP a ejecutar durante la instalación, el archivo .module que contiene el código del módulo como la implementación de \textit{hooks} de Drupal y los archivos .tpl con las templates de PHP. Dentro del mismo directorio y como se puede observar en la figura \{***** imagen carpetas ****\} se incluirán una carpeta ``css'' para los estilos del módulo y una carpeta ``js'' para todo el contenido \textit{front-end} dinámico.\\
+La arquitectura del módulo constará de un directorio base que contiene el archivo .info de descripción del módulo, el archivo .install con las instrucciones PHP a ejecutar durante la instalación, el archivo .module que contiene el código del módulo como la implementación de \textit{hooks} de Drupal y los archivos .tpl con las plantillas de PHP. Dentro del mismo directorio y como se puede observar en la figura \{***** imagen carpetas ****\} se incluirán una carpeta ``css'' para los estilos del módulo y una carpeta ``js'' para todo el contenido \textit{front-end} dinámico.\\
 
 La aplicación inicialmente seguirá el diseño de la figura \{**** arquitectura inicial ****\} con Drupal como fuente de datos, y comunicaciones JSON con el \textit{front-end} para la generación de PDF.
 
 \subsubsection{Desarrollo}
-Se decide abordar de principio la historia de usuario H01 ``Botón de generación de PDF de producto'' ya que es la que presenta menor complejidad y la que es más necesaria para la interacción humano/máquina. Para mostrar un botón en los productos de Ubercart, es necesario implementar el \textit{hook} form_alter en el archivo .module. Esta es la función a la que Drupal llama cada vez que pinta un formulario, de modo que se usará para comprobar si se está renderizando un formulario de producto de Ubercart y, de este modo, añadir el botón ``Generar PDF'' a cada producto. La cabecera de este hook es la siguiente:
-\begin{verbatim}
-    function pdf_warp_form_alter(&$form, $form_state, $form_id){
-	  ...
+\begin{itemize}  
+	\item \textbf{H01 ``Botón de generación de PDF de producto''}\\
+	Se decide abordar de principio la historia de usuario H01 ``Botón de generación de PDF de producto'' ya que presenta menor complejidad y es más necesaria para la interacción humano/máquina. Para mostrar un botón en los productos de Ubercart, es necesario implementar el \textit{hook} \textit{form\_alter} en el archivo .module. Esta es la función a la que Drupal llama cada vez que pinta un formulario, de modo que se usará para comprobar si se está renderizando un formulario de producto de Ubercart y, de este modo, añadir el botón ``Generar PDF'' a cada producto. El código de este \textit{hook} es el siguiente:
+	\begin{verbatim}
+	    function pdf_warp_form_alter(&$form, $form_state, $form_id){
+	      if (strpos($form_id, 'uc_product_add_to_cart_form') !== false) {
+	        $form['to_pdf_button'] = array(
+	          '#type' => 'submit',
+	          '#value' => t('Generar PDF'),
+	          '#submit' => array('pdf_warp_goto_generation')
+	        );
+	      }
+	    }
+	\end{verbatim}
+	En dónde \textit{\&\$form} contiene la información del formulario que se está renderizando, \textit{\$form\_state} contiene la información del estado de formulario y \textit{\$form\_id} contiene el id de formulario.\\
+	\item \textbf{HT02 ``Creación de vistas programáticamente''}\\
+	Se necesita crear las vistas de producto y catálogo en JSON para que el código Javascript del cliente pueda trabajar con estos datos. Para ello se hace uso de los \textit{hooks} \textit{views\_api} y \textit{views\_default\_views}. Debido a que crear una vista programáticamente es complicado, lo más sencillo es crear la vista de forma manual y luego exportar el código generado a \textit{views\_default\_views} como se observa en la figura \{***** imagen de exportación*****\}
+	\begin{verbatim}
+	function pdf_warp_views_api() {
+	  return array(
+	    'api' => 3.0,
+	    'path' => drupal_get_path('module', 'pdf_warp')
+	  );
 	}
-\end{verbatim}
-En dónde &$form contiene la información del formulario que se está renderizando, $form_state contiene la información del estado de formulario y $form_id contiene el id de formulario.\\
+	
+	functionpdf_warp_views_default_views() {
+	  // Pegar código de la exportación
+	
+	  $views[$view->name] = $view;
+	  return $views;
+	}
+	\end{verbatim}
+	\item \textbf{H02 ``Generación de PDF de producto''}\\
+	Tras concluir la implementación de la historia H01 y HT02, se empieza con la H02 ``Generación de PDF de producto''. En esta historia de usuario se necesita añadir las librerías de generación de PDF, implementar la funcionalidad del lado del cliente y agregar el lanzado de la generación al botón de la historia H01.\\
+	
+	Para no sobrecargar las páginas de Drupal con librerías que no necesitan, se cargará el código Javascript localmente en las páginas en las que sea necesario. Con este fin, se crea una nueva página que realizará la generación de PDF.\\
+	El proceso de creación de una nueva página requiere implementar los \textit{hooks} \textit{menu} y \textit{theme} en el archivo .module. Estas funciones son llamadas por Drupal cuando se va a generar el árbol de navegación y los temas.\\
+	
+	En el \textit{hook} \textit{menu}, se añade un nuevo elemento al \textit{array} \$items con su título, descripción, \textit{callback}, argumentos de página y privilegios necesarios para acceder. La implementación es la siguiente:
+	\begin{verbatim}
+    function pdf_warp_menu() {
+      $items['pdf_warp/generate/product/%'] = array(
+       'title'            => 'PDF Warp generación',
+       'description'      => 'Generación de PDF',
+       'page callback'    => 'pdf_warp_generate_product_page',
+       'page arguments'   => array(3),
+       'access arguments' => array('access content'),
+      );
+    }
+	\end{verbatim}
+	En este caso se establece que se está creando una página de título ``PDF Warp generación'', con llamada función de .module ``pdf\_warp\_generate\_product\_page'' en el paso previo a su renderizado, con un argumento que viene dado por el índice 3 de la url y que se requiere el privilegio de acceso a contenido para su navegación.\\
+	
+	Para el \textit{hook} \textit{theme} se devuelve un array de elementos que contienen un atributo \textit{template} con el nombre del fichero dentro del directorio del módulo que contiene el código de dicha plantilla:
+	\begin{verbatim}
+	    function pdf_warp_theme(){
+	      return array(
+	        'pdf_warp_generation' => array (
+	          'template' => 'pdf-warp-generation'
+	        )
+	      );
+	    }
+	\end{verbatim}
+	
+	Teniendo los hooks, se programa la función ``pdf\_warp\_generate\_product\_page''. Esta función tiene un argumento que será el contenido de ``page arguments''. Aquí se realiza la inyección de las librerías de Javascript con el uso de drupal\_add\_js:
+	\begin{verbatim}
+    function pdf_warp_generate_product_page($id_item) {
+      $path = drupal_get_path('module', 'pdf_warp');
+      
+      drupal_add_js($path.'/js/pdf_warp_generation.js');
+      drupal_add_js($path.'/js/vendor/jspdf.min.js');
+      drupal_add_js($path.'/js/vendor/html2pdf.js');
 
-Tras incluir el botón se empieza con la historia H02 ``Generación de PDF de producto'' 
+      return theme('pdf_warp_generation');
+    }
+    \end{verbatim}
+    Una vez integradas las librerías de Javascript en Drupal se procede a implementar las funciones de generación PDF en el lado del cliente. Para ello se crea dentro de la carpeta ``js'' de pdf\_warp un fichero pdf\_warp\_generation.js que ya estamos referenciando en la función anterior.
+    En este fichero se hace uso de las librerías de JsPDF para generar un documento PDF del producto con id \$id\_item. Para conseguir los datos de este producto en JSON, se hace uso de las vistas definidas previamente mediante una llamada ajax a:
+    \begin{verbatim}
+      base_url + '/store/catalog/' + id + '/json'
+    \end{verbatim}
+    siendo \textit{base\_ur}l la url de base de la aplicación Drupal e \textit{id} el id del producto. Con esta información en el Javascript se puede generar un pdf de manera programática haciendo uso de las funciones de la librería JsPDF:
+    \begin{verbatim}
+        var doc = new jsPDF('portrait','pt','a4');
+        var pdf_elements = vm.initTemplate.pdf_elements
+        doc.setFontSize(16 * 72 / 96);
+        doc.text(pdf_elements[key].x * 72 / 96 + 40 * 72 / 96,
+            pdf_elements[key].y * 72 / 96 + 40 * 72 / 96,
+            product[index].product.Title
+        );
+        doc.setFontSize(10 * 72 / 96);
+        doc.text(pdf_elements[key].x * 72 / 96 + 40 * 72 / 96,
+            pdf_elements[key].y * 72 / 96 + 60 * 72 / 96, 
+            'SKU:' + product[index].product.SKU
+        );
+        doc.setFontSize(22 * 72 / 96);
+        doc.text(pdf_elements[key].x * 72 / 96 + 100 * 72 / 96,
+            pdf_elements[key].y * 72 / 96 + 300 * 72 / 96,
+            product[index].product.Price
+        );
+        doc.save('producto.pdf');
+    \end{verbatim}
+    
+    Con esta funcionalidad, al hacer click en el botón se generará un PDF del producto asociado a dicho botón.
+\end{itemize}
+
+\subsubsection{Pruebas}
+Las pruebas realizadas son las siguientes:
+\begin{itemize}
+	\item Se comprueba que el botón ``Generar PDF'' únicamente se genera para los productos.
+	\item Se prueba el botón de ``Generar PDF '' de cada producto para comprobar que se generan documentos PDF distintos en función del producto al que pertenecen.
+	\item Se comprueba que las vistas en JSON devuelven el contenido correcto de un producto.
+	\item Se comprueba que los \textit{hooks} implementados funcionan correctamente.
+\end{itemize}
 
 \subsection{Tercer \textit{sprint}}
 
