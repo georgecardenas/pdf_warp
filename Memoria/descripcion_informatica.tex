@@ -199,13 +199,15 @@ La arquitectura del módulo constará de un directorio base que contiene el archiv
 La aplicación inicialmente seguirá el diseño de la figura \{**** arquitectura inicial ****\} con Drupal como fuente de datos, y comunicaciones JSON con el \textit{front-end} para la generación de PDF.
 
 \subsubsection{Desarrollo}
-Se decide abordar de principio la historia de usuario ``Botón de generación de PDF de producto'' ya que es la que presenta menor complejidad y la que es más necesaria para la interacción humano/máquina. Para mostrar un botón en los productos de Ubercart, es necesario implementar el \textit{hook} form_alter en el archivo .module. Esta es la función a la que Drupal llama cada vez que pinta un formulario, de modo que se usará para comprobar si se está renderizando un formulario de producto de Ubercart y, de este modo, añadir el botón ``Generar PDF'' a cada producto. La cabecera de este hook es la siguiente:
+Se decide abordar de principio la historia de usuario H01 ``Botón de generación de PDF de producto'' ya que es la que presenta menor complejidad y la que es más necesaria para la interacción humano/máquina. Para mostrar un botón en los productos de Ubercart, es necesario implementar el \textit{hook} form_alter en el archivo .module. Esta es la función a la que Drupal llama cada vez que pinta un formulario, de modo que se usará para comprobar si se está renderizando un formulario de producto de Ubercart y, de este modo, añadir el botón ``Generar PDF'' a cada producto. La cabecera de este hook es la siguiente:
 \begin{verbatim}
     function pdf_warp_form_alter(&$form, $form_state, $form_id){
 	  ...
 	}
 \end{verbatim}
-En dónde &$form contiene la información del formulario que se está renderizando, $form_state contiene la información del estado de formulario y $form_id contiene el id de formulario.
+En dónde &$form contiene la información del formulario que se está renderizando, $form_state contiene la información del estado de formulario y $form_id contiene el id de formulario.\\
+
+Tras incluir el botón se empieza con la historia H02 ``Generación de PDF de producto'' 
 
 \subsection{Tercer \textit{sprint}}
 
