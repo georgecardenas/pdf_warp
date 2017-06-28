@@ -54,7 +54,7 @@ function pdf_warp_menu() {
   );
   
   $items['admin/appearance/pdf_warp/enable/%'] = array(
-    'title' => t('Borrar plantilla'),
+    'title' => t('Activar plantilla'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('pdf_warp_template_enable_confirm', 4),
     'access arguments' => array('administer site configuration'),
@@ -63,7 +63,7 @@ function pdf_warp_menu() {
   );
   
   $items['admin/appearance/pdf_warp/add'] = array(
-    'title' => 'Nueva plantilla',
+    'title' => t('Nueva plantilla'),
     'page callback' => 'drupal_get_form',
     'page arguments' => array('pdf_warp_form_add_template'),
     'access arguments' => array('administer site configuration'),
@@ -71,7 +71,7 @@ function pdf_warp_menu() {
   );
   
   $items['admin/appearance/pdf_warp/edit/%'] = array(
-    'title' => 'Nueva plantilla',
+    'title' => t('Editar plantilla'),
     'page callback' => 'pdf_warp_edit_template_page',
     'page arguments' => array(4),
     'access arguments' => array('administer site configuration'),
@@ -87,7 +87,7 @@ function pdf_warp_menu() {
   );
   
   $items['admin/appearance/pdf_warp/edit/catalog/%'] = array(
-    'title' => 'Nueva plantilla',
+    'title' => t('Editar plantilla de catálogo'),
     'page callback' => 'pdf_warp_edit_catalog_template_page',
     'page arguments' => array(5),
     'access arguments' => array('administer site configuration'),

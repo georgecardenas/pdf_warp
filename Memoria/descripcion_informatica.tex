@@ -81,7 +81,7 @@ Tras la implementación del segundo \textit{sprint} se lleva a cabo la revisión d
 		H03 & Creación de plantillas de producto & Yo como administrador\newline debo ser capaz de crear plantillas para la generación de PDFs de Productos\newline para que el usuario genere un PDF atractivo & \#3\\ \hline
 		H04 & Asignación de plantillas de producto & Yo como administrador\newline necesito poder asignar una plantilla de PDF a Productos\newline para que se genere un PDF con los elementos posicionados de acorde a la plantilla & \#3\\ \hline
 		H05 & Mover elementos en plantillas de producto & Yo como administrador\newline necesito poder mover elementos en una plantilla pdf de producto\newline para posicionarlos donde crea conveniente & \#3\\ \hline
-		H06 & Borrado de plantillas de producto & Yo como administrador\newline debo ser capaz de borrar plantillas PDF de producto\newline para que no se acumulen plantillas sin uso & \#2\\ \hline
+		H06 & Borrado de plantillas de producto & Yo como administrador\newline debo ser capaz de borrar plantillas PDF de producto\newline para que no se acumulen plantillas sin uso & \#3\\ \hline
 		H07 & Acceso a sección de gestión de plantillas & Yo como administrador\newline necesito un botón en la sección de admnistración\newline para poder acceder a la sección de gestión de plantillas & \#3\\ \hline
 		H08 & Botón de generación de PDF de catálogo & Yo como usuario\newline necesito ver un botón de generación de PDF para catálogos\newline para poder generar un documento PDF & \#4\\ \hline
 		H09 & Generación de PDF de catálogo & Yo como usuario\newline debo ser capaz de generar PDFs a partir de catálogos\newline para su posterior consulta offline & \#4\\ \hline
@@ -281,24 +281,24 @@ La aplicación inicialmente seguirá el diseño de la figura \{**** arquitectura in
     \end{verbatim}
     siendo \textit{base\_ur}l la url de base de la aplicación Drupal e \textit{id} el id del producto. Con esta información en el Javascript se puede generar un pdf de manera programática haciendo uso de las funciones de la librería JsPDF:
     \begin{verbatim}
-        var doc = new jsPDF('portrait','pt','a4');
-        var pdf_elements = vm.initTemplate.pdf_elements
-        doc.setFontSize(16 * 72 / 96);
-        doc.text(pdf_elements[key].x * 72 / 96 + 40 * 72 / 96,
-            pdf_elements[key].y * 72 / 96 + 40 * 72 / 96,
-            product[index].product.Title
-        );
-        doc.setFontSize(10 * 72 / 96);
-        doc.text(pdf_elements[key].x * 72 / 96 + 40 * 72 / 96,
-            pdf_elements[key].y * 72 / 96 + 60 * 72 / 96, 
-            'SKU:' + product[index].product.SKU
-        );
-        doc.setFontSize(22 * 72 / 96);
-        doc.text(pdf_elements[key].x * 72 / 96 + 100 * 72 / 96,
-            pdf_elements[key].y * 72 / 96 + 300 * 72 / 96,
-            product[index].product.Price
-        );
-        doc.save('producto.pdf');
+    var doc = new jsPDF('portrait','pt','a4');
+    var pdf_elements = vm.initTemplate.pdf_elements
+    doc.setFontSize(16 * 72 / 96);
+    doc.text(pdf_elements[key].x * 72 / 96 + 40 * 72 / 96,
+        pdf_elements[key].y * 72 / 96 + 40 * 72 / 96,
+        product[index].product.Title
+    );
+    doc.setFontSize(10 * 72 / 96);
+    doc.text(pdf_elements[key].x * 72 / 96 + 40 * 72 / 96,
+        pdf_elements[key].y * 72 / 96 + 60 * 72 / 96, 
+        'SKU:' + product[index].product.SKU
+    );
+    doc.setFontSize(22 * 72 / 96);
+    doc.text(pdf_elements[key].x * 72 / 96 + 100 * 72 / 96,
+        pdf_elements[key].y * 72 / 96 + 300 * 72 / 96,
+        product[index].product.Price
+    );
+    doc.save('producto.pdf');
     \end{verbatim}
     
     Con esta funcionalidad, al hacer click en el botón se generará un PDF del producto asociado a dicho botón.
@@ -314,5 +314,376 @@ Las pruebas realizadas son las siguientes:
 \end{itemize}
 
 \subsection{Tercer \textit{sprint}}
+El tercer \textit{sprint} consta de cinco historias de usuario que se dividen en doce tareas, como está reflejado en el cuadro \ref{tab:sb03}. Al ser más largo y complejo que el resto, ya que se han realizado cambios en la funcionalidad general, se cuenta con un período de dos semanas para su realización.
+
+\subsubsection{Diseño}
+Para este \textit{sprint} se pide el uso de plantillas PDF que servirán para generar los documentos con los elementos en el sitio que decidamos. Para este fin se necesita diseñar una estructura de datos que contenga la plantilla. Contendrá los siguientes campos:
+\begin{itemize}
+	\item Nombre: el nombre de la plantilla.
+	\item Tipo: el tipo de plantilla, si de catálogo o de producto.
+	\item Tipo de renderizado: imagen o texto.
+	\item Activo: para saber si la plantilla está activa o no.
+	\item Contenido: El contenido en \ac{JSON} de la plantilla con sus elementos. Se trata de un objeto \ac{JSON} que a su vez contiene dos objetos llamados pdf\_elements y edit\_elements que contienen una lista de elementos para la generación de PDF y para la edición de la plantilla respectivamente, ya que las posiciones de estos elementos en el modo edición son relativas.
+\end{itemize}
+
+Para almacenar la información de plantilla se diseña una nueva tabla de base de datos que contendrá las plantillas PDF. Esta tabla contará con los siguientes campos:
+\begin{itemize}
+	\item id: identificador de plantilla de tipo UNSIGNED INT.
+	\item name: nombre de la plantilla de tipo VARCHAR(255).
+	\item type: el tipo de plantilla de tipo VARCHAR(32) con valor por defecto 'catalog' siendo el otro valor 'product'.
+	\item render\_mode: el modo de renderizado de tipo VARCHAR(32). Por defecto 'imagen'
+	\item active: para saber si la plantilla está activa o no de tipo TINYINT con 1 activo y 0 no activo.
+	\item content: El contenido en JSON de tipo TEXT y tamaño medio.
+\end{itemize}
+
+Por otro lado se requiere una sección de administración para que un usuario con privilegios pueda gestionar plantillas. Se decide incluir una pestaña de administración dentro de la sección ``Appearance''. El diseño de las pantallas se puede ver en la figura \{***** incluir diseño de pantallas admin ****\}\\
+
+\subsubsection{Desarrollo}
+
+\begin{itemize}
+	\item \textbf{H03 ``Creación de plantillas de producto''}\\
+	El primer paso en la creación de las plantillas es asegurarse de que es posible persistir los datos, de manera que se procede a crear la tabla de la base de datos. Esta tabla debe desplegarse durante la instalación del módulo para asegurar que sea exportable, y debe borrarse una vez se desinstale el módulo. Para ello se crea un nuevo archivo pdf\_warp.install en la raíz del módulo. En este fichero se implementan los \textit{hooks} \textit{install, uninstall y schema}. \textit{Install} y \textit{uninstall} como su nombre indica instalaran y desinstalarán nuestro \textit{schema} según se instale o elimine el módulo. \textit{Schema} contiene la definición de la tabla de base de datos. La implementación se puede observar a continuación:
+	\begin{verbatim}
+	function pdf_warp_install() {
+	  drupal_install_schema('pdf_warp');
+	}
+	
+	function pdf_warp_uninstall() {
+	  drupal_uninstall_schema('pdf_warp');
+	}
+	function pdf_warp_schema() {
+	  $schema['pdf_warp_templates'] = array(
+	    'description' => t('Tabla de plantillas del módulo PDF Warp.'),
+	    'fields' => array(
+	      'id' => array(
+	        'description' => 'Identificador de plantila',
+	        'type'        => 'serial',
+	        'unsigned'    => TRUE,
+	        'not null'    => TRUE),
+	      'name' => array(
+	        'description' => 'Nombre de la plantilla',
+	        //...RESTO DE CAMPOS
+	    ),
+	    'primary key' => array('id')
+	  );
+	  return $schema;
+	}
+	\end{verbatim}
+	Para que un usuario con privilegios pueda crear plantillas, necesita una serie de páginas de administración, como por ejemplo una página para ver todas las plantillas, y otra para darlas de alta. Como hemos explicado en el \textit{sprint} anterior, este proceso se realiza mediante el \textit{hook menu} con la diferencia de que las páginas nuevas deberán estar contenidas en la ruta ``admin/appearance/'' y con privilegios ``administer site configuration''. El tipo de la página principal ``MENU\_LOCAL\_TASK'', esto generará una nueva pestaña en ``Appearance''. El tipo de la página para añadir plantilla será MENU\_LOCAL\_ACTION para que genere un botón de ``Nueva plantilla''. Las nuevas páginas se definen con el siguiente código dentro del \textit{hook menu} implementado previamente:
+	\begin{verbatim}
+    $items['admin/appearance/pdf_warp'] = array(
+      'title'            => 'PDF Warp',
+      'description'      => 'Configuración de plantillas',
+      'page callback'    => 'pdf_warp_admin_page',
+      'access arguments' => array('administer site configuration'),
+      'type'             => MENU_LOCAL_TASK,
+    );
+    $items['admin/appearance/pdf_warp/add'] = array(
+      'title' => t('Nueva plantilla'),
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('pdf_warp_form_add_template'),
+      'access arguments' => array('administer site configuration'),
+      'type' => MENU_LOCAL_ACTION,
+    );
+	\end{verbatim}
+	Posteriormente se implementan las funciones de \textit{callback}, \textit{pdf\_warp\_admin\_page} y \textit{pdf\_warp\_form\_add\_template}, para generar el contenido de las páginas, además para el formulario de creación de plantilla se requiere implementar uan nueva función \textit{pdf\_warp\_form\_add\_templat\_submit} que contendrá el código para crear una nueva plantilla en base de datos. El aspecto que presentan se puede ver en las figuras \{***** Imagenes de las páginas*****\}.\\
+	Una vez tenemos la plantilla creada, se modifica la generación de PDF de producto para que haga uso de ella en vez de una prefijada. Para ello tan sólo modificamos la función del back que renderiza la página de generación de PDF para que envíe el JSON de nuestra plantilla a la página de generación, en los \textit{settings} de Drupal:
+	\begin{verbatim}
+	function pdf_warp_generate_product_page($id_item) {
+	  ...
+	  
+	  $sql = "SELECT * FROM {pdf_warp_templates} WHERE active=1 
+	    AND type='product'";
+	  $settings['pdf_warp']['template_content'] = 
+	    db_query($sql)->fetchAll();
+	  drupal_add_js($settings, 'setting');
+	  
+	  return theme('pdf_warp_generation');
+	}
+	\end{verbatim}
+	
+	\item \textbf{H04 ``Asignación de plantillas de producto''}\\
+	Para la asignación o activación de plantillas el proceso es sencillo. Se crea una nueva página de formulario implementando el \textit{hook menu} y su función de \textit{callback} que se llamará pdf\_warp\_template\_enable\_confirm. El código que se añade al \textit{hook} es el siguiente:
+	\begin{verbatim}
+	$items['admin/appearance/pdf_warp/enable/%'] = array(
+	  'title' => t('Activar plantilla'),
+	  'page callback' => 'drupal_get_form',
+	  'page arguments' => array('pdf_warp_template_enable_confirm', 4),
+	  'access arguments' => array('administer site configuration'),
+	  'access callback' => TRUE,
+	  'type' => MENU_CALLBACK, 
+	);
+	\end{verbatim}
+	 A está página se navegará desde un botón contenido en la tabla de plantillas de la pantalla principal de administración. Su funcionamiento será el de activar la plantilla seleccionada y desactivar el resto de plantillas. Para ello se hacen dos operaciones de \textit{update} en base de datos, una que ponga a 0 el campo \textit{active} de todas las plantillas del tipo seleccionado (catálogo o producto) y otra para marcar con 1 el campo \textit{active} de la plantilla seleccionada.
+	 
+	\item \textbf{H05 ``Mover elementos en plantillas de producto''}\\
+	Esta historia de usuario requiere realizar desarrollos tanto en el \textit{back-end} como en el \textit{front-end} y realizar una comunicación entre ellos. Debido a que la edición de plantillas requiere una interfaz de usuario dinámica e interactiva, se decide integrar AngularJS en el \textit{front-end} para poder utilizar todos los desarrollos de la comunidad que necesitemos.
+	Para ello una de las dependencias del módulo será la extensión AngularJS Bridge que añade cualquier versión del \textit{framework} a Drupal.\\
+	Una vez realizada la instalación y activación de la dependencia, se procede a crear las páginas de edición. Se crean dos nuevas entradas mediante el \textit{hook menu} una que contiene la funcionalidad de edición y otra un \textit{endpoint} al que llamar cuando se quieran guardar los cambios. Estas páginas sólo podrán ser accedidas por un usuario con privilegios. Se definen con el siguiente código:
+	\begin{verbatim}
+	$items['admin/appearance/pdf_warp/edit/%'] = array(
+	  'title' => t('Editar plantilla'),
+	  'page callback' => 'pdf_warp_edit_template_page',
+	  'page arguments' => array(4),
+	  'access arguments' => array('administer site configuration'),
+	  'type' => MENU_CALLBACK,
+	);
+	
+	$items['admin/appearance/pdf_warp/edit/%/save'] = array(
+	  'title' => t('Guardar plantilla'),
+	  'page callback' => 'pdf_warp_save_edit',
+	  'page arguments' => array(4),
+	  'access arguments' => array('administer site configuration'),
+	  'type' => MENU_CALLBACK, 
+	);
+	\end{verbatim}
+	
+	En la función de \textit{callback} de la página de edición, se tienen que cargar todas las librerías \textit{front-end} necesarias y enviar el contenido de la plantilla desde base de datos. El código sería el siguiente:
+	\begin{verbatim}
+	function pdf_warp_edit_template_page($id_template) {
+	  drupal_add_library('angularjs', 'angularjs');
+	
+	  $path = drupal_get_path('module', 'pdf_warp');
+	  drupal_add_css($path.'/css/pdf_warp_template.css');
+	  drupal_add_js($path.'/js/pdf_warp.js');
+	  drupal_add_js($path.'/js/vendor/jspdf.min.js');
+	  drupal_add_js($path.'/js/vendor/html2pdf.js');
+	  drupal_add_js($path.'/js/vendor/bower_.../../classie.js');
+	  drupal_add_js(
+	    $path.'/js/vendor/bower_.../../EventEmitter.js'
+	  );
+	  drupal_add_js(
+	    $path.'/js/vendor/bower_components/eventie/eventie.js'
+	  );
+	  drupal_add_js(
+	    $path.'/js/vendor/bower_.../../get-style-property.js'
+	  );
+	  drupal_add_js(
+	    $path.'/js/vendor/bower_.../../get-size.js'
+	  );
+	  drupal_add_js(
+	    $path.'/js/vendor/bower_.../../draggabilly.js'
+	  );
+	  drupal_add_js(
+	    $path.'/js/vendor/bower_.../../angular-draggabilly.js'
+	  );
+	
+	  $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id_template;
+	  $settings['pdf_warp']['template_content'] = db_query($sql)->fetchAll();
+	  $sql = "SELECT nid FROM {uc_products}";
+	  $settings['pdf_warp']['products'] = db_query($sql)->fetchAll();
+	  drupal_add_js($settings, 'setting');
+	
+	  return theme('pdf_warp_template');
+	}
+	\end{verbatim}
+	
+	Como se puede observar, se incuyen librerías extra desde la carpeta \textit{vendor}. Estas librerías son para poder usar la extensión de AngularJs Draggabilly que nos permite mover elementos mediante \textit{drag and drop} al punto que queramos dentro de un elemento contenedor.\\
+	
+	La página de edición AngularJS se divide en dos ficheros, uno que contiene la lógica de la página llamado pdf\_warp.js  y otro con la el código \ac{HTML} representando la vista de nombre pdf-warp-template.tpl.php.
+	La página resultante se puede ver en la figura \{*******imagen edición plantilla *****\}
+	
+	\item \textbf{H06 ``Borrado de plantillas de producto''}\\
+	El borrado de plantillas de producto también se realiza de manera sencilla. Se crea una nueva página de formulario implementando el \textit{hook menu} y su función de \textit{callback} que se llamará pdf\_warp\_template\_delete\_confirm. El código que se añade al \textit{hook} es el siguiente:
+	\begin{verbatim}
+	$items['admin/appearance/pdf_warp/delete/%'] = array(
+	  'title' => t('Borrar plantilla'),
+	  'page callback' => 'drupal_get_form',
+	  'page arguments' => array('pdf_warp_template_delete_confirm', 4),
+	  'access arguments' => array('administer site configuration'),
+	  'access callback' => TRUE,
+	  'type' => MENU_CALLBACK, 
+	);
+	\end{verbatim}
+	A está página se navegará desde un botón contenido en la tabla de plantillas de la pantalla principal de administración. Al pulsar este botón se navegará a una página de confirmación para borrar la plantilla seleccionad. Para ello se realiza una operación de borrado en base de datos por id de plantilla.
+	
+	\item \textbf{H07 ``Acceso a sección de gestión de plantilla''}\\
+	Esta historia de usuario se lleva a cabo de manera conjunta con la historia H03 ``Creación de plantillas de producto'' ya que al agregar las nueva página de administración de tipo \textit{MENU\_LOCAL\_TASK} dentro de la navegación de un menú existente, obtenemos un botón de acceso, o, en este caso, una pestaña.
+\end{itemize}
+\subsubsection{Pruebas}
+Las pruebas realizadas en este \textit{sprint} son las siguientes:
+\begin{itemize}
+	\item Creación de plantillas de producto.
+	\item Borrado de plantillas de producto.
+	\item Edición de plantillas de producto.
+	\item Activado de plantillas de producto.
+	\item Generación de PDF a partir de plantillas de producto.
+\end{itemize}
 
 \subsection{Cuarto \textit{sprint}}
+El último \textit{sprint} consta de seis historias de usuario que se dividen en doce tareas, como está reflejado en el cuadro \ref{tab:sb04}. Este \textit{sprint} aún siendo similar en tamaño al anterior, tiene menor complejidad ya que podemos reutilizar código y experiencia previa para realizar un desarrollo más ágil, por ello el tiempo estimado es de una semana.
+
+\subsubsection{Diseño}
+Lo único nuevo en cuestión de diseño en este \textit{sprint} es la pantalla de edición de plantillas de catálogos que podemos ver en la figura \{****** Diseño plantilla de catálogo******\}
+
+\subsubsection{Desarrollo}
+\begin{itemize}
+	\item \textbf{H08 ``Botón de generación de PDF de catálogo''}\\
+	Para la creación de un botón que genere documentos PDF a partir de catálogos, se requiere el uso del \textit{hook page\_alter} ya que al contrario que con productos, no se está asociando la generación a un único formulario de producto, sino a un catálogo que se muestra en una página completa.
+	El código de implementación del \textit{hook} es el siguiente: 
+	\begin{verbatim}
+	function pdf_warp_page_alter(&$page){
+	  if (strpos($page['content']['system_main']
+	  ['products']['#markup'], 'view-uc-catalog') != false){
+	    $url = explode("/", current_path());
+	    $page['content']['system_main']['products']['#markup'] =
+	    $page['content']['system_main']['products']['#markup'].
+	    '<a href="'.$GLOBALS['base_url'].
+	    '/pdf_warp/generate/catalog/'.
+	    $url[1].'";
+	  }
+	}
+	\end{verbatim}
+	Con esta implementación aparecerá un botón en cada catálogo que navegue a la página /pdf\_warp/generate/catalog/{id} en la que se desarrollará la generación del PDF de catálogo.
+	
+	\item \textbf{``H09 Generación de PDF de catálogo''}\\
+	Al igual que en el segundo \textit{sprint} se crea la página de generación de PDF a partir de plantillas de catálogo. En el \textit{hook} \textit{menu} se añade un elemento nuevo, el código es el siguiente:
+	\begin{verbatim}
+	$items['pdf_warp/generate/catalog/%'] = array(
+	  'title'            => 'PDF Warp generación',
+	  'description'      => 'Generación de PDF',
+	  'page callback'    => 'pdf_warp_generate_catalog_page',
+	  'page arguments'   => array(3),
+	  'access arguments' => array('access content'),
+	);
+	\end{verbatim}
+	También es necesario crear nuevos temas, para utilizar las páginas \textit{front-end} de catálogos:
+	\begin{verbatim}
+	function pdf_warp_theme(){
+	  return array(
+	  ...
+	  'pdf_warp_catalog_template' => array (
+	    'template' => 'pdf-warp-catalog-template'
+	  )
+	  ,
+	  'pdf_warp_catalog_generation' => array (
+	    'template' => 'pdf-warp-catalog-generation'
+	  )
+	);
+	}
+	\end{verbatim}
+	La función de \textit{callback} de la página de generación, será prácticamente igual que la de producto, con la diferencia de que se cargan otros recursos,se envía una plantilla de tipo \textit{catalog} y se devuelve otro tema distinto.
+	\begin{verbatim}
+	function pdf_warp_generate_catalog_page($id_item) {
+	  ...
+	  $path = drupal_get_path('module', 'pdf_warp');
+	  drupal_add_js($path.'/js/pdf_warp_catalog_generation.js');
+	  drupal_add_js($path.'/js/vendor/jspdf.min.js');
+	  drupal_add_js($path.'/js/vendor/html2pdf.js');
+	  ...
+	  $sql = "SELECT * FROM {pdf_warp_templates} WHERE active=1 AND type='catalog'";
+	  $settings['pdf_warp']['template_content'] = db_query($sql)->fetchAll();
+	  drupal_add_js($settings, 'setting');
+	
+	  return theme('pdf_warp_catalog_generation');
+	}
+	\end{verbatim}
+	
+	Habiendo creado la página de generación con las librerías necesarias inyectadas, se puede implementar el código de generación del documento PDF de catálogo en el archivo pdf\_warp\_catalog\_generation.js, el cuál será similar al de productos con la diferencia de que se generan páginas diferentes dependiendo del número de elementos por página deseado:
+	\begin{verbatim}
+	...
+	var doc = new jsPDF('portrait','pt','a4');
+	var pdf_elements = vm.initTemplate.pdf_elements
+	
+	angular.forEach(splitProducts, function(product, productIndex) {
+	  if (productIndex > 0){
+	    doc.addPage();
+	  }
+	  angular.forEach(Object.keys(pdf_elements), function(key, index) {
+	    if (product[index]) {
+	      doc.setFontSize(16 * 72 / 96);
+	      doc.text(pdf_elements[key].x * 72 / 96 + 40 * 72 / 96,
+	        pdf_elements[key].y * 72 / 96 + 40 * 72 / 96,
+	        product[index].product.Title);
+	      doc.setFontSize(10 * 72 / 96);
+	      doc.text(pdf_elements[key].x * 72 / 96 + 40 * 72 / 96,
+	        pdf_elements[key].y * 72 / 96 + 60 * 72 / 96,
+	        'SKU:' + product[index].product.SKU);
+	      doc.setFontSize(22 * 72 / 96);
+	      doc.text(pdf_elements[key].x * 72 / 96 + 100 * 72 / 96,
+	        pdf_elements[key].y * 72 / 96 + 300 * 72 / 96,
+	        product[index].product.Price);
+	    }
+	  });             
+	});
+	...
+	\end{verbatim}
+	
+	Con esta implementación al hacer click en el botón creado en la historia de usuario anterior, se generará un documento PDF de catálogo a partir de su plantilla.
+	
+	\item \textbf{``H10 Creación de plantillas de catálogo''}\\
+	Para la creación de plantillas de catálogo se añade un elemento en el formulario de creación de plantillas y una condición en la función de creación:
+	\begin{verbatim}
+	function pdf_warp_form_add_template_submit(&$form, $form_state) {
+ 	  ...
+	  'type' => $form_state['values']
+	    ['template_type'] == 0 ? 'product' : 'catalog'
+	  ...
+	}
+	\end{verbatim}
+	
+	\item \textbf{H11 ``Asignación de plantillas de catálogo''}\\
+	Para la activación de plantillas de catálogo, se añade código a la función de activación de plantillas para que se diferencie entre una plantilla de cátalogo y otra de producto. En concreto se realiza una consulta en la que se obtiene la información de plantilla para poder saber si estamos activando una plantilla de producto o catálogo. El código añadido es el siguiente:
+	\begin{verbatim}
+	function pdf_warp_template_enable_confirm_submit($form, &$form_state) {
+	  ...
+	 $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id_template;
+	  $templateResult = db_query($sql);
+	  $templateType = 'product';
+	
+	  foreach ($templateResult as $v) {
+	    $templateType = $v->type;
+	  }
+	  ...
+	}
+	\end{verbatim}
+	
+	\item \textbf{H12 ``Mover elementos en plantillas de catálogo''}\\
+	Esta historia de usuario, al igual que su homónima de productos, requiere realizar desarrollos tanto en el \textit{back-end} como en el \textit{front-end}. Se deben crear nuevas páginas de edición de plantillas de catálogo que también integren las librerías de AngularJS y Draggabilly, ya que la funcionalidad general será parecida. Las páginas que se añaden al \textit{hook menu} son las siguientes:
+	\begin{verbatim}
+	$items['admin/appearance/pdf_warp/edit/catalog/%'] = array(
+	  'title' => t('Editar plantilla de catálogo'),
+	  'page callback' => 'pdf_warp_edit_catalog_template_page',
+	  'page arguments' => array(5),
+	  'access arguments' => array('administer site configuration'),
+	  'type' => MENU_CALLBACK,
+	);
+	
+	$items['admin/appearance/pdf_warp/edit/catalog/%/save'] = array(
+	  'title' => t('Guardar plantilla'),
+	  'page callback' => 'pdf_warp_catalog_save_edit',
+	  'page arguments' => array(5),
+	  'access arguments' => array('administer site configuration'),
+	  'type' => MENU_CALLBACK, 
+	);
+	\end{verbatim}
+	
+	Al igual que con los catálogos, en la función de \textit{callback} de la página de edición, se tienen que cargar todas las librerías \textit{front-end} necesarias y enviar el contenido de la plantilla desde base de datos. El código sería el siguiente:
+	\begin{verbatim}
+	function pdf_warp_edit_template_page($id_template) {
+	  // CARGA DE LIBRERÍAS
+	
+	  $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id_template;
+	  $settings['pdf_warp']['template_content'] = db_query($sql)->fetchAll();
+	  drupal_add_js($settings, 'setting');
+	
+	  return theme('pdf_warp_catalog_template');
+	}
+	\end{verbatim}
+	
+	La página de edición de plantillas de catálogo se divide en dos ficheros, uno que contiene la lógica de la página llamado pdf\_warp\_catalog.js  y otro con la el código \ac{HTML} representando la vista de nombre pdf-warp-catalog-template.tpl.php.
+	La página resultante se puede ver en la figura \{*******imagen edición plantilla catalogo *****\}
+	
+	\item \textbf{H13 ``Borrado de plantillas de catálogo''}\\
+	El borrado de plantillas de catálogo no requiere código extra, ya que el borrado inicial se realiza por ID de plantilla y no entra en conflicto con la implementación previa.
+\end{itemize}
+
+\subsubsection{Pruebas}
+Las pruebas realizadas en este \textit{sprint} son las siguientes:
+\begin{itemize}
+	\item Creación de plantillas de catálogo.
+	\item Borrado de plantillas de catálogo.
+	\item Edición de plantillas de catálogo.
+	\item Activado de plantillas de catálogo.
+	\item Generación de PDF a partir de plantillas de catálogo.
+\end{itemize}
