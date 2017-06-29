@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  28 JUN 2017 21:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.17)  29 JUN 2017 21:36
 entering extended mode
 **./plantilla_PFC.tex
 (plantilla_PFC.tex
@@ -967,222 +967,400 @@ File: logo_master.png Graphic file (type png)
 Package pdftex.def Info: logo_master.png used on input line 146.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
 
-[29]
+[29] <./imagenes/arquitecturaWAMP.png, id=161, 699.36281pt x 466.74374pt>
+File: ./imagenes/arquitecturaWAMP.png Graphic file (type png)
+
+<use ./imagenes/arquitecturaWAMP.png>
+Package pdftex.def Info: ./imagenes/arquitecturaWAMP.png used on input line 152
+.
+(pdftex.def)             Requested size: 455.24411pt x 303.82852pt.
+
+<./imagenes/instalacion_wamp.png, id=163, 375.65344pt x 291.33844pt>
+File: ./imagenes/instalacion_wamp.png Graphic file (type png)
+
+<use ./imagenes/instalacion_wamp.png>
+Package pdftex.def Info: ./imagenes/instalacion_wamp.png used on input line 157
+.
+(pdftex.def)             Requested size: 369.88582pt x 286.88336pt.
+
+<./imagenes/wamp_ejecutable.png, id=164, 461.47406pt x 384.6872pt>
+File: ./imagenes/wamp_ejecutable.png Graphic file (type png)
+
+<use ./imagenes/wamp_ejecutable.png>
+Package pdftex.def Info: ./imagenes/wamp_ejecutable.png used on input line 162.
+
+(pdftex.def)             Requested size: 369.88582pt x 308.33714pt.
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 172.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [30 <./imagenes/arquitecturaWAMP.png>]
+File: logo_master.png Graphic file (type png)
+ <use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 172.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [31 <./imagenes/instalacion_wamp.png> <./imagenes/wamp_ejecutable.png>]
 Package acronym Info: Label `acro:WAMP' newly defined as it shall be overridden
 
-although it is yet undefined on input line 158.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 158.
+although it is yet undefined on input line 173.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 158.
+<./imagenes/Wizard_drupal.png, id=172, 1445.4pt x 782.925pt>
+File: ./imagenes/Wizard_drupal.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+<use ./imagenes/Wizard_drupal.png>
+Package pdftex.def Info: ./imagenes/Wizard_drupal.png used on input line 177.
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
 
  []
 
 File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 163.
+Package pdftex.def Info: logo_upm.png used on input line 186.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [30]
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+ [32 <./imagenes/Wizard_drupal.png>]
+<./imagenes/Drupal_administration.png, id=177, 1445.4pt x 782.925pt>
+File: ./imagenes/Drupal_administration.png Graphic file (type png)
+
+<use ./imagenes/Drupal_administration.png>
+Package pdftex.def Info: ./imagenes/Drupal_administration.png used on input lin
+e 192.
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
+
+<./imagenes/nuevo_modulo_form.png, id=178, 1445.4pt x 782.925pt>
+File: ./imagenes/nuevo_modulo_form.png Graphic file (type png)
+
+<use ./imagenes/nuevo_modulo_form.png>
+Package pdftex.def Info: ./imagenes/nuevo_modulo_form.png used on input line 19
+7.
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
+
+<./imagenes/modules.png, id=179, 1445.4pt x 782.925pt>
+File: ./imagenes/modules.png Graphic file (type png)
+
+<use ./imagenes/modules.png>
+Package pdftex.def Info: ./imagenes/modules.png used on input line 202.
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
 
  []
 
 File: logo_master.png Graphic file (type png)
 <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 178.
+Package pdftex.def Info: logo_master.png used on input line 209.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [31]
-Overfull \hbox (69.63115pt too wide) in paragraph at lines 188--188
+ [33 <./imagenes/Drupal_administration.png>]
+File: logo_upm.png Graphic file (type png)
+
+<use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 209.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [34 <./imagenes/nuevo_modulo_form.png> <./imagenes/modules.png>] <./imagenes/a
+ppearance.png, id=186, 1445.4pt x 782.925pt>
+File: ./imagenes/appearance.png Graphic file (type png)
+
+<use ./imagenes/appearance.png>
+Package pdftex.def Info: ./imagenes/appearance.png used on input line 215.
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
+
+Overfull \hbox (69.63115pt too wide) in paragraph at lines 227--227
 []    \OT1/cmtt/m/n/12 description = A module that provides Drupal 7 with PDF f
 unctionality for Ubercart[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
+File: logo_master.png Graphic file (type png)
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 234.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [35]
+<./imagenes/carpetas.png, id=190, 444.15938pt x 196.48407pt>
+File: ./imagenes/carpetas.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+<use ./imagenes/carpetas.png>
+Package pdftex.def Info: ./imagenes/carpetas.png used on input line 237.
+(pdftex.def)             Requested size: 369.88582pt x 163.62738pt.
 
- []
+<./imagenes/arquitecturaAplicacion.png, id=191, 447.92343pt x 307.1475pt>
+File: ./imagenes/arquitecturaAplicacion.png Graphic file (type png)
 
+<use ./imagenes/arquitecturaAplicacion.png>
+Package pdftex.def Info: ./imagenes/arquitecturaAplicacion.png used on input li
+ne 243.
+(pdftex.def)             Requested size: 369.88582pt x 253.64351pt.
 File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 198.
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 248.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [32]
-Overfull \hbox (6.3808pt too wide) in paragraph at lines 215--215
+ [36 <./imagenes/appearance.png> <./imagenes/carpetas.png>]
+Overfull \hbox (6.3808pt too wide) in paragraph at lines 263--263
  []      \OT1/cmtt/m/n/12 if (strpos($form_id, 'uc_product_add_to_cart_form') !
 == false) {[] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
- []
-
 File: logo_master.png Graphic file (type png)
 <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 219.
+Package pdftex.def Info: logo_master.png used on input line 263.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [33]
-Underfull \hbox (badness 10000) in paragraph at lines 234--236
+ [37 <./imagenes/arquitecturaAplicacion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
 
  []
 
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 251.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [34]
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
+<./imagenes/exportar_vista.png, id=199, 1445.4pt x 782.925pt>
+File: ./imagenes/exportar_vista.png Graphic file (type png)
 
- []
-
-File: logo_master.png Graphic file (type png)
-<use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 276.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [35]
+<use ./imagenes/exportar_vista.png>
+Package pdftex.def Info: ./imagenes/exportar_vista.png used on input line 288.
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 302.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [36]
-File: logo_master.png Graphic file (type png)
- <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 327.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 339--340
-
- []
-
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 371.
+Package pdftex.def Info: logo_upm.png used on input line 293.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
  [38]
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
 File: logo_master.png Graphic file (type png)
- <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 388.
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 305.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [39]
+ [39 <./imagenes/exportar_vista.png>]
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 407.
+Package pdftex.def Info: logo_upm.png used on input line 333.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [40]
-File: logo_master.png Graphic file (type png)
 
-<use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 439.
+[40]
+File: logo_master.png Graphic file (type png)
+ <use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 366.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
  [41]
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 479.
+Package pdftex.def Info: logo_upm.png used on input line 388.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
  [42]
-Overfull \hbox (0.2058pt too wide) in paragraph at lines 479--479
+<./imagenes/disenoAdminPpal.png, id=217, 1054.6903pt x 472.01344pt>
+File: ./imagenes/disenoAdminPpal.png Graphic file (type png)
+
+<use ./imagenes/disenoAdminPpal.png>
+Package pdftex.def Info: ./imagenes/disenoAdminPpal.png used on input line 393.
+
+(pdftex.def)             Requested size: 455.24411pt x 203.73247pt.
+
+<./imagenes/disenoAdminCreacion.png, id=218, 325.215pt x 231.86626pt>
+File: ./imagenes/disenoAdminCreacion.png Graphic file (type png)
+
+<use ./imagenes/disenoAdminCreacion.png>
+Package pdftex.def Info: ./imagenes/disenoAdminCreacion.png used on input line 
+398.
+(pdftex.def)             Requested size: 284.52756pt x 202.87184pt.
+
+<./imagenes/EditarProducto.png, id=219, 624.08156pt x 575.90157pt>
+File: ./imagenes/EditarProducto.png Graphic file (type png)
+
+<use ./imagenes/EditarProducto.png>
+Package pdftex.def Info: ./imagenes/EditarProducto.png used on input line 403.
+(pdftex.def)             Requested size: 455.24411pt x 420.10588pt.
+
+Underfull \vbox (badness 2600) has occurred while \output is active []
+
+File: logo_master.png Graphic file (type png)
+
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 413.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [43 <./imagenes/disenoAdminPpal.png> <./imagenes/disenoAdminCreacion.png>]
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 413.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [44 <./imagenes/EditarProducto.png>]
+File: logo_master.png Graphic file (type png)
+
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 440.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [45]
+<./imagenes/administracion2.png, id=233, 1445.4pt x 782.925pt>
+File: ./imagenes/administracion2.png Graphic file (type png)
+
+<use ./imagenes/administracion2.png>
+Package pdftex.def Info: ./imagenes/administracion2.png used on input line 458.
+
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
+
+<./imagenes/administracion3.png, id=234, 1445.4pt x 782.925pt>
+File: ./imagenes/administracion3.png Graphic file (type png)
+
+<use ./imagenes/administracion3.png>
+Package pdftex.def Info: ./imagenes/administracion3.png used on input line 463.
+
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 480.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [46]
+File: logo_master.png Graphic file (type png)
+
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 480.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [47 <./imagenes/administracion2.png> <./imagenes/administracion3.png>]
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 500.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [48]
+File: logo_master.png Graphic file (type png)
+ <use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 556.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [49]
+Overfull \hbox (0.2058pt too wide) in paragraph at lines 556--556
  []  \OT1/cmtt/m/n/12 $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id
 _template;[] 
  []
 
 
-Overfull \hbox (24.9058pt too wide) in paragraph at lines 479--479
+Overfull \hbox (24.9058pt too wide) in paragraph at lines 556--556
  []  \OT1/cmtt/m/n/12 $settings['pdf_warp']['template_content'] = db_query($sql
 )->fetchAll();[] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
 
-File: logo_master.png Graphic file (type png)
-<use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 497.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [43]
+<./imagenes/administracion4.png, id=247, 1445.4pt x 782.925pt>
+File: ./imagenes/administracion4.png Graphic file (type png)
+
+<use ./imagenes/administracion4.png>
+Package pdftex.def Info: ./imagenes/administracion4.png used on input line 563.
+
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 524.
+Package pdftex.def Info: logo_upm.png used on input line 567.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [44]
+ [50]
 File: logo_master.png Graphic file (type png)
- <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 551.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
 
-[45]
-Overfull \hbox (68.13083pt too wide) in paragraph at lines 580--580
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 584.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [51 <./imagenes/administracion4.png>]
+<./imagenes/disenoCatalogo.png, id=255, 610.53094pt x 569.12625pt>
+File: ./imagenes/disenoCatalogo.png Graphic file (type png)
+
+<use ./imagenes/disenoCatalogo.png>
+Package pdftex.def Info: ./imagenes/disenoCatalogo.png used on input line 601.
+(pdftex.def)             Requested size: 455.24411pt x 424.38602pt.
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 623.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [52]
+File: logo_master.png Graphic file (type png)
+
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 623.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [53 <./imagenes/disenoCatalogo.png>]
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 651.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+
+[54]
+Overfull \hbox (68.13083pt too wide) in paragraph at lines 667--667
  []  \OT1/cmtt/m/n/12 $sql = "SELECT * FROM {pdf_warp_templates} WHERE active=1
  AND type='catalog'";[] 
  []
 
 
-Overfull \hbox (24.9058pt too wide) in paragraph at lines 580--580
- []  \OT1/cmtt/m/n/12 $settings['pdf_warp']['template_content'] = db_query($sql
-)->fetchAll();[] 
- []
-
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 583.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [46]
-File: logo_master.png Graphic file (type png)
- <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 623.
-(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [47]
-Overfull \hbox (12.5558pt too wide) in paragraph at lines 639--639
- []\OT1/cmtt/m/n/12 function pdf_warp_template_enable_confirm_submit($form, &$f
-orm_state) {[] 
- []
-
-File: logo_upm.png Graphic file (type png)
-<use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 659.
-(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [48]
-Overfull \hbox (0.2058pt too wide) in paragraph at lines 672--672
- []  \OT1/cmtt/m/n/12 $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id
-_template;[] 
- []
-
-
-Overfull \hbox (24.9058pt too wide) in paragraph at lines 672--672
+Overfull \hbox (24.9058pt too wide) in paragraph at lines 667--667
  []  \OT1/cmtt/m/n/12 $settings['pdf_warp']['template_content'] = db_query($sql
 )->fetchAll();[] 
  []
 
 File: logo_master.png Graphic file (type png)
 <use logo_master.png>
-Package pdftex.def Info: logo_master.png used on input line 685.
+Package pdftex.def Info: logo_master.png used on input line 697.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [49])
+ [55]
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
-Package pdftex.def Info: logo_upm.png used on input line 158.
+Package pdftex.def Info: logo_upm.png used on input line 714.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [50]
+ [56]
+Overfull \hbox (12.5558pt too wide) in paragraph at lines 726--726
+ []\OT1/cmtt/m/n/12 function pdf_warp_template_enable_confirm_submit($form, &$f
+orm_state) {[] 
+ []
+
+File: logo_master.png Graphic file (type png)
+<use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 749.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [57]
+Overfull \hbox (0.2058pt too wide) in paragraph at lines 759--759
+ []  \OT1/cmtt/m/n/12 $sql = "SELECT * FROM {pdf_warp_templates} WHERE id=".$id
+_template;[] 
+ []
+
+
+Overfull \hbox (24.9058pt too wide) in paragraph at lines 759--759
+ []  \OT1/cmtt/m/n/12 $settings['pdf_warp']['template_content'] = db_query($sql
+)->fetchAll();[] 
+ []
+
+<./imagenes/administracion5.png, id=276, 1445.4pt x 782.925pt>
+File: ./imagenes/administracion5.png Graphic file (type png)
+
+<use ./imagenes/administracion5.png>
+Package pdftex.def Info: ./imagenes/administracion5.png used on input line 764.
+
+(pdftex.def)             Requested size: 455.24411pt x 246.58684pt.
+File: logo_upm.png Graphic file (type png)
+ <use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 776.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [58 <./imagenes/administracion5.png>])
+File: logo_master.png Graphic file (type png)
+ <use logo_master.png>
+Package pdftex.def Info: logo_master.png used on input line 158.
+(pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
+ [59]
 \openout2 = `conclusiones.aux'.
 
  (conclusiones.tex
+File: logo_upm.png Graphic file (type png)
+
+<use logo_upm.png>
+Package pdftex.def Info: logo_upm.png used on input line 1.
+(pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
+ [60
+
+
+
+]
 Cap\'{\i }tulo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
@@ -1199,16 +1377,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[51
-
-
-
-])
+[61])
 File: logo_upm.png Graphic file (type png)
  <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 160.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [52] (plantilla_PFC.bbl
+ [62] (plantilla_PFC.bbl
 Underfull \hbox (badness 1184) in paragraph at lines 31--36
 []\OT1/cmr/m/n/12 Git.  \OT1/cmr/m/it/12 A Short His-tory of Git\OT1/cmr/m/n/12
  .  2014.  $\OT1/cmtt/m/n/12 https : / / git-[]scm . com / book / en / v2 /
@@ -1226,7 +1400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--77
 network . org / shows /
  []
 
-[53
+[63
 
 
 
@@ -1300,12 +1474,12 @@ File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 158.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [54])
+ [64])
 File: logo_master.png Graphic file (type png)
  <use logo_master.png>
 Package pdftex.def Info: logo_master.png used on input line 175.
 (pdftex.def)             Requested size: 91.42131pt x 42.27783pt.
- [55]
+ [65]
 \openout2 = `anexos.aux'.
 
  (anexos.tex
@@ -1314,10 +1488,10 @@ File: logo_upm.png Graphic file (type png)
 <use logo_upm.png>
 Package pdftex.def Info: logo_upm.png used on input line 1.
 (pdftex.def)             Requested size: 334.24792pt x 355.32661pt.
- [56
+ [66
 
 
-]) [57] (plantilla_PFC.aux
+]) [67] (plantilla_PFC.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
  (agradecimientos.aux)
@@ -1329,13 +1503,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5532 strings out of 493323
- 77385 string characters out of 3139051
- 186838 words of memory out of 3000000
- 8864 multiletter control sequences out of 15000+200000
+ 5647 strings out of 493323
+ 80625 string characters out of 3139051
+ 187058 words of memory out of 3000000
+ 8962 multiletter control sequences out of 15000+200000
  14933 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,17n,48p,1170b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,17n,48p,1170b,536s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiK
@@ -1344,13 +1518,12 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX 2.9
 pe1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program
- Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on plantilla_PFC.pdf (74 pages, 380749 bytes).
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on plantilla_PFC.pdf (84 pages, 880165 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
+ 349 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

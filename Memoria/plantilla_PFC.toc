@@ -48,21 +48,21 @@
 \contentsline {section}{\numberline {3.2}Desarrollo del proyecto}{30}
 \contentsline {subsection}{\numberline {3.2.1}Primer \textit {sprint}}{30}
 \contentsline {subsubsection}{Requisitos de Drupal}{30}
-\contentsline {subsubsection}{Instalaci\'on de Drupal}{30}
-\contentsline {subsubsection}{Expandiendo Drupal}{31}
-\contentsline {subsubsection}{Creaci\'on de un m\'odulo de Drupal}{32}
-\contentsline {subsection}{\numberline {3.2.2}Segundo \textit {sprint}}{32}
-\contentsline {subsubsection}{Dise\~no}{32}
-\contentsline {subsubsection}{Desarrollo}{33}
-\contentsline {subsubsection}{Pruebas}{37}
-\contentsline {subsection}{\numberline {3.2.3}Tercer \textit {sprint}}{37}
-\contentsline {subsubsection}{Dise\~no}{37}
-\contentsline {subsubsection}{Desarrollo}{38}
-\contentsline {subsubsection}{Pruebas}{44}
-\contentsline {subsection}{\numberline {3.2.4}Cuarto \textit {sprint}}{44}
-\contentsline {subsubsection}{Dise\~no}{44}
+\contentsline {subsubsection}{Instalaci\'on de Drupal}{32}
+\contentsline {subsubsection}{Expandiendo Drupal}{33}
+\contentsline {subsubsection}{Creaci\'on de un m\'odulo de Drupal}{35}
+\contentsline {subsection}{\numberline {3.2.2}Segundo \textit {sprint}}{36}
+\contentsline {subsubsection}{Dise\~no}{36}
+\contentsline {subsubsection}{Desarrollo}{37}
+\contentsline {subsubsection}{Pruebas}{41}
+\contentsline {subsection}{\numberline {3.2.3}Tercer \textit {sprint}}{42}
+\contentsline {subsubsection}{Dise\~no}{42}
 \contentsline {subsubsection}{Desarrollo}{45}
-\contentsline {subsubsection}{Pruebas}{49}
-\contentsline {chapter}{\numberline {4}Conclusiones y trabajos futuros}{51}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{55}
-\contentsline {chapter}{Anexo 1}{57}
+\contentsline {subsubsection}{Pruebas}{52}
+\contentsline {subsection}{\numberline {3.2.4}Cuarto \textit {sprint}}{52}
+\contentsline {subsubsection}{Dise\~no}{52}
+\contentsline {subsubsection}{Desarrollo}{52}
+\contentsline {subsubsection}{Pruebas}{59}
+\contentsline {chapter}{\numberline {4}Conclusiones y trabajos futuros}{61}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{65}
+\contentsline {chapter}{Anexo 1}{67}

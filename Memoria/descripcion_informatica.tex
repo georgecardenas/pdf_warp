@@ -148,6 +148,21 @@ En esta sección se expondrá el proceso de desarrollo del \ac{TFM}. Según lo expu
 Como se puede observar en el cuadro \ref{tab:sb01}, el primer \textit{sprint} tiene sólo una historia de usuario: ``Instalación de Entorno'', que comprende ocho tareas básicas para desplegar y comprender el funcionamiento de un entorno Drupal.
 
 \subsubsection{Requisitos de Drupal}
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/arquitecturaWAMP.png}}
+	\caption{Arquitectura WAMP}
+	\label{fig:wamparch}
+\end{figure}
+\begin{figure}
+	\centering{\includegraphics[width=13cm]{./imagenes/instalacion_wamp.png}}
+	\caption{Instalación de WAMP}
+	\label{fig:wampwizard}
+\end{figure}
+\begin{figure}
+	\centering{\includegraphics[width=13cm]{./imagenes/wamp_ejecutable.png}}
+	\caption{Archivos de WAMP}
+	\label{fig:wampexe}
+\end{figure}
 Para poder ejecutar una aplicación Drupal se tienen que cumplir los siguientes requisitos:
 \begin{itemize}  
 	\item Espacio en disco mínimo de 60MB.
@@ -155,28 +170,52 @@ Para poder ejecutar una aplicación Drupal se tienen que cumplir los siguientes r
 	\item Base de datos MySQL, MariaDB, Percona Server, PostgreSQL o SQLite.
 	\item PHP 5.2.5 mínimo
 \end{itemize}
-Se decide utilizar una infraestructura \acf{WAMP} con lo que se cumplen todos los requisitos mínimos de Drupal. El esquema de WAMP se puede ver en la figura \{****** incluir imagen *****\}.
-Realizar una instalación para \ac{WAMP} es sencillo, simplemente hay que descargar un instalador de la página web de \ac{WAMP}\footnote{http://www.wampserver.es/} y seguir los pasos del wizard de instalación como se puede observar en la figura \{**** imagen del wizard****\}. Una vez completada la instalación, se arrancan los servicios de \ac{WAMP} navegando a la carpeta de instalación y ejecutando {*** ejecutable ***}.
-
+Se decide utilizar una infraestructura \acf{WAMP} con lo que se cumplen todos los requisitos mínimos de Drupal. El esquema de WAMP se puede ver en la figura \ref{fig:wamparch}.
+Realizar una instalación para \ac{WAMP} es sencillo, simplemente hay que descargar un instalador de la página web de \ac{WAMP}\footnote{http://www.wampserver.es/} y seguir los pasos del wizard de instalación como se puede observar en la figura \ref{fig:wampwizard}. Una vez completada la instalación, se arrancan los servicios de \ac{WAMP} navegando a la carpeta de instalación y ejecutando wampmanager.exe como se ve en la figura \ref{fig:wampexe}.
 \subsubsection{Instalación de Drupal}
-Hay varias formas para instalar Drupal y sus extensiones. Inicialmente se intentó usar la herramienta Composer con la cual poder crear un archivo composer.json con todos los parámetros de la instalación de Drupal, incluyendo módulos extra, y posteriormente ejecutar la instalación con un único comando de consola. Sin embargo, tras múltiples problemas relacionados con la plataforma Windows elegida, y, dado que el proceso de instalación de Drupal en sí no está incluído dentro del alcance de los propósito del \ac{TFM}, se decidió utilizar un proceso de instalación manual.\\
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/Wizard_drupal.png}}
+	\caption{Instalación de Drupal}
+	\label{fig:drupalins}
+\end{figure}
+Hay varias formas para instalar Drupal y sus extensiones. Inicialmente se intentó usar la herramienta Composer con la cual poder crear un archivo composer.json con todos los parámetros de la instalación de Drupal, incluyendo módulos extra, y posteriormente ejecutar la instalación con un único comando de consola. Sin embargo, tras múltiples problemas relacionados con la plataforma Windows elegida, y, dado que el proceso de instalación de Drupal en sí no está incluido dentro del alcance de los propósito del \ac{TFM}, se decidió utilizar un proceso de instalación manual.\\
 
 Para instalar Drupal manualmente, el proceso es el siguiente:
 \begin{enumerate}  
 	\item Descargar y extraer Drupal: El \textit{framework} no requiere instalación propiamente dicha, tan sólo hace falta descargar el archivo comprimido de la web de Drupal\footnote{https://www.drupal.org/project/drupal} y extraer los ficheros comprimidos dentro de la carpeta de aplicaciones web en la instalación de \ac{WAMP}.
 	\item Crear base de datos: En el servidor de MySQL incluido en \ac{WAMP}, se crea la base de datos para la aplicación de Drupal.
-	\item Ejecución de scripts de Drupal: Finalmente se navega a la aplicación creada en el punto 1 (ejemplo: http://localhsot/drupal) y se siguen los pasos para completar la instalación. Esto ejecutará los scripts necesarios para completar la instalación de Drupal como se puede ver en la figura \{****** incluir imagen de instalación de Drupal *****\}.
+	\item Ejecución de scripts de Drupal: Finalmente se navega a la aplicación creada en el punto 1 (ejemplo: http://localhost/drupal) y se siguen los pasos para completar la instalación. Esto ejecutará los scripts necesarios para completar la instalación de Drupal como se puede ver en la figura \ref{fig:drupalins}.
 \end{enumerate}
 
 \subsubsection{Expandiendo Drupal}
-Como \ac{CMS}, Drupal contiene mecanismos para que un administrador pueda agregar contenido y funcionalidad extra. Esto se realiza desde los menús de administración en la aplicación web. Para acceder a esta sección, se navega a la aplicación web del servidor local (creado en la sección anterior) y se introducen los credenciales de un usuario con privilegios, creado en el paso 3 de la instalación manual de Drupal. En la figura \{****** insertar imagen administracion ****\} se puede ver el menú de administración.\\
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/Drupal_administration.png}}
+	\caption{Administración de Drupal}
+	\label{fig:drupaladmin}
+\end{figure}
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/nuevo_modulo_form.png}}
+	\caption{Formulario de añadir módulo a Drupal}
+	\label{fig:drupalnewmodule}
+\end{figure}
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/modules.png}}
+	\caption{Lista de módulos instalados en Drupal}
+	\label{fig:drupalmodulelist}
+\end{figure}
+Como \ac{CMS}, Drupal contiene mecanismos para que un administrador pueda agregar contenido y funcionalidad extra. Esto se realiza desde los menús de administración en la aplicación web. Para acceder a esta sección, se navega a la aplicación web del servidor local (creado en la sección anterior) y se introducen los credenciales de un usuario con privilegios, creado en el paso 3 de la instalación manual de Drupal. En la figura \ref{fig:drupaladmin} se puede ver el menú de administración.\\
 
 Las siguientes acciones sobre la instalación de Drupal se han llevado a cabo para el primer \textit{sprint}:
 \begin{itemize}  
-	\item Instalación de módulo: Para instalar un módulo de Drupal manualmente, hay que realizar una búsqueda del mismo en su web\footnote{https://www.drupal.org/project/project\_module} y descargar su fichero comprimido. Una vez descargado, se añade el módulo a Drupal mediante la opción ``Install new module'' del menú ``Modules'' como se puede observar en la figura \{****** menú modules ****\}. Una vez añadido, el módulo y sus dependencias, se activa desde la lista de módulos, como se muestra en la figura \{**** Lista de módulos ****\}. Para ganar tiempo en el futuro del desarrollo, se instala directamente el módulo de Ubercart y sus dependencias.
-	\item Instalación de tema: Se instala el tema Acquia Prosper de manera manual. Para ello se realiza una búsqueda en la web de descarga de temas\footnote{https://www.drupal.org/project/project\_theme} y se obtiene el fichero comprimido. Luego desde la sección ``Appearance'', se elige la opción ``Install new theme'' y se elige el archivo descargado como se puede ver en la figura \{***** imagen de appearance ****\}. Por último se instalan us dependencias y se activa desde el listado de temas de la sección ``Appearance''.
+	\item Instalación de módulo: Para instalar un módulo de Drupal manualmente, hay que realizar una búsqueda del mismo en su web\footnote{https://www.drupal.org/project/project\_module} y descargar su fichero comprimido. Una vez descargado, se añade el módulo a Drupal mediante la opción ``Install new module'' del menú ``Modules'' como se puede observar en la figura \ref{fig:drupalnewmodule}. Una vez añadido, el módulo y sus dependencias, se activa desde la lista de módulos, como se muestra en la figura \ref{fig:drupalmodulelist}. Para ganar tiempo en el futuro del desarrollo, se instala directamente el módulo de Ubercart y sus dependencias.
+	\item Instalación de tema: Se instala el tema Acquia Prosper de manera manual. Para ello se realiza una búsqueda en la web de descarga de temas\footnote{https://www.drupal.org/project/project\_theme} y se obtiene el fichero comprimido. Luego desde la sección ``Appearance'', se elige la opción ``Install new theme'' y se elige el archivo descargado como se puede ver en la figura \ref{fig:drupalappearance}. Por último se instalan us dependencias y se activa desde el listado de temas de la sección ``Appearance''.
 	\item Creación de contenido: Se crean contenidos, tipos de contenido, vistas y bloques de prueba para familiarizarse con la diferente funcionalidad de Drupal y productos para el posterior desarrollo del proyecto.
 \end{itemize}
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/appearance.png}}
+	\caption{Agregar nuevo tema a Drupal}
+	\label{fig:drupalappearance}
+\end{figure}
 
 \subsubsection{Creación de un módulo de Drupal}
 Para crear un nuevo módulo de Drupal 7, se navega a la carpeta ``sites/all/modules/'' de la instalación de Drupal, y se crea un nuevo directorio con el nombre de la nueva extensión que en este caso será ``pdf\_warp''. En este nuevo directorio se crea un fichero ``pdf\_warp.info'' con el siguiente contenido:
@@ -194,9 +233,18 @@ Por último se crea en el directorio un fichero pdf\_warp.module que tendrá el có
 Este \textit{sprint} consta de tres historias de usuario que se dividen en cinco tareas, como está reflejado en el cuadro \ref{tab:sb02}. A partir de este punto empieza el desarrollo de la funcionalidad del \ac{TFM}.
 
 \subsubsection{Diseño}
-La arquitectura del módulo constará de un directorio base que contiene el archivo .info de descripción del módulo, el archivo .install con las instrucciones PHP a ejecutar durante la instalación, el archivo .module que contiene el código del módulo como la implementación de \textit{hooks} de Drupal y los archivos .tpl con las plantillas de PHP. Dentro del mismo directorio y como se puede observar en la figura \{***** imagen carpetas ****\} se incluirán una carpeta ``css'' para los estilos del módulo y una carpeta ``js'' para todo el contenido \textit{front-end} dinámico.\\
-
-La aplicación inicialmente seguirá el diseño de la figura \{**** arquitectura inicial ****\} con Drupal como fuente de datos, y comunicaciones JSON con el \textit{front-end} para la generación de PDF.
+\begin{figure}
+	\centering{\includegraphics[width=13cm]{./imagenes/carpetas.png}}
+	\caption{Carpetas de módulo pdf\_warp}
+	\label{fig:folders}
+\end{figure}
+La arquitectura del módulo constará de un directorio base que contiene el archivo .info de descripción del módulo, el archivo .install con las instrucciones PHP a ejecutar durante la instalación, el archivo .module que contiene el código del módulo como la implementación de \textit{hooks} de Drupal y los archivos .tpl con las plantillas de PHP. Dentro del mismo directorio y como se puede observar en la figura \ref{fig:folders} se incluirán una carpeta ``css'' para los estilos del módulo y una carpeta ``js'' para todo el contenido \textit{front-end} dinámico.\\
+\begin{figure}
+	\centering{\includegraphics[width=13cm]{./imagenes/arquitecturaAplicacion.png}}
+	\caption{Arquitectura de la aplicación}
+	\label{fig:arc}
+\end{figure}
+La aplicación inicialmente seguirá el diseño de la figura \ref{fig:arc} con Drupal como fuente de datos, y comunicaciones JSON con el \textit{front-end} para la generación de PDF.
 
 \subsubsection{Desarrollo}
 \begin{itemize}  
@@ -215,7 +263,7 @@ La aplicación inicialmente seguirá el diseño de la figura \{**** arquitectura in
 	\end{verbatim}
 	En dónde \textit{\&\$form} contiene la información del formulario que se está renderizando, \textit{\$form\_state} contiene la información del estado de formulario y \textit{\$form\_id} contiene el id de formulario.\\
 	\item \textbf{HT02 ``Creación de vistas programáticamente''}\\
-	Se necesita crear las vistas de producto y catálogo en JSON para que el código Javascript del cliente pueda trabajar con estos datos. Para ello se hace uso de los \textit{hooks} \textit{views\_api} y \textit{views\_default\_views}. Debido a que crear una vista programáticamente es complicado, lo más sencillo es crear la vista de forma manual y luego exportar el código generado a \textit{views\_default\_views} como se observa en la figura \{***** imagen de exportación*****\}
+	Se necesita crear las vistas de producto y catálogo en JSON para que el código Javascript del cliente pueda trabajar con estos datos. Para ello se hace uso de los \textit{hooks} \textit{views\_api} y \textit{views\_default\_views}. Debido a que crear una vista programáticamente es complicado, lo más sencillo es crear la vista de forma manual y luego exportar el código generado a \textit{views\_default\_views} como se observa en la figura \ref{fig:export}.
 	\begin{verbatim}
 	function pdf_warp_views_api() {
 	  return array(
@@ -236,7 +284,11 @@ La aplicación inicialmente seguirá el diseño de la figura \{**** arquitectura in
 	
 	Para no sobrecargar las páginas de Drupal con librerías que no necesitan, se cargará el código Javascript localmente en las páginas en las que sea necesario. Con este fin, se crea una nueva página que realizará la generación de PDF.\\
 	El proceso de creación de una nueva página requiere implementar los \textit{hooks} \textit{menu} y \textit{theme} en el archivo .module. Estas funciones son llamadas por Drupal cuando se va a generar el árbol de navegación y los temas.\\
-	
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/exportar_vista.png}}
+		\caption{Exportación de vista a código PHP}
+		\label{fig:export}
+	\end{figure}
 	En el \textit{hook} \textit{menu}, se añade un nuevo elemento al \textit{array} \$items con su título, descripción, \textit{callback}, argumentos de página y privilegios necesarios para acceder. La implementación es la siguiente:
 	\begin{verbatim}
     function pdf_warp_menu() {
@@ -336,7 +388,22 @@ Para almacenar la información de plantilla se diseña una nueva tabla de base de 
 	\item content: El contenido en JSON de tipo TEXT y tamaño medio.
 \end{itemize}
 
-Por otro lado se requiere una sección de administración para que un usuario con privilegios pueda gestionar plantillas. Se decide incluir una pestaña de administración dentro de la sección ``Appearance''. El diseño de las pantallas se puede ver en la figura \{***** incluir diseño de pantallas admin ****\}\\
+Por otro lado se requiere una sección de administración para que un usuario con privilegios pueda gestionar plantillas. Se decide incluir una pestaña de administración dentro de la sección ``Appearance''. El diseño de las pantallas se puede ver en las figuras \ref{fig:diseno1},\ref{fig:diseno2} y \ref{fig:diseno3}.\\
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/disenoAdminPpal.png}}
+	\caption{Diseño de pantalla principal de administración}
+	\label{fig:diseno1}
+\end{figure}
+\begin{figure}
+	\centering{\includegraphics[width=10cm]{./imagenes/disenoAdminCreacion.png}}
+	\caption{Diseño de creación de plantilla}
+	\label{fig:diseno2}
+\end{figure}
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/EditarProducto.png}}
+	\caption{Diseño de edición de plantilla}
+	\label{fig:diseno3}
+\end{figure}
 
 \subsubsection{Desarrollo}
 
@@ -386,7 +453,17 @@ Por otro lado se requiere una sección de administración para que un usuario con 
       'type' => MENU_LOCAL_ACTION,
     );
 	\end{verbatim}
-	Posteriormente se implementan las funciones de \textit{callback}, \textit{pdf\_warp\_admin\_page} y \textit{pdf\_warp\_form\_add\_template}, para generar el contenido de las páginas, además para el formulario de creación de plantilla se requiere implementar uan nueva función \textit{pdf\_warp\_form\_add\_templat\_submit} que contendrá el código para crear una nueva plantilla en base de datos. El aspecto que presentan se puede ver en las figuras \{***** Imagenes de las páginas*****\}.\\
+	Posteriormente se implementan las funciones de \textit{callback}, \textit{pdf\_warp\_admin\_page} y \textit{pdf\_warp\_form\_add\_template}, para generar el contenido de las páginas, además para el formulario de creación de plantilla se requiere implementar uan nueva función \textit{pdf\_warp\_form\_add\_templat\_submit} que contendrá el código para crear una nueva plantilla en base de datos. El aspecto que presentan se puede ver en las figuras \ref{fig:adminpdf2} y \ref{fig:adminpdf3}.\\
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion2.png}}
+		\caption{Página de administración principal}
+		\label{fig:adminpdf2}
+	\end{figure}
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion3.png}}
+		\caption{Página de creación de plantilla}
+		\label{fig:adminpdf3}
+	\end{figure}
 	Una vez tenemos la plantilla creada, se modifica la generación de PDF de producto para que haga uso de ella en vez de una prefijada. Para ello tan sólo modificamos la función del back que renderiza la página de generación de PDF para que envíe el JSON de nuestra plantilla a la página de generación, en los \textit{settings} de Drupal:
 	\begin{verbatim}
 	function pdf_warp_generate_product_page($id_item) {
@@ -481,7 +558,12 @@ Por otro lado se requiere una sección de administración para que un usuario con 
 	Como se puede observar, se incuyen librerías extra desde la carpeta \textit{vendor}. Estas librerías son para poder usar la extensión de AngularJs Draggabilly que nos permite mover elementos mediante \textit{drag and drop} al punto que queramos dentro de un elemento contenedor.\\
 	
 	La página de edición AngularJS se divide en dos ficheros, uno que contiene la lógica de la página llamado pdf\_warp.js  y otro con la el código \ac{HTML} representando la vista de nombre pdf-warp-template.tpl.php.
-	La página resultante se puede ver en la figura \{*******imagen edición plantilla *****\}
+	La página resultante se puede ver en la figura \ref{fig:adminpdf4}.
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion4.png}}
+		\caption{Página de edición de plantilla}
+		\label{fig:adminpdf4}
+	\end{figure}
 	
 	\item \textbf{H06 ``Borrado de plantillas de producto''}\\
 	El borrado de plantillas de producto también se realiza de manera sencilla. Se crea una nueva página de formulario implementando el \textit{hook menu} y su función de \textit{callback} que se llamará pdf\_warp\_template\_delete\_confirm. El código que se añade al \textit{hook} es el siguiente:
@@ -514,7 +596,12 @@ Las pruebas realizadas en este \textit{sprint} son las siguientes:
 El último \textit{sprint} consta de seis historias de usuario que se dividen en doce tareas, como está reflejado en el cuadro \ref{tab:sb04}. Este \textit{sprint} aún siendo similar en tamaño al anterior, tiene menor complejidad ya que podemos reutilizar código y experiencia previa para realizar un desarrollo más ágil, por ello el tiempo estimado es de una semana.
 
 \subsubsection{Diseño}
-Lo único nuevo en cuestión de diseño en este \textit{sprint} es la pantalla de edición de plantillas de catálogos que podemos ver en la figura \{****** Diseño plantilla de catálogo******\}
+Lo único nuevo en cuestión de diseño en este \textit{sprint} es la pantalla de edición de plantillas de catálogos que podemos ver en la figura \ref{fig:diseno4}.
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/disenoCatalogo.png}}
+	\caption{Diseño de edición de plantilla de catálogo}
+	\label{fig:diseno4}
+\end{figure}
 
 \subsubsection{Desarrollo}
 \begin{itemize}
@@ -672,7 +759,12 @@ Lo único nuevo en cuestión de diseño en este \textit{sprint} es la pantalla de e
 	\end{verbatim}
 	
 	La página de edición de plantillas de catálogo se divide en dos ficheros, uno que contiene la lógica de la página llamado pdf\_warp\_catalog.js  y otro con la el código \ac{HTML} representando la vista de nombre pdf-warp-catalog-template.tpl.php.
-	La página resultante se puede ver en la figura \{*******imagen edición plantilla catalogo *****\}
+	La página resultante se puede ver en la figura \ref{fig:adminpdf5}.
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion5.png}}
+		\caption{Diseño de edición de plantilla de catálogo}
+		\label{fig:adminpdf5}
+	\end{figure}
 	
 	\item \textbf{H13 ``Borrado de plantillas de catálogo''}\\
 	El borrado de plantillas de catálogo no requiere código extra, ya que el borrado inicial se realiza por ID de plantilla y no entra en conflicto con la implementación previa.
