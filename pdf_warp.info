@@ -2,3 +2,7 @@ name = PDF Warp
 description = A module that provides Drupal 7 with PDF functionality for Ubercart
 core = 7.x
 package = PDF Warp
+dependencies[] = ubercart:uc_product
+dependencies[] = ubercart:uc_catalog
+dependencies[] = angularjs
+dependencies[] = views_datasource:views_json

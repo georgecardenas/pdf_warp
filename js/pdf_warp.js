@@ -11,6 +11,7 @@ var app = angular
 
   .controller('ProductCtrl', function($http, $location) {
     var vm = this;
+    var base_url = Drupal.settings.pdf_warp.base_url;
     vm.products = [];
     vm.path = $location.path() + '/save';
     vm.template = '';
@@ -23,9 +24,7 @@ var app = angular
     vm.selectProducts = Drupal.settings.pdf_warp.products.map(item => item.nid);
     vm.selectedProduct = vm.selectProducts[0];
     
-    var app = $location.path().split('/')[1];
-    
-    $http.get('http://' + $location.host() + '/' + app + '/store/product/'+ vm.selectedProduct + '/json')
+    $http.get(base_url + '/store/product/'+ vm.selectedProduct + '/json')
     .then(function(result) {
       vm.products = result.data.products;
       var templateInfo = Drupal.settings.pdf_warp.template_content;
@@ -55,7 +54,7 @@ var app = angular
     }
     
     vm.productChange = function() {
-      $http.get('http://' + $location.host() + '/' + app + '/store/product/'+ vm.selectedProduct + '/json')
+      $http.get(base_url + '/store/product/'+ vm.selectedProduct + '/json')
       .then(function(result) {
         vm.products = result.data.products;
       });

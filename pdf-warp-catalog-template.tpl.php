@@ -9,13 +9,6 @@
       </div>
       <form class="textCenter" action="{{vm.path}}" ng-submit="vm.save()" method="post" id="form">
         <input type="hidden" name="content" ng-value="vm.template">
-        <div class="options-container">
-          <label for="renderModeSelect" class="inline">Renderizado: </label>
-          <select name="renderModeSelect" class="inline" ng-model="vm.renderMode">
-            <option value="text">Texto</option>
-            <option value="image">Imagen</option>
-          </select>
-        </div>
         <input class="form-submit views-ajax-processed-processed center" type="submit" value="Guardar"/>
       </form>
     </div>

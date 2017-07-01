@@ -11,8 +11,8 @@ var app = angular
 
   .controller('GenerationCtrl', function($http, $location, $timeout) {
     var vm = this;
+    var base_url = Drupal.settings.pdf_warp.base_url;
     var id = $location.path().substring($location.path().lastIndexOf('/') + 1);
-    var app = $location.path().split('/')[1];
     var nImages = 0;
     var imagesLoaded = 0;
     
@@ -55,7 +55,7 @@ var app = angular
       return result;
     }
     
-    $http.get('http://' + $location.host() + '/' + app + '/store/catalog/' + id + '/json')
+    $http.get(base_url + '/store/catalog/' + id + '/json')
     .then(function(result) {
       vm.products = result.data.products;
       nImages = vm.products.length;

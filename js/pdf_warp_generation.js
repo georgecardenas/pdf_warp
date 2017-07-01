@@ -11,6 +11,7 @@ var app = angular
 
   .controller('GenerationCtrl', function($http, $location, $timeout) {
     var vm = this;
+    var base_url = Drupal.settings.pdf_warp.base_url;
     var idEquivalence = {
       pdf_product_description: {id: 'Description', label: ''},
       pdf_product_height: {id: 'Height', label: 'Alto: '},
@@ -51,9 +52,8 @@ var app = angular
       };
       img.src = url;
     }
-    var app = $location.path().split('/')[1];
     
-    $http.get('http://' + $location.host() + '/' + app + '/store/product/' + id + '/json')
+    $http.get(base_url + '/store/product/' + id + '/json')
     .then(function(result) {
       vm.products = result.data.products;
       var templateInfo = Drupal.settings.pdf_warp.template_content;
