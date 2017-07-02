@@ -2,17 +2,17 @@
 En este capítulo se realiza un análisis del proceso de desarrollo del proyecto, explicando la aplicación de la metodología, los hitos cumplidos en el desarrollo del proyecto e incluyendo toda la información relevante sobre el funcionamiento de la aplicación.
 \section{Aplicación de la metodología Scrum}
 \label{sec:metscrum}
-En este proyecto se aplica la metodología Scrum adaptada a \ac{TFM} como hemos explicado en el apartado \ref{sec:scrumtfm}. El tutor del proyecto toma el rol de propietario del producto y el alumno de desarrollador. El rol de \textit{Scrum Master} se divide entre tutor y alumno.
+En este proyecto se aplica la metodología Scrum adaptada a \ac{TFM} como hemos explicado en la Sección \ref{sec:scrumtfm}. El tutor del proyecto toma el rol de propietario del producto y el alumno de desarrollador. El rol de \textit{Scrum Master} se divide entre tutor y alumno.
 
 \subsection{Primera reunión 04/05/2017}
 En la primera reunión se trata todo lo referente al inicio del proyecto. El propietario del producto explica al desarrollador cual es el objetivo final del \ac{TFM}: desarrollar un módulo para Drupal para la generación de PDF a partir de catálogos y productos de Ubercart. Se dan también los primeros detalles que debería contener la herramienta.
-Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica de instalación, gestión y estudio de este \textit{framework}. A partir de este backlog se establece el primer \textit{sprint} (cuadro \ref{tab:sb01}) y se da un plazo de 2 a 3 semanas para terminarlo. En el cuadro \ref{tab:pb01} se puede observar el estado del product backlog tras la primera reunión.
+Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica de instalación, gestión y estudio de este \textit{framework}. A partir de el \textit{product backlog} del cuál se puede observar su estado tras la primera reunión en la Tabla \ref{tab:pb01}, se establece el primer \textit{sprint} (Tabla \ref{tab:sb01}) y se da un plazo de 2 a 3 semanas para terminarlo.
 
 \begin{table}
 	\centering
-	\begin{tabular}{ | p{2cm} | p{3cm} | p{7.5cm} | p{1cm} |}
+	\begin{tabular}{ | c | p{3cm} | p{8cm} | c |}
 		\hline
-		ID Historia & Alias & Enunciado & \textit{Sprint}\\ \hline
+		ID & Alias & Enunciado & \textit{Sprint}\\ \hline
 		HT01 & Instalación de Entorno & Yo como desarrollador\newline necesito montar un entorno de Drupal 7\newline para poder desarrollar la aplicación & \#1\\ \hline
 	\end{tabular}
 	\caption{\textit{Product Backlog} 04/05/2017}\label{tab:pb01}
@@ -20,9 +20,9 @@ Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica
 
 \begin{table}
 	\centering
-	\begin{tabular}{ | p{2cm} | p{2cm} | p{7cm} | p{2cm} |}
+	\begin{tabular}{ | c | c | p{7cm} | c |}
 		\hline
-		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline
+		ID & ID Tarea & Descripción & Esfuerzo\\ \hline
 		HT01 & TT01.1 & Instalar Drupal 7 & 8\\ \hline
 		HT01 & TT01.2 & Instalar base de datos & 8\\ \hline
 		HT01 & TT01.3 & Instalar módulo & 5\\ \hline
@@ -36,26 +36,27 @@ Debido a que el desarrollador desconoce Drupal, se crea la primera tarea técnica
 \end{table}
 
 \subsection{Segunda reunión 25/05/2017}
-En la segunda reunión se muestra al propietario del producto las tareas realizadas con resultado satisfactorio. Al haber completado con éxito el primer \textit{sprint} y haber demostrado el desarrollador soltura a la hora de utilizar el \textit{framework} de Drupal, se comienza a hablar de la funcionalidad que debe cumplir el \ac{TFM}. Se establecen nuevas historias de usuario para el \textit{product backlog} estableciendo como prioritarias aquellas relacionadas con la generación de documentos PDF. Se establece el nuevo \textit{sprint} (cuadro \ref{tab:sb02}) y se establece una duración de una semana. El \textit{product backlog} en este punto se puede observar en el cuadro \ref{tab:pb02}
+En la segunda reunión se muestra al propietario del producto las tareas realizadas con resultado satisfactorio. Al haber completado con éxito el primer \textit{sprint} y haber demostrado el desarrollador soltura a la hora de utilizar el \textit{framework} de Drupal, se comienza a hablar de la funcionalidad que debe cumplir el \ac{TFM}. Se establecen nuevas historias de usuario para el \textit{product backlog} estableciendo como prioritarias aquellas relacionadas con la generación de documentos PDF. Se actualiza el \textit{product backlog} como se puede observar en la Tabla \ref{tab:pb02} y se establece el nuevo \textit{sprint} (Tabla \ref{tab:sb02}) con una duración de una semana.
 
-\begin{table}
+\begin{table}[h]
 	\centering
-	\begin{tabular}{ | p{2cm} | p{3cm} | p{7.5cm} | p{1cm} |}
+	\scriptsize{
+	\begin{tabular}{ | c | p{2.5cm} | p{10cm} | c |}
 		\hline
-		ID Historia & Alias & Enunciado & \textit{Sprint}\\ \hline
+		ID & Alias & Enunciado & \textit{Sprint}\\ \hline
 		HT01 & Instalación de Entorno & Yo como desarrollador\newline necesito montar un entorno de Drupal 7\newline para poder desarrollar la aplicación & \#1\\ \hline
 		H01 & Botón de generación de PDF de producto & Yo como usuario\newline necesito ver un botón de generación de PDF para Productos\newline para poder generar un documento PDF & \#2\\ \hline
 		H02 & Generación de PDF de producto & Yo como usuario\newline debo ser capaz de generar PDF a partir de Productos\newline para su posterior consulta offline & \#2\\ \hline
 		HT02 & Creación de vistas programáticamente & Yo como desarrollador\newline debo crear las vistas JSON del módulo programáticamente\newline para que el usuario no tenga que realizar trabajo extra en la fase de instalación & \#2\\ \hline
-	\end{tabular}
+	\end{tabular}}
 	\caption{\textit{Product Backlog} 25/05/2017}\label{tab:pb02}
 \end{table}
 
 \begin{table}
 	\centering
-	\begin{tabular}{ | p{2cm} | p{2cm} | p{7cm} | p{2cm} |}
+	\begin{tabular}{ | c | c | p{7cm} | c |}
 		\hline
-		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline
+		ID & ID Tarea & Descripción & Esfuerzo\\ \hline
 		H01 & T01.1 & Crear Hooks & 2\\ \hline
 		H02 & T02.1 & Integrar librería pdf & 5\\ \hline
 		H02 & T02.2 & Programar funciones de conversión a PDF según la librería & 8\\ \hline
@@ -66,14 +67,14 @@ En la segunda reunión se muestra al propietario del producto las tareas realizad
 \end{table}
 
 \subsection{Tercera reunión 01/06/2017}
-Tras la implementación del segundo \textit{sprint} se lleva a cabo la revisión de las tareas realizadas. En este momento el propietario del producto informa que hay nuevas historias de usuario que implican cambios en la idea inicial del procedimiento. Además de la generación PDF, debe ser posible que un usuario administrador cree y gestione nuevas plantillas que serán aplicadas en el momento de la generación. Se pide también que además de la generación de PDF de productos independientes se implemente la generación de PDF de catálogos de productos. Al haber demasiadas historias de usuario para el siguiente \textit{sprint} (ver cuadro \ref{tab:pb03}) se decide dividir las tareas en dos \textit{sprints} que serán ejecutados en sucesión. La definición del tercer \textit{sprint} se puede ver en el cuadro \ref{tab:sb03} la duración del mismo será de 2 semanas.
+Tras la implementación del segundo \textit{sprint} se lleva a cabo la revisión de las tareas realizadas. En este momento el propietario del producto informa que hay nuevas historias de usuario que implican cambios en la idea inicial del procedimiento. Además de la generación PDF, debe ser posible que un usuario administrador cree y gestione nuevas plantillas que serán aplicadas en el momento de la generación. Se pide también que además de la generación de PDF de productos independientes se implemente la generación de PDF de catálogos de productos. Al haber demasiadas historias de usuario en el \textit{product backlog} como se puede ver en la Tabla \ref{tab:pb03} se decide dividir las tareas en dos \textit{sprints} que serán ejecutados en sucesión. La definición del tercer \textit{sprint} se puede ver en la Tabla \ref{tab:sb03} la duración del mismo será de 2 semanas.
 
 \begin{table}
 	\centering
 	\scriptsize{
-	\begin{tabular}{ | p{2cm} | p{3cm} | p{7.5cm} | p{1cm} |}
+	\begin{tabular}{ | c | p{2.5cm} | p{10cm} | c |}
 		\hline
-		ID Historia & Alias & Enunciado & \textit{Sprint}\\ \hline
+		ID & Alias & Enunciado & \textit{Sprint}\\ \hline
 		HT01 & Instalación de Entorno & Yo como desarrollador\newline necesito montar un entorno de Drupal 7\newline para poder desarrollar la aplicación & \#1\\ \hline
 		H01 & Botón de generación de PDF de producto & Yo como usuario\newline necesito ver un botón de generación de PDF para Productos\newline para poder generar un documento PDF & \#2\\ \hline
 		H02 & Generación de PDF de producto & Yo como usuario\newline debo ser capaz de generar PDF a partir de Productos\newline para su posterior consulta offline & \#2\\ \hline
@@ -95,9 +96,9 @@ Tras la implementación del segundo \textit{sprint} se lleva a cabo la revisión d
 
 \begin{table}
 	\centering
-	\begin{tabular}{ | p{2cm} | p{2cm} | p{7cm} | p{2cm} |}
+	\begin{tabular}{ | c | c | p{7cm} | c |}
 		\hline
-		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline		
+		ID & ID Tarea & Descripción & Esfuerzo\\ \hline		
 		H03 & T03.1 & Crear tablas de base de datos & 8\\ \hline
 		H03 & T03.2 & Crear vistas de administración & 8\\ \hline
 		H03 & T03.3 & Crear funciones en \textit{back-end} de creación de plantillas & 5\\ \hline
@@ -115,13 +116,13 @@ Tras la implementación del segundo \textit{sprint} se lleva a cabo la revisión d
 \end{table}
 
 \subsection{Cuarta reunión 16/06/2017}
-Se lleva a cabo la cuarta reunión revisando las tareas realizadas en el tercer \textit{sprint}. El resultado es satisfactorio y se planifica el siguiente conjunto de tareas a realizar a partir de las historias de usuario restantes en el \textit{product backlog}. Se define el \textit{sprint} del cuadro \ref{tab:sb04} mientras se mantiene el estado actual del \textit{product backlog} del cuadro \ref{tab:pb03}. la complejidad de estas tareas es menor, ya que están muy relacionadas con las tareas del tercer \textit{sprint} y la experiencia previa, permite que el tiempo asignado para estas tareas sea de una semana.
+Se lleva a cabo la cuarta reunión revisando las tareas realizadas en el tercer \textit{sprint}. El resultado es satisfactorio y se planifica el siguiente conjunto de tareas a realizar a partir de las historias de usuario restantes en el \textit{product backlog}. El estado del product backlog se mantiene de acuerdo a lo definido en la Tabla \ref{tab:pb03}. Se define el \textit{sprint} de la Tabla \ref{tab:sb04}. La menor complejidad de estas tareas, ya que están muy relacionadas con las tareas del tercer \textit{sprint} y la experiencia previa, permite que el tiempo asignado para estas tareas sea de una semana.
 
 \begin{table}
 	\centering
-	\begin{tabular}{ | p{2cm} | p{2cm} | p{7cm} | p{2cm} |}
+	\begin{tabular}{ | c | c | p{7cm} | c |}
 		\hline
-		ID Historia & ID Tarea & Descripción & Esfuerzo\\ \hline
+		ID & ID Tarea & Descripción & Esfuerzo\\ \hline
 		H08 & T08.1 & Crear Hooks & 2\\ \hline
 		H09 & T09.1 & Programar funciones de conversión a PDF según la librería & 5\\ \hline
 		H09 & T09.2 & Añadir funcionalidad a botón H02 & 2\\ \hline
@@ -140,14 +141,23 @@ Se lleva a cabo la cuarta reunión revisando las tareas realizadas en el tercer \
 
 \subsection{Quinta reunión 23/06/2017}
 Se muestran los resultados de la implementación de las tareas del cuarto \textit{sprint}. El resultado es satisfactorio y se continúa con la elaboración de la documentación para el ac{TFM}.
-
+\clearpage
 \section{Desarrollo del proyecto}
-En esta sección se expondrá el proceso de desarrollo del \ac{TFM}. Según lo expuesto en la sección \ref{sec:metscrum}, el desarrollo está dividido en cuatro \textit{sprints} y cada uno de ellos consta de diseño, desarrollo y pruebas.
+En esta sección se expondrá el proceso de desarrollo del \ac{TFM}. Según lo expuesto en la Sección \ref{sec:metscrum}, el desarrollo está dividido en cuatro \textit{sprints} con sus diferentes tareas y cada una de ellas consta de diseño, desarrollo y pruebas. En este documento se explicarán en detalle las Historias y Tareas con mayor relevancia.
 
 \subsection{Primer \textit{sprint}}
-Como se puede observar en el cuadro \ref{tab:sb01}, el primer \textit{sprint} tiene sólo una historia de usuario: ``Instalación de Entorno'', que comprende ocho tareas básicas para desplegar y comprender el funcionamiento de un entorno Drupal.
+Como se puede observar en la Tabla \ref{tab:sb01} de la sección anterior, el primer \textit{sprint} tiene sólo una historia de usuario: ``Instalación de Entorno'', que comprende ocho tareas básicas para desplegar y comprender el funcionamiento de un entorno Drupal.
 
 \subsubsection{Requisitos de Drupal}
+Para poder ejecutar una aplicación Drupal se tienen que cumplir los siguientes requisitos:
+\begin{itemize}  
+	\item Espacio en disco mínimo de 60MB.
+	\item Servidor web con soporte PHP como Apache, Nginx ó Microsoft IIS.
+	\item Base de datos MySQL, MariaDB, Percona Server, PostgreSQL o SQLite.
+	\item PHP 5.2.5 mínimo
+\end{itemize}
+Se decide utilizar una infraestructura \acf{WAMP} con lo que se cumplen todos los requisitos mínimos de Drupal. El esquema de WAMP se puede ver en la Figura \ref{fig:wamparch}.
+Realizar una instalación para \ac{WAMP} es sencillo, simplemente hay que descargar un instalador de la página web de \ac{WAMP}\footnote{http://www.wampserver.es/} y seguir los pasos del wizard de instalación como se puede observar en la Figura \ref{fig:wampwizard}. Una vez completada la instalación, se arrancan los servicios de \ac{WAMP} navegando a la carpeta en la que se han instalado los componentes y ejecutando wampmanager.exe como se ve en la Figura \ref{fig:wampexe}.
 \begin{figure}
 	\centering{\includegraphics[width=\textwidth]{./imagenes/arquitecturaWAMP.png}}
 	\caption{Arquitectura WAMP}
@@ -163,36 +173,36 @@ Como se puede observar en el cuadro \ref{tab:sb01}, el primer \textit{sprint} ti
 	\caption{Archivos de WAMP}
 	\label{fig:wampexe}
 \end{figure}
-Para poder ejecutar una aplicación Drupal se tienen que cumplir los siguientes requisitos:
-\begin{itemize}  
-	\item Espacio en disco mínimo de 60MB.
-	\item Servidor web con soporte PHP como Apache, Nginx ó Microsoft IIS.
-	\item Base de datos MySQL, MariaDB, Percona Server, PostgreSQL o SQLite.
-	\item PHP 5.2.5 mínimo
-\end{itemize}
-Se decide utilizar una infraestructura \acf{WAMP} con lo que se cumplen todos los requisitos mínimos de Drupal. El esquema de WAMP se puede ver en la figura \ref{fig:wamparch}.
-Realizar una instalación para \ac{WAMP} es sencillo, simplemente hay que descargar un instalador de la página web de \ac{WAMP}\footnote{http://www.wampserver.es/} y seguir los pasos del wizard de instalación como se puede observar en la figura \ref{fig:wampwizard}. Una vez completada la instalación, se arrancan los servicios de \ac{WAMP} navegando a la carpeta de instalación y ejecutando wampmanager.exe como se ve en la figura \ref{fig:wampexe}.
+\clearpage
 \subsubsection{Instalación de Drupal}
-\begin{figure}
-	\centering{\includegraphics[width=\textwidth]{./imagenes/Wizard_drupal.png}}
-	\caption{Instalación de Drupal}
-	\label{fig:drupalins}
-\end{figure}
 Hay varias formas para instalar Drupal y sus extensiones. Inicialmente se intentó usar la herramienta Composer con la cual poder crear un archivo composer.json con todos los parámetros de la instalación de Drupal, incluyendo módulos extra, y posteriormente ejecutar la instalación con un único comando de consola. Sin embargo, tras múltiples problemas relacionados con la plataforma Windows elegida, y, dado que el proceso de instalación de Drupal en sí no está incluido dentro del alcance de los propósito del \ac{TFM}, se decidió utilizar un proceso de instalación manual.\\
 
 Para instalar Drupal manualmente, el proceso es el siguiente:
 \begin{enumerate}  
 	\item Descargar y extraer Drupal: El \textit{framework} no requiere instalación propiamente dicha, tan sólo hace falta descargar el archivo comprimido de la web de Drupal\footnote{https://www.drupal.org/project/drupal} y extraer los ficheros comprimidos dentro de la carpeta de aplicaciones web en la instalación de \ac{WAMP}.
 	\item Crear base de datos: En el servidor de MySQL incluido en \ac{WAMP}, se crea la base de datos para la aplicación de Drupal.
-	\item Ejecución de scripts de Drupal: Finalmente se navega a la aplicación creada en el punto 1 (ejemplo: http://localhost/drupal) y se siguen los pasos para completar la instalación. Esto ejecutará los scripts necesarios para completar la instalación de Drupal como se puede ver en la figura \ref{fig:drupalins}.
+	\item Ejecución de scripts de Drupal: Finalmente se navega a la aplicación creada en el punto 1 (ejemplo: http://localhost/drupal) y se siguen los pasos para completar la instalación. Esto ejecutará los scripts necesarios para completar la instalación de Drupal como se puede ver en la Figura \ref{fig:drupalins}.
 \end{enumerate}
 
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/Wizard_drupal.png}}
+	\caption{Instalación de Drupal}
+	\label{fig:drupalins}
+\end{figure}
 \subsubsection{Expandiendo Drupal}
+Como \ac{CMS}, Drupal contiene mecanismos para que un administrador pueda agregar contenido y funcionalidad extra. Esto se realiza desde los menús de administración en la aplicación web. Para acceder a esta sección, se navega a la aplicación web del servidor local (creado en la sección anterior) y se introducen los credenciales de un usuario con privilegios, creado en el paso 3 de la instalación manual de Drupal. En la Figura \ref{fig:drupaladmin} se puede ver el menú de administración.\\
 \begin{figure}
 	\centering{\includegraphics[width=\textwidth]{./imagenes/Drupal_administration.png}}
 	\caption{Administración de Drupal}
 	\label{fig:drupaladmin}
 \end{figure}
+
+Las siguientes acciones sobre la instalación de Drupal se han llevado a cabo para el primer \textit{sprint}:
+\begin{itemize}  
+	\item Instalación de módulo: Para instalar un módulo de Drupal manualmente, hay que realizar una búsqueda del mismo en su web\footnote{https://www.drupal.org/project/project\_module} y descargar su fichero comprimido. Una vez descargado, se añade el módulo a Drupal mediante la opción ``Install new module'' del menú ``Modules'' como se puede observar en la Figura \ref{fig:drupalnewmodule}. Una vez añadido, el módulo y sus dependencias, se activa desde la lista de módulos, como se muestra en la Figura \ref{fig:drupalmodulelist}. Para ganar tiempo en el futuro del desarrollo, se instala directamente el módulo de Ubercart y sus dependencias.
+	\item Instalación de tema: Se instala el tema Acquia Prosper de manera manual. Para ello se realiza una búsqueda en la web de descarga de temas\footnote{https://www.drupal.org/project/project\_theme} y se obtiene el fichero comprimido. Luego desde la sección ``Appearance'', se elige la opción ``Install new theme'' y se elige el archivo descargado como se puede ver en la Figura \ref{fig:drupalappearance}. Por último se instalan us dependencias y se activa desde el listado de temas de la sección ``Appearance''.
+	\item Creación de contenido: Se crean contenidos, tipos de contenido, vistas y bloques de prueba para familiarizarse con la diferente funcionalidad de Drupal y productos para el posterior desarrollo del proyecto.
+\end{itemize}
 \begin{figure}
 	\centering{\includegraphics[width=\textwidth]{./imagenes/nuevo_modulo_form.png}}
 	\caption{Formulario de añadir módulo a Drupal}
@@ -203,14 +213,6 @@ Para instalar Drupal manualmente, el proceso es el siguiente:
 	\caption{Lista de módulos instalados en Drupal}
 	\label{fig:drupalmodulelist}
 \end{figure}
-Como \ac{CMS}, Drupal contiene mecanismos para que un administrador pueda agregar contenido y funcionalidad extra. Esto se realiza desde los menús de administración en la aplicación web. Para acceder a esta sección, se navega a la aplicación web del servidor local (creado en la sección anterior) y se introducen los credenciales de un usuario con privilegios, creado en el paso 3 de la instalación manual de Drupal. En la figura \ref{fig:drupaladmin} se puede ver el menú de administración.\\
-
-Las siguientes acciones sobre la instalación de Drupal se han llevado a cabo para el primer \textit{sprint}:
-\begin{itemize}  
-	\item Instalación de módulo: Para instalar un módulo de Drupal manualmente, hay que realizar una búsqueda del mismo en su web\footnote{https://www.drupal.org/project/project\_module} y descargar su fichero comprimido. Una vez descargado, se añade el módulo a Drupal mediante la opción ``Install new module'' del menú ``Modules'' como se puede observar en la figura \ref{fig:drupalnewmodule}. Una vez añadido, el módulo y sus dependencias, se activa desde la lista de módulos, como se muestra en la figura \ref{fig:drupalmodulelist}. Para ganar tiempo en el futuro del desarrollo, se instala directamente el módulo de Ubercart y sus dependencias.
-	\item Instalación de tema: Se instala el tema Acquia Prosper de manera manual. Para ello se realiza una búsqueda en la web de descarga de temas\footnote{https://www.drupal.org/project/project\_theme} y se obtiene el fichero comprimido. Luego desde la sección ``Appearance'', se elige la opción ``Install new theme'' y se elige el archivo descargado como se puede ver en la figura \ref{fig:drupalappearance}. Por último se instalan us dependencias y se activa desde el listado de temas de la sección ``Appearance''.
-	\item Creación de contenido: Se crean contenidos, tipos de contenido, vistas y bloques de prueba para familiarizarse con la diferente funcionalidad de Drupal y productos para el posterior desarrollo del proyecto.
-\end{itemize}
 \begin{figure}
 	\centering{\includegraphics[width=\textwidth]{./imagenes/appearance.png}}
 	\caption{Agregar nuevo tema a Drupal}
@@ -230,21 +232,21 @@ Esto indicará a Drupal las propiedades básicas del nuevo módulo para que lo reco
 Por último se crea en el directorio un fichero pdf\_warp.module que tendrá el código PHP con la funcionalidad de la extensión.
 
 \subsection{Segundo \textit{sprint}}
-Este \textit{sprint} consta de tres historias de usuario que se dividen en cinco tareas, como está reflejado en el cuadro \ref{tab:sb02}. A partir de este punto empieza el desarrollo de la funcionalidad del \ac{TFM}.
+Este \textit{sprint} consta de tres historias de usuario que se dividen en cinco tareas, como está reflejado en el Tabla \ref{tab:sb02} de la sección anterior. A partir de este punto empieza el desarrollo de la funcionalidad del \ac{TFM}.
 
 \subsubsection{Diseño}
+La arquitectura del módulo constará de un directorio base que contiene el archivo .info de descripción del módulo, el archivo .install con las instrucciones PHP a ejecutar durante la instalación, el archivo .module que contiene el código del módulo como la implementación de \textit{hooks} de Drupal y los archivos .tpl con las plantillas de PHP. Dentro del mismo directorio y como se puede observar en la Figura \ref{fig:folders} se incluirán una carpeta ``css'' para los estilos del módulo y una carpeta ``js'' para todo el contenido \textit{front-end} dinámico.\\
 \begin{figure}
 	\centering{\includegraphics[width=13cm]{./imagenes/carpetas.png}}
 	\caption{Carpetas de módulo pdf\_warp}
 	\label{fig:folders}
 \end{figure}
-La arquitectura del módulo constará de un directorio base que contiene el archivo .info de descripción del módulo, el archivo .install con las instrucciones PHP a ejecutar durante la instalación, el archivo .module que contiene el código del módulo como la implementación de \textit{hooks} de Drupal y los archivos .tpl con las plantillas de PHP. Dentro del mismo directorio y como se puede observar en la figura \ref{fig:folders} se incluirán una carpeta ``css'' para los estilos del módulo y una carpeta ``js'' para todo el contenido \textit{front-end} dinámico.\\
+La aplicación inicialmente seguirá el diseño de la Figura \ref{fig:arc} con Drupal como fuente de datos, y comunicaciones JSON con el \textit{front-end} para la generación de PDF.
 \begin{figure}
 	\centering{\includegraphics[width=13cm]{./imagenes/arquitecturaAplicacion.png}}
 	\caption{Arquitectura de la aplicación}
 	\label{fig:arc}
 \end{figure}
-La aplicación inicialmente seguirá el diseño de la figura \ref{fig:arc} con Drupal como fuente de datos, y comunicaciones JSON con el \textit{front-end} para la generación de PDF.
 
 \subsubsection{Desarrollo}
 \begin{itemize}  
@@ -263,32 +265,28 @@ La aplicación inicialmente seguirá el diseño de la figura \ref{fig:arc} con Drup
 	\end{verbatim}
 	En dónde \textit{\&\$form} contiene la información del formulario que se está renderizando, \textit{\$form\_state} contiene la información del estado de formulario y \textit{\$form\_id} contiene el id de formulario.\\
 	\item \textbf{HT02 ``Creación de vistas programáticamente''}\\
-	Se necesita crear las vistas de producto y catálogo en JSON para que el código Javascript del cliente pueda trabajar con estos datos. Para ello se hace uso de los \textit{hooks} \textit{views\_api} y \textit{views\_default\_views}. Debido a que crear una vista programáticamente es complicado, lo más sencillo es crear la vista de forma manual y luego exportar el código generado a \textit{views\_default\_views} como se observa en la figura \ref{fig:export}.
+	Se necesita crear las vistas de producto y catálogo en JSON para que el código Javascript del cliente pueda trabajar con estos datos. Para ello se hace uso de los \textit{hooks} \textit{views\_api} y \textit{views\_default\_views}. Debido a que crear una vista programáticamente es complicado, lo más sencillo es crear la vista de forma manual y luego exportar el código generado a \textit{views\_default\_views} como se observa en la Figura \ref{fig:export}.
 	\begin{verbatim}
 	function pdf_warp_views_api() {
-	  return array(
-	    'api' => 3.0,
-	    'path' => drupal_get_path('module', 'pdf_warp')
-	  );
+	// Definir path del módulo
 	}
 	
 	functionpdf_warp_views_default_views() {
 	  // Pegar código de la exportación
-	
 	  $views[$view->name] = $view;
 	  return $views;
 	}
 	\end{verbatim}
-	\item \textbf{H02 ``Generación de PDF de producto''}\\
-	Tras concluir la implementación de la historia H01 y HT02, se empieza con la H02 ``Generación de PDF de producto''. En esta historia de usuario se necesita añadir las librerías de generación de PDF, implementar la funcionalidad del lado del cliente y agregar el lanzado de la generación al botón de la historia H01.\\
-	
-	Para no sobrecargar las páginas de Drupal con librerías que no necesitan, se cargará el código Javascript localmente en las páginas en las que sea necesario. Con este fin, se crea una nueva página que realizará la generación de PDF.\\
-	El proceso de creación de una nueva página requiere implementar los \textit{hooks} \textit{menu} y \textit{theme} en el archivo .module. Estas funciones son llamadas por Drupal cuando se va a generar el árbol de navegación y los temas.\\
 	\begin{figure}
 		\centering{\includegraphics[width=\textwidth]{./imagenes/exportar_vista.png}}
 		\caption{Exportación de vista a código PHP}
 		\label{fig:export}
 	\end{figure}
+	\item \textbf{H02 ``Generación de PDF de producto''}\\
+	Tras concluir la implementación de la historia H01 y HT02, se empieza con la H02 ``Generación de PDF de producto''. En esta historia de usuario se necesita añadir las librerías de generación de PDF, implementar la funcionalidad del lado del cliente y agregar el lanzado de la generación al botón de la historia H01.\\
+	
+	Para no sobrecargar las páginas de Drupal con librerías que no necesitan, se cargará el código Javascript localmente en las páginas en las que sea necesario. Con este fin, se crea una nueva página que realizará la generación de PDF.\\
+	El proceso de creación de una nueva página requiere implementar los \textit{hooks} \textit{menu} y \textit{theme} en el archivo .module. Estas funciones son llamadas por Drupal cuando se va a generar el árbol de navegación y los temas.\\
 	En el \textit{hook} \textit{menu}, se añade un nuevo elemento al \textit{array} \$items con su título, descripción, \textit{callback}, argumentos de página y privilegios necesarios para acceder. La implementación es la siguiente:
 	\begin{verbatim}
     function pdf_warp_menu() {
@@ -366,7 +364,7 @@ Las pruebas realizadas son las siguientes:
 \end{itemize}
 
 \subsection{Tercer \textit{sprint}}
-El tercer \textit{sprint} consta de cinco historias de usuario que se dividen en doce tareas, como está reflejado en el cuadro \ref{tab:sb03}. Al ser más largo y complejo que el resto, ya que se han realizado cambios en la funcionalidad general, se cuenta con un período de dos semanas para su realización.
+El tercer \textit{sprint} consta de cinco historias de usuario que se dividen en doce tareas, como está reflejado en la Tabla \ref{tab:sb03}. Al ser más largo y complejo que el resto, ya que se han realizado cambios en la funcionalidad general, se cuenta con un período de dos semanas para su realización.
 
 \subsubsection{Diseño}
 Para este \textit{sprint} se pide el uso de plantillas PDF que servirán para generar los documentos con los elementos en el sitio que decidamos. Para este fin se necesita diseñar una estructura de datos que contenga la plantilla. Contendrá los siguientes campos:
@@ -383,12 +381,12 @@ Para almacenar la información de plantilla se diseña una nueva tabla de base de 
 	\item id: identificador de plantilla de tipo UNSIGNED INT.
 	\item name: nombre de la plantilla de tipo VARCHAR(255).
 	\item type: el tipo de plantilla de tipo VARCHAR(32) con valor por defecto 'catalog' siendo el otro valor 'product'.
-	\item render\_mode: el modo de renderizado de tipo VARCHAR(32). Por defecto 'imagen'
+	\item render\_mode: el modo de renderizado de tipo VARCHAR(32). Por defecto 'imagen'.
 	\item active: para saber si la plantilla está activa o no de tipo TINYINT con 1 activo y 0 no activo.
 	\item content: El contenido en JSON de tipo TEXT y tamaño medio.
 \end{itemize}
 
-Por otro lado se requiere una sección de administración para que un usuario con privilegios pueda gestionar plantillas. Se decide incluir una pestaña de administración dentro de la sección ``Appearance''. El diseño de las pantallas se puede ver en las figuras \ref{fig:diseno1},\ref{fig:diseno2} y \ref{fig:diseno3}.\\
+Por otro lado se requiere una sección de administración para que un usuario con privilegios pueda gestionar plantillas. Se decide incluir una pestaña de administración dentro de la sección ``Appearance''. El diseño de las pantallas se puede ver en las Figuras \ref{fig:diseno1},\ref{fig:diseno2} y \ref{fig:diseno3}.\\
 \begin{figure}
 	\centering{\includegraphics[width=\textwidth]{./imagenes/disenoAdminPpal.png}}
 	\caption{Diseño de pantalla principal de administración}
@@ -453,32 +451,33 @@ Por otro lado se requiere una sección de administración para que un usuario con 
       'type' => MENU_LOCAL_ACTION,
     );
 	\end{verbatim}
-	Posteriormente se implementan las funciones de \textit{callback}, \textit{pdf\_warp\_admin\_page} y \textit{pdf\_warp\_form\_add\_template}, para generar el contenido de las páginas, además para el formulario de creación de plantilla se requiere implementar uan nueva función \textit{pdf\_warp\_form\_add\_templat\_submit} que contendrá el código para crear una nueva plantilla en base de datos. El aspecto que presentan se puede ver en las figuras \ref{fig:adminpdf2} y \ref{fig:adminpdf3}.\\
-	\begin{figure}
-		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion2.png}}
-		\caption{Página de administración principal}
-		\label{fig:adminpdf2}
-	\end{figure}
-	\begin{figure}
-		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion3.png}}
-		\caption{Página de creación de plantilla}
-		\label{fig:adminpdf3}
-	\end{figure}
+	Posteriormente se implementan las funciones de \textit{callback}, \textit{pdf\_warp\_admin\_page} y \textit{pdf\_warp\_form\_add\_template}, para generar el contenido de las páginas, además para el formulario de creación de plantilla se requiere implementar uan nueva función \textit{pdf\_warp\_form\_add\_templat\_submit} que contendrá el código para crear una nueva plantilla en base de datos. El aspecto que presentan se puede ver en las Figuras \ref{fig:adminpdf2} y \ref{fig:adminpdf3}.\\
+
 	Una vez tenemos la plantilla creada, se modifica la generación de PDF de producto para que haga uso de ella en vez de una prefijada. Para ello tan sólo modificamos la función del back que renderiza la página de generación de PDF para que envíe el JSON de nuestra plantilla a la página de generación, en los \textit{settings} de Drupal:
+	\clearpage
 	\begin{verbatim}
 	function pdf_warp_generate_product_page($id_item) {
 	  ...
-	  
-	  $sql = "SELECT * FROM {pdf_warp_templates} WHERE active=1 
-	    AND type='product'";
-	  $settings['pdf_warp']['template_content'] = 
-	    db_query($sql)->fetchAll();
+	  $sql = "SELECT * FROM {pdf_warp_templates} WHERE active=1
+	  AND type='product'";
+	  $settings['pdf_warp']['template_content'] =
+	  db_query($sql)->fetchAll();
 	  drupal_add_js($settings, 'setting');
 	  
 	  return theme('pdf_warp_generation');
 	}
 	\end{verbatim}
-	
+	\begin{figure}[h]
+		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion2.png}}
+		\caption{Página de administración principal}
+		\label{fig:adminpdf2}
+	\end{figure}
+	\clearpage
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion3.png}}
+		\caption{Página de creación de plantilla}
+		\label{fig:adminpdf3}
+	\end{figure}
 	\item \textbf{H04 ``Asignación de plantillas de producto''}\\
 	Para la asignación o activación de plantillas el proceso es sencillo. Se crea una nueva página de formulario implementando el \textit{hook menu} y su función de \textit{callback} que se llamará pdf\_warp\_template\_enable\_confirm. El código que se añade al \textit{hook} es el siguiente:
 	\begin{verbatim}
@@ -554,11 +553,10 @@ Por otro lado se requiere una sección de administración para que un usuario con 
 	  return theme('pdf_warp_template');
 	}
 	\end{verbatim}
-	
-	Como se puede observar, se incuyen librerías extra desde la carpeta \textit{vendor}. Estas librerías son para poder usar la extensión de AngularJs Draggabilly que nos permite mover elementos mediante \textit{drag and drop} al punto que queramos dentro de un elemento contenedor.\\
+	Como se puede observar, se incuyen librerías extra desde la carpeta \textit{vendor} para poder usar la extensión de AngularJs Draggabilly que nos permite mover elementos mediante \textit{drag and drop} al punto que queramos dentro de un elemento contenedor.\\
 	
 	La página de edición AngularJS se divide en dos ficheros, uno que contiene la lógica de la página llamado pdf\_warp.js  y otro con la el código \ac{HTML} representando la vista de nombre pdf-warp-template.tpl.php.
-	La página resultante se puede ver en la figura \ref{fig:adminpdf4}.
+	La página resultante se puede ver en la Figura \ref{fig:adminpdf4}.
 	\begin{figure}
 		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion4.png}}
 		\caption{Página de edición de plantilla}
@@ -593,10 +591,10 @@ Las pruebas realizadas en este \textit{sprint} son las siguientes:
 \end{itemize}
 
 \subsection{Cuarto \textit{sprint}}
-El último \textit{sprint} consta de seis historias de usuario que se dividen en doce tareas, como está reflejado en el cuadro \ref{tab:sb04}. Este \textit{sprint} aún siendo similar en tamaño al anterior, tiene menor complejidad ya que podemos reutilizar código y experiencia previa para realizar un desarrollo más ágil, por ello el tiempo estimado es de una semana.
+El último \textit{sprint} consta de seis historias de usuario que se dividen en doce tareas, como está reflejado en la Tabla \ref{tab:sb04}. Este \textit{sprint} aún siendo similar en tamaño al anterior, tiene menor complejidad ya que podemos reutilizar código y experiencia previa para realizar un desarrollo más ágil, por ello el tiempo estimado es de una semana.
 
 \subsubsection{Diseño}
-Lo único nuevo en cuestión de diseño en este \textit{sprint} es la pantalla de edición de plantillas de catálogos que podemos ver en la figura \ref{fig:diseno4}.
+Lo único nuevo en cuestión de diseño en este \textit{sprint} es la pantalla de edición de plantillas de catálogos que podemos ver en la Figura \ref{fig:diseno4}.
 \begin{figure}
 	\centering{\includegraphics[width=\textwidth]{./imagenes/disenoCatalogo.png}}
 	\caption{Diseño de edición de plantilla de catálogo}
@@ -635,6 +633,7 @@ Lo único nuevo en cuestión de diseño en este \textit{sprint} es la pantalla de e
 	);
 	\end{verbatim}
 	También es necesario crear nuevos temas, para utilizar las páginas \textit{front-end} de catálogos:
+	\clearpage
 	\begin{verbatim}
 	function pdf_warp_theme(){
 	  return array(
@@ -759,12 +758,7 @@ Lo único nuevo en cuestión de diseño en este \textit{sprint} es la pantalla de e
 	\end{verbatim}
 	
 	La página de edición de plantillas de catálogo se divide en dos ficheros, uno que contiene la lógica de la página llamado pdf\_warp\_catalog.js  y otro con la el código \ac{HTML} representando la vista de nombre pdf-warp-catalog-template.tpl.php.
-	La página resultante se puede ver en la figura \ref{fig:adminpdf5}.
-	\begin{figure}
-		\centering{\includegraphics[width=\textwidth]{./imagenes/administracion5.png}}
-		\caption{Diseño de edición de plantilla de catálogo}
-		\label{fig:adminpdf5}
-	\end{figure}
+	La página resultante se puede ver en la Figura \ref{fig:adminpdf5}.
 	
 	\item \textbf{H13 ``Borrado de plantillas de catálogo''}\\
 	El borrado de plantillas de catálogo no requiere código extra, ya que el borrado inicial se realiza por ID de plantilla y no entra en conflicto con la implementación previa.
@@ -779,3 +773,9 @@ Las pruebas realizadas en este \textit{sprint} son las siguientes:
 	\item Activado de plantillas de catálogo.
 	\item Generación de PDF a partir de plantillas de catálogo.
 \end{itemize}
+
+\begin{figure}[h]
+	\centering{\includegraphics[width=\textwidth]{./imagenes/administracion5.png}}
+	\caption{Diseño de edición de plantilla de catálogo}
+	\label{fig:adminpdf5}
+\end{figure}

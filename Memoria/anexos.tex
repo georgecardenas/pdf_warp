@@ -1,7 +1,64 @@
 \chapter{Anexo 1}
+\section{Instalación manual de Drupal 7}
+El manual básico para la instalación no automática de Drupal es el siguiente:
+\begin{enumerate}
+	\item Descargar el archivo comprimido de Drupal 7 de la web https://www.drupal.org/project/drupal como se puede ver en la Figura \ref{fig:drupins1}.
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/install_drupal_1.png}}
+		\caption{Web de descarga de Drupal}
+		\label{fig:drupins1}
+	\end{figure}
+	\item Extraer el contenido del archivo comprimido en la instalación de WAMP, concretamente en la carpeta \textless instalación\_de\_WAMP\textgreater /www/.
+	\item Renombrar directorio de la aplicación.(En el ejemplo warpdf).Figura\ref{fig:drupins2}.
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/install_drupal_2.png}}
+		\caption{Directorio de la aplicación de Drupal}
+		\label{fig:drupins2}
+	\end{figure}
+	\item Crear la base de datos en el servidor de MySQL (Depende del gestor utilizado, en el ejemplo phpMy).Figura\ref{fig:drupins3}.
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/install_drupal_3.png}}
+		\caption{Creación de la base de datos}
+		\label{fig:drupins3}
+	\end{figure}
+	\item Navegar a la aplicación de Drupal desde el navegador, en el ejemplo http://localhost/warpdf.
+	\item Seguir los pasos del instalador indicando que se utilice la base de datos del paso 3. Figura\ref{fig:drupins4}.
+	\begin{figure}
+		\centering{\includegraphics[width=\textwidth]{./imagenes/Wizard_drupal.png}}
+		\caption{Wizard de Drupal}
+		\label{fig:drupins4}
+	\end{figure}
+\end{enumerate}
+\clearpage
+\section{Manual de instalación del módulo PDF-Warp}
+Para instalar el módulo PDF-Warp primero se deben cumplir previamente los siguientes requisitos en la instalación de Drupal:
 \begin{itemize}
-	\item Manual de instalación de Drupal 7: https://www.drupal.org/docs/7/install
-	\item Documentación de Ubercart: http://www.ubercart.org/docs
-	\item Documentación de Angularjs: https://docs.angularjs.org/api
-	\item Ejemplos de JsPDF: https://parall.ax/products/jspdf
+	\item Tener instalado y activado el módulo Ubercart con su módulo de productos y catálogos, además de sus dependencias.
+	\item Tener instalado y activo el módulo Angularjs con la versión 1.6x, además de sus dependencias.
+	\item Tener instalado y activo el módulo Views Datasource, en concreto su módulo views\_json.
 \end{itemize}
+Cumpliendo estos requisitos, el manual de instalación es el siguiente:
+\begin{enumerate}
+	\item Obtener el archivo comprimido con los componentes del módulo pdf\_warp.
+	\item Navegar al menú ``\textit{Modules}'' dentro de la instalación de Drupal.
+	\item Acceder a al opción ``\textit{Install new Module}''.(Figura \ref{fig:pdfins1})
+	\item Elegir la opción ``\textit{Upload a module or theme archive to install}'' buscar el archivo del módulo pdf\_warp y seleccionarlo.
+	\item Pulsar el botón ``\textit{Install}''.(Figura \ref{fig:pdfins2})
+	\item Activar el módulo desde la lista de módulos instalados seleccionando su \textit{checkbox} y pulsando el botón ``\textit{Save Configuration}''.(Figura \ref{fig:pdfins3})
+\end{enumerate}
+
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/modules.png}}
+	\caption{Lista de módulos y botón \textit{Install new module}}
+	\label{fig:pdfins1}
+\end{figure}
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/install_pdf_1.png}}
+	\caption{Selección de modo de instalación de módulo}
+	\label{fig:pdfins2}
+\end{figure}
+\begin{figure}
+	\centering{\includegraphics[width=\textwidth]{./imagenes/install_pdf_2.png}}
+	\caption{Botón \textit{Save Configuration}}
+	\label{fig:pdfins3}
+\end{figure}

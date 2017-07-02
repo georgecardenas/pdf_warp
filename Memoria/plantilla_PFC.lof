@@ -5,24 +5,31 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitectura WAMP}}{30}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Arquitectura WAMP}}{31}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Instalaci\'on de WAMP}}{31}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Archivos de WAMP}}{31}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Instalaci\'on de Drupal}}{32}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Administraci\'on de Drupal}}{33}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Formulario de a\~nadir m\'odulo a Drupal}}{34}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Lista de m\'odulos instalados en Drupal}}{34}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Archivos de WAMP}}{32}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Instalaci\'on de Drupal}}{34}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Administraci\'on de Drupal}}{34}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Formulario de a\~nadir m\'odulo a Drupal}}{35}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Lista de m\'odulos instalados en Drupal}}{36}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Agregar nuevo tema a Drupal}}{36}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Carpetas de m\'odulo pdf\_warp}}{36}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Arquitectura de la aplicaci\'on}}{37}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Exportaci\'on de vista a c\'odigo PHP}}{39}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Dise\~no de pantalla principal de administraci\'on}}{43}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Dise\~no de creaci\'on de plantilla}}{43}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Dise\~no de edici\'on de plantilla}}{44}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces P\'agina de administraci\'on principal}}{47}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces P\'agina de creaci\'on de plantilla}}{47}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces P\'agina de edici\'on de plantilla}}{51}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Dise\~no de edici\'on de plantilla de cat\'alogo}}{53}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Dise\~no de edici\'on de plantilla de cat\'alogo}}{58}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Carpetas de m\'odulo pdf\_warp}}{38}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Arquitectura de la aplicaci\'on}}{38}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Exportaci\'on de vista a c\'odigo PHP}}{40}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Dise\~no de pantalla principal de administraci\'on}}{44}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Dise\~no de creaci\'on de plantilla}}{45}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Dise\~no de edici\'on de plantilla}}{45}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces P\'agina de administraci\'on principal}}{48}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces P\'agina de creaci\'on de plantilla}}{49}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces P\'agina de edici\'on de plantilla}}{52}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Dise\~no de edici\'on de plantilla de cat\'alogo}}{54}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Dise\~no de edici\'on de plantilla de cat\'alogo}}{60}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Web de descarga de Drupal}}{68}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Directorio de la aplicaci\'on de Drupal}}{68}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Creaci\'on de la base de datos}}{69}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Wizard de Drupal}}{69}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Lista de m\'odulos y bot\'on \textit {Install new module}}}{71}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Selecci\'on de modo de instalaci\'on de m\'odulo}}{71}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Bot\'on \textit {Save Configuration}}}{72}
